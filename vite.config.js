@@ -24,8 +24,8 @@ export default ({ command }) => ({
         // respond to all network requests
         host: "0.0.0.0",
         strictPort: true,
-        port: 2000,
-        origin: "http://localhost:2000",
+        port: 3000,
+        origin: "http://localhost:3000",
     },
     plugins: [
         legacy({
