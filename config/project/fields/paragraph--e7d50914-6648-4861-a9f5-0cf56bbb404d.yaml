@@ -1,0 +1,19 @@
+columnSuffix: nigdsynn
+contentColumnType: text
+fieldGroup: 3a9d522e-5500-4663-a4d9-162830130a81 # Common
+handle: paragraph
+instructions: null
+name: Paragraph
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
