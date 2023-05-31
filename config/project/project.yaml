@@ -1,4 +1,4 @@
-dateModified: 1685560760
+dateModified: 1685561629
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: kortkijk
@@ -9,6 +9,11 @@ meta:
     3a9d522e-5500-4663-a4d9-162830130a81: Common # Common
     7e186b00-f55c-4b5b-b3bd-e417d6d64350: kortkijk # kortkijk
     b0eaeae1-9094-4470-901b-b4838031a37f: 'Public Schema' # Public Schema
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true
