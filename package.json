@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-legacy": "^4.0.4",
+    "terser": "^5.17.7",
     "vite-plugin-restart": "^0.3.1"
   }
 }
