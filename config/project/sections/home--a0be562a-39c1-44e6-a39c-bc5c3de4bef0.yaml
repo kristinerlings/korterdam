@@ -1,0 +1,13 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: home
+propagationMethod: all
+siteSettings:
+  2a135274-a469-4f7e-900e-fc0bc70ed3c3: # kortkijk
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/home.twig
+    uriFormat: __home__
+type: single
+
