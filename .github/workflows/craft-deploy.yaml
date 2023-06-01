@@ -9,8 +9,8 @@ on:
   workflow_dispatch:
   
 env:
-  APP_PATH: ~/craft/kortkijk
-  WEB_PATH: ~/www/kortkijk
+  APP_PATH: ~/craft/korterdam
+  WEB_PATH: ~/www/korterdam
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
