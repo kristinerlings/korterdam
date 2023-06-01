@@ -1,5 +1,5 @@
 fieldLayouts:
-  6c282205-6c85-4b85-a8b0-dddd3014c5bf:
+  b458ac17-0deb-48c1-ba7f-4d003ad03842:
     tabs:
       -
         elementCondition: null
@@ -26,30 +26,30 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 4d49742f-3685-40de-9da3-e71246ab73d0
+            uid: b4ef93b6-43ba-43ed-b96a-29c45f3abd63
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: e7d50914-6648-4861-a9f5-0cf56bbb404d # Paragraph
+            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f34cfd5f-6cd1-4a19-a652-0a555801d607
+            uid: 89a12e52-28ee-4f13-bc46-badf4db249f1
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: a8e9bb67-9276-426e-a78a-7dcbce8d9bbd
+        uid: b0e30bac-aa62-4a3c-a9cb-fe2de261bbb0
         userCondition: null
 handle: home
 hasTitleField: true
 name: home
-section: a0be562a-39c1-44e6-a39c-bc5c3de4bef0 # home
-sortOrder: 2
-titleFormat: null
+section: 13181b27-bdca-4e23-af9e-6ba7a5023d1f # home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

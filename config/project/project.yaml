@@ -1,17 +1,17 @@
-dateModified: 1685566295
+dateModified: 1685623017
 email:
   fromEmail: lilou.barbier@student.howest.be
-  fromName: kortkijk
+  fromName: korterdam
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    2a135274-a469-4f7e-900e-fc0bc70ed3c3: kortkijk # kortkijk
-    3a9d522e-5500-4663-a4d9-162830130a81: Common # Common
-    4dcd2dc4-1312-4985-b7be-352960f631df: home # home
-    7e186b00-f55c-4b5b-b3bd-e417d6d64350: kortkijk # kortkijk
-    a0be562a-39c1-44e6-a39c-bc5c3de4bef0: home # home
-    b0eaeae1-9094-4470-901b-b4838031a37f: 'Public Schema' # Public Schema
-    e7d50914-6648-4861-a9f5-0cf56bbb404d: Paragraph # Paragraph
+    2ead9e23-6bdd-43c3-9657-e72cfaca7748: Common # Common
+    1535a3de-5390-403d-806b-b9674e214560: home # home
+    13181b27-bdca-4e23-af9e-6ba7a5023d1f: home # home
+    3867285b-e2d9-4bf2-813e-38639300f4c4: korterdam # korterdam
+    aa1a3e63-bc1f-4863-903d-5bad285c2da6: 'Public Schema' # Public Schema
+    d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
+    d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
 plugins:
   vite:
     edition: standard
@@ -20,7 +20,7 @@ plugins:
 system:
   edition: pro
   live: true
-  name: kortkijk
+  name: korterdam
   schemaVersion: 4.4.0.4
   timeZone: America/Los_Angeles
 users:

@@ -4,10 +4,9 @@ handle: home
 name: home
 propagationMethod: all
 siteSettings:
-  2a135274-a469-4f7e-900e-fc0bc70ed3c3: # kortkijk
+  3867285b-e2d9-4bf2-813e-38639300f4c4: # korterdam
     enabledByDefault: true
     hasUrls: true
     template: _/pages/home.twig
     uriFormat: __home__
 type: single
-
