@@ -10,7 +10,7 @@ on:
   
 env:
   APP_PATH: ~/craft/korterdam
-  WEB_PATH: ~/www/korterdam
+  WEB_PATH: ~/subsites/dev-korterdam.lilou-barbier.be
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
