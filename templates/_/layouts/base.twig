@@ -5,8 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Korterdam Film Festival</title>
-		{{ craft.vite.script("src/js/app.js") }}
+		<!-- can be deleted? --> {{ craft.vite.script("src/js/app.js" ) }} 
 		<link rel="stylesheet" href="/dist/assets/app-aef97326.css">
+		<script type="module" src="/dist/assets/app-3e02badc.js" crossorigin="" onload="e=new CustomEvent('vite-script-loaded', {detail:{path: 'src/js/app.js'}});document.dispatchEvent(e);"></script>
+		<script src="/dist/assets/app-legacy-fbb1abc9.js" nomodule="" onload="e=new CustomEvent('vite-script-loaded', {detail:{path: 'src/js/app-legacy.js'}});document.dispatchEvent(e);"></script>
+
 
 	</head>
 	<body>
