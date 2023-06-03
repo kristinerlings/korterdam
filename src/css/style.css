@@ -1,9 +1,17 @@
 @import url(reset.css);
 
+@font-face {
+  font-family: Cyrene;
+  src: url("../fonts/cyrene.otf") format("opentype");
+}
+
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -15,6 +23,6 @@ body {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-
-  color: red;
+  font-family: Cyrene;
+  color: blue;
 }
