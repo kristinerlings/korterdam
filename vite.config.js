@@ -28,11 +28,8 @@ export default ({ command }) => ({
     },
     plugins: [
         legacy({
-            targets: ["defaults", "not IE 11"],
+            targets: ['defaults', 'not IE 11']
         }),
-        viteRestartValue,
+        viteRestartValue
     ],
-    css: {
-        extract: true, // Extract CSS into separate files during production build
-    },
 });
