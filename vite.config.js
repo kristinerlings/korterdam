@@ -10,7 +10,7 @@ const viteRestartValue = (() => {
 })();
 
 export default ({ command }) => ({
-    base: command === "serve" ? "/" : "/dist/",
+    base: command === 'serve' ? '' : '/dist/',
     build: {
         manifest: true,
         outDir: "./web/dist/",
@@ -21,7 +21,6 @@ export default ({ command }) => ({
         },
     },
     server: {
-        // respond to all network requests
         host: "0.0.0.0",
         strictPort: true,
         port: 3000,
@@ -33,4 +32,7 @@ export default ({ command }) => ({
         }),
         viteRestartValue,
     ],
+    css: {
+        extract: true, // Extract CSS into separate files during production build
+    },
 });
