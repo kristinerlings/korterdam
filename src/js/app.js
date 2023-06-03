@@ -1,5 +1,3 @@
-console.log("test")
-/*
 import "../css/style.css";
 
 // Accept HMR as per: https://vitejs.dev/guide/api-hmr.html
@@ -12,4 +10,3 @@ if (import.meta.hot) {
 
 
 console.log("test")
-*/
