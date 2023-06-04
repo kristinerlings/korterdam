@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: filmArchive
+name: 'film archive'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  3867285b-e2d9-4bf2-813e-38639300f4c4: # korterdam
+    enabledByDefault: true
+    hasUrls: true
+    template: film-archive/_entry
+    uriFormat: 'film-archive/{slug}'
+structure:
+  maxLevels: null
+  uid: d186391a-2215-4743-bf29-da69e80202c5
+type: structure

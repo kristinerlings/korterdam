@@ -1,0 +1,43 @@
+fieldLayouts:
+  7157e74a-828a-4ae7-8895-87da3cdfc9c3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 43746d52-9d3e-4b9a-a3d2-2e540c925eba
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c4e04e12-8158-4c26-8366-6a68d2911a83
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3 # film archive
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
