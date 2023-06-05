@@ -1,4 +1,4 @@
-dateModified: 1685871027
+dateModified: 1685972229
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -6,8 +6,6 @@ email:
 meta:
   __names__:
     2ead9e23-6bdd-43c3-9657-e72cfaca7748: Common # Common
-    3f9ea64e-244f-4fdc-9868-d0d6a53bb385: 'home image' # home image
-    4c1495d8-5cce-4829-9c58-0a9cc2cc5b98: 'Preview image' # Preview image
     07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3: 'film archive' # film archive
     065f0887-68ef-4bba-8a1c-5816e2af8bc9: Year # Year
     938d4841-ceff-4136-8f8b-3e69bec08ad0: 'Short description' # Short description
