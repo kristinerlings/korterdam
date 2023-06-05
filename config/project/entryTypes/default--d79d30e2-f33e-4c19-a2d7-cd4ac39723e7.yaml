@@ -36,7 +36,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3 # film archive
+section: 07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3 # Films
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

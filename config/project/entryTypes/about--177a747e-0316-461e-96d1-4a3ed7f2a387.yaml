@@ -1,5 +1,5 @@
 fieldLayouts:
-  b458ac17-0deb-48c1-ba7f-4d003ad03842:
+  c444b5be-c7d3-4450-8097-19b3b40a1ccd:
     tabs:
       -
         elementCondition: null
@@ -26,29 +26,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: b4ef93b6-43ba-43ed-b96a-29c45f3abd63
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 89a12e52-28ee-4f13-bc46-badf4db249f1
+            uid: d4c46cbf-dff8-4b3e-9070-136e540a492e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: b0e30bac-aa62-4a3c-a9cb-fe2de261bbb0
+        uid: bda747d0-4a3e-4034-8bc5-617bb67ed8a2
         userCondition: null
-handle: home
-hasTitleField: true
-name: Home
-section: 13181b27-bdca-4e23-af9e-6ba7a5023d1f # Home
+handle: about
+hasTitleField: false
+name: About
+section: c7f63c6e-197e-4ce8-9204-f8843d5232cd # About
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
