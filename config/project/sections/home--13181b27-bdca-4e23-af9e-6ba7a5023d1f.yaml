@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: home
-name: home
+name: Home
 propagationMethod: all
 siteSettings:
   3867285b-e2d9-4bf2-813e-38639300f4c4: # korterdam

@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: filmArchive
-name: 'film archive'
+handle: about
+name: About
 previewTargets:
   -
     __assoc__:
@@ -19,9 +19,6 @@ siteSettings:
   3867285b-e2d9-4bf2-813e-38639300f4c4: # korterdam
     enabledByDefault: true
     hasUrls: true
-    template: film-archive/_entry
-    uriFormat: 'film-archive/{slug}'
-structure:
-  maxLevels: null
-  uid: d186391a-2215-4743-bf29-da69e80202c5
-type: structure
+    template: _/pages/about.twig
+    uriFormat: about
+type: single
