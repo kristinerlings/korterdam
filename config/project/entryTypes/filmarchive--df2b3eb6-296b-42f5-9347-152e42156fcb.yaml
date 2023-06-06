@@ -42,6 +42,54 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Short description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9d961c6-0db8-403f-aa59-87be7c9adddf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 641379e6-19ec-4118-b39e-71ae88d57c6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 065f0887-68ef-4bba-8a1c-5816e2af8bc9 # Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77a4eed4-c5e0-4f22-8477-c88a6972bf34
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 01158648-d04e-4a08-8738-8594ccb5eab2 # Theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80ba89c4-1e8c-4ba9-8bec-43eddec25661
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: e8339339-0154-4921-be32-9968afc8c679
         userCondition: null
