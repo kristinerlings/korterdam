@@ -1,0 +1,43 @@
+fieldLayouts:
+  bce00a44-ad3b-480d-8b57-6e4c8eb5f27f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 37e71caa-b882-4df4-b3d0-78db35c6894d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4ef02767-f079-4ba4-96ba-eeb211ad73c1
+        userCondition: null
+handle: participate
+hasTitleField: false
+name: Participate
+section: fd8ec98f-11cf-4d4b-a6a6-0cb932a93541 # Participate
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
