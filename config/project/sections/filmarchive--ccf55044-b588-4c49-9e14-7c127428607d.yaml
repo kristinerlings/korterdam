@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: filmarchive
+name: filmarchive
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  3867285b-e2d9-4bf2-813e-38639300f4c4: # korterdam
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/filmarchive.twig
+    uriFormat: films
+type: single

@@ -1,4 +1,4 @@
-dateModified: 1686010544
+dateModified: 1686011493
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -21,8 +21,10 @@ meta:
     aa1a3e63-bc1f-4863-903d-5bad285c2da6: 'Public Schema' # Public Schema
     b0957ce1-6c74-4f5d-b2f1-40e0e2abac03: Films # Films
     c7f63c6e-197e-4ce8-9204-f8843d5232cd: About # About
+    ccf55044-b588-4c49-9e14-7c127428607d: filmarchive # filmarchive
     d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
     d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
+    df2b3eb6-296b-42f5-9347-152e42156fcb: filmarchive # filmarchive
 plugins:
   redactor:
     edition: standard
