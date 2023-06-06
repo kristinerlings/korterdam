@@ -21,7 +21,7 @@
 	</section>
 	<section class="container__archive">
 		<h2>Kortkijk Archive</h2>
-		<a href="{{url('films') }}" class="btn__archive">Show all films</a>
+		<a href="/{{('films') }}" class="btn__archive">Show all films</a>
 		 {% for film in craft.entries.section('films').limit(3).all()%}
 		<article class="archive__card">
 			<img class="card__img">
