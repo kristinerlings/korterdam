@@ -1,5 +1,5 @@
 fieldLayouts:
-  7157e74a-828a-4ae7-8895-87da3cdfc9c3:
+  efa05cbc-a073-4142-8f10-e587d56ed967:
     tabs:
       -
         elementCondition: null
@@ -13,7 +13,7 @@ fieldLayouts:
             elementCondition: null
             id: null
             instructions: null
-            label: null
+            label: 'Film name'
             max: null
             min: null
             name: null
@@ -26,19 +26,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 43746d52-9d3e-4b9a-a3d2-2e540c925eba
+            uid: d81f5902-f829-4e21-91a6-035f128f6d27
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Short description
+            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c9d961c6-0db8-403f-aa59-87be7c9adddf
+            uid: 4aad1054-cfb5-483a-82cb-4186211d72fb
             userCondition: null
             warning: null
             width: 100
@@ -50,19 +50,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 641379e6-19ec-4118-b39e-71ae88d57c6c
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 065f0887-68ef-4bba-8a1c-5816e2af8bc9 # Year
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 77a4eed4-c5e0-4f22-8477-c88a6972bf34
+            uid: 049a4a87-7f14-427a-9bc4-2f957b1d66ac
             userCondition: null
             warning: null
             width: 100
@@ -74,18 +62,30 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 80ba89c4-1e8c-4ba9-8bec-43eddec25661
+            uid: 06a4bbb5-259b-42c1-9ca9-5a9f5765766a
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: c4e04e12-8158-4c26-8366-6a68d2911a83
+          -
+            elementCondition: null
+            fieldUid: 5148dc6c-5663-46f0-b91e-bfd9b178f8fb # Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a26cdf1-43de-4a25-ab86-ca6b1f0a7dd2
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Film details'
+        uid: d668aad4-4fc2-403c-9656-b5304e576672
         userCondition: null
-handle: default
+handle: films
 hasTitleField: true
-name: Default
+name: Films
 section: 07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3 # Films
-sortOrder: 1
+sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
