@@ -1,0 +1,91 @@
+fieldLayouts:
+  efa05cbc-a073-4142-8f10-e587d56ed967:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: 'Film name'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d81f5902-f829-4e21-91a6-035f128f6d27
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4aad1054-cfb5-483a-82cb-4186211d72fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 049a4a87-7f14-427a-9bc4-2f957b1d66ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 01158648-d04e-4a08-8738-8594ccb5eab2 # Theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06a4bbb5-259b-42c1-9ca9-5a9f5765766a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5148dc6c-5663-46f0-b91e-bfd9b178f8fb # Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a26cdf1-43de-4a25-ab86-ca6b1f0a7dd2
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Film details'
+        uid: d668aad4-4fc2-403c-9656-b5304e576672
+        userCondition: null
+handle: films
+hasTitleField: true
+name: Films
+section: 07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3 # Films
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

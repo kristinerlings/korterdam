@@ -1,0 +1,15 @@
+<table width="100%">
+
+
+	{% for film in craft.entries.section('films').limit(25).all() %}
+
+		<tr>
+			<td>
+				<a href="{{ film.url }}">{{ film.title }}</a>
+				<p>{{ film.description }}</p>
+
+			</td>
+		</tr>
+
+	{% endfor %}
+</table>

@@ -30,11 +30,23 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f82b8437-7635-46ca-af05-ad40a241e552
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: bda747d0-4a3e-4034-8bc5-617bb67ed8a2
         userCondition: null
 handle: about
-hasTitleField: false
+hasTitleField: true
 name: About
 section: c7f63c6e-197e-4ce8-9204-f8843d5232cd # About
 sortOrder: 1

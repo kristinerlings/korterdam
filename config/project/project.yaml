@@ -1,4 +1,4 @@
-dateModified: 1685988452
+dateModified: 1686010544
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -7,19 +7,27 @@ meta:
   __names__:
     2ead9e23-6bdd-43c3-9657-e72cfaca7748: Common # Common
     07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3: Films # Films
+    19d79b5f-728a-4d1f-870f-1bca4ee2ab94: 'Link Text' # Link Text
     065f0887-68ef-4bba-8a1c-5816e2af8bc9: Year # Year
     177a747e-0316-461e-96d1-4a3ed7f2a387: About # About
-    938d4841-ceff-4136-8f8b-3e69bec08ad0: 'Short description' # Short description
+    938d4841-ceff-4136-8f8b-3e69bec08ad0: Description # Description
     1535a3de-5390-403d-806b-b9674e214560: Home # Home
+    5148dc6c-5663-46f0-b91e-bfd9b178f8fb: Year # Year
     13181b27-bdca-4e23-af9e-6ba7a5023d1f: Home # Home
+    50654ac9-b523-4e34-8181-5184d7734b96: Films # Films
     01158648-d04e-4a08-8738-8594ccb5eab2: Theme # Theme
     3867285b-e2d9-4bf2-813e-38639300f4c4: korterdam # korterdam
+    a1b2348b-5613-448e-bb5d-c7d202221b50: 'Link Destination' # Link Destination
     aa1a3e63-bc1f-4863-903d-5bad285c2da6: 'Public Schema' # Public Schema
+    b0957ce1-6c74-4f5d-b2f1-40e0e2abac03: Films # Films
     c7f63c6e-197e-4ce8-9204-f8843d5232cd: About # About
     d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
-    d79d30e2-f33e-4c19-a2d7-cd4ac39723e7: Default # Default
     d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
 plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
   vite:
     edition: standard
     enabled: true
