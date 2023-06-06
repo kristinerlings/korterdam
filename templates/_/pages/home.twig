@@ -6,18 +6,7 @@
 		{{ entry.paragraph}}
 	</p>
 	<section class="container__countdown">
-			{# Set the final date and time of the event #}
-		{% set finalDate = '2023-06-18 18:00:00' %}
-
-			{# Calculate the remaining time #}
-		{% set currentTime = now|date('Y-m-d H:i:s') %}
-		{% set remainingSeconds = date(finalDate).timestamp - date(currentTime).timestamp %}
-		{% set remainingDays = remainingSeconds // 86400 %}
-		{% set remainingHours = (remainingSeconds % 86400) // 3600 %}
-		{% set remainingMinutes = ((remainingSeconds % 86400) % 3600) // 60 %}
-
-		{# Display the countdown #}
-		<p>Countdown: {{ remainingDays }} days, {{ remainingHours }} hours, {{ remainingMinutes }} minutes</p>
+			{% include "_/components/countdown.twig" %}
 	</section>
 	<section class="container__archive">
 		<h2>Kortkijk Archive</h2>
