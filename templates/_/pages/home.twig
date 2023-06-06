@@ -10,7 +10,7 @@
 	</section>
 	<section class="container__archive">
 		<h2>Kortkijk Archive</h2>
-		<a href="{{url('films') }}" class="btn__archive">Show all films</a>
+		<a href="/{{('films') }}" class="btn__archive">Show all films</a>
 		 {% for film in craft.entries.section('films').limit(3).all()%}
 		<article class="archive__card">
 			<img class="card__img">
@@ -19,7 +19,7 @@
 				<p class="card__paragraph"> {{film.paragraph}} </p>
 				<p class="card__year">{{film.year}}</p>
 				<p class="card__theme">{{film.theme}}</p>
-				<a href="{{film.url}}" class="btn__card">See more</a>
+				<a href="/films/{{film.slug}}" class="btn__card">See more</a>
 			</div>
   	</article>
 		 {% endfor %}
