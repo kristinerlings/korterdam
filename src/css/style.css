@@ -3,18 +3,8 @@
 /* fonts */
 
 @font-face {
-  font-family: 'ClashDisplay-Variable';
-  src: url('../fonts/ClashDisplay-Variable.woff') format('woff');
-  font-weight: 200 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-
-@font-face {
   font-family: 'ClashDisplay-Extralight';
-  src: url('../fonts/ClashDisplay-Extralight.woff') format('woff');
-  font-weight: 200;
+  src: url('../fonts/ClashDisplay-Extralight.otf')format("opentype");
   font-display: swap;
   font-style: normal;
 }
@@ -22,7 +12,7 @@
 
 @font-face {
   font-family: 'ClashDisplay-Light';
-  src: url('../fonts/ClashDisplay-Light.woff') format('woff');
+  src: url('../fonts/ClashDisplay-Light.otf') format("opentype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
@@ -31,7 +21,7 @@
 
 @font-face {
   font-family: 'ClashDisplay-Regular';
-  src: url('../fonts/ClashDisplay-Regular.woff') format('woff');
+  src: url('../fonts/ClashDisplay-Regular.ttf') format("opentype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -40,7 +30,7 @@
 
 @font-face {
   font-family: 'ClashDisplay-Medium';
-  src: url('../fonts/ClashDisplay-Medium.woff') format('woff');
+  src: url('../fonts/ClashDisplay-Medium.otf') format("opentype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -49,8 +39,7 @@
 
 @font-face {
   font-family: 'ClashDisplay-Semibold';
-  src: url('../fonts/ClashDisplay-Semibold.woff') format('woff');
-  font-weight: 600;
+  src: url('../fonts/ClashDisplay-Semibold.otf') format("opentype");
   font-display: swap;
   font-style: normal;
 }
@@ -58,11 +47,12 @@
 
 @font-face {
   font-family: 'ClashDisplay-Bold';
-  src:url('../fonts/ClashDisplay-Bold.woff') format('woff');
+  src: url('../fonts/ClashDisplay-Bold.otf') format("opentype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
+
 
 /* end fonts */
 
@@ -80,17 +70,17 @@ html {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 1rem;
-  color:#E0D8C5;
+  color: #E0D8C5;
 }
 
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  font-family:'ClashDisplay-Bold';
+  font-family: 'ClashDisplay-Bold';
 }
 
 a {
   color: #E0D8C5;
-  
+
 }
