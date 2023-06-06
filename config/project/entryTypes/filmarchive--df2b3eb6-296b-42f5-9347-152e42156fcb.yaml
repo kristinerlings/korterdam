@@ -44,7 +44,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Short description
+            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Description
             instructions: null
             label: null
             required: false
@@ -68,7 +68,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 065f0887-68ef-4bba-8a1c-5816e2af8bc9 # Year
+            fieldUid: 065f0887-68ef-4bba-8a1c-5816e2af8bc9
             instructions: null
             label: null
             required: false
@@ -96,7 +96,7 @@ fieldLayouts:
 handle: filmarchive
 hasTitleField: true
 name: filmarchive
-section: ccf55044-b588-4c49-9e14-7c127428607d # filmarchive
+section: ccf55044-b588-4c49-9e14-7c127428607d
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
