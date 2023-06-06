@@ -1,0 +1,103 @@
+fieldLayouts:
+  e51a2899-88d2-4272-8631-bd6122c08582:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: df4bce1b-8bfb-4355-b7f3-716f4ddd0371
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66cfcdf9-7a7e-42c9-b72f-c35e3ff4a526
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9d961c6-0db8-403f-aa59-87be7c9adddf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 641379e6-19ec-4118-b39e-71ae88d57c6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 065f0887-68ef-4bba-8a1c-5816e2af8bc9
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77a4eed4-c5e0-4f22-8477-c88a6972bf34
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 01158648-d04e-4a08-8738-8594ccb5eab2 # Theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80ba89c4-1e8c-4ba9-8bec-43eddec25661
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e8339339-0154-4921-be32-9968afc8c679
+        userCondition: null
+handle: filmarchive
+hasTitleField: true
+name: filmarchive
+section: ccf55044-b588-4c49-9e14-7c127428607d
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

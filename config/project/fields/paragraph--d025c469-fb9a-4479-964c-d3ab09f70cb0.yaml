@@ -12,7 +12,7 @@ settings:
   columnType: null
   initialRows: 4
   multiline: true
-  placeholder: null
+  placeholder: 'To be replaced by a paragraph'
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

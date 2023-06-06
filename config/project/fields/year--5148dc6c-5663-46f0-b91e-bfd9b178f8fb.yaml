@@ -1,18 +1,18 @@
-columnSuffix: rkdgcdip
-contentColumnType: text
+columnSuffix: qvtidnby
+contentColumnType: string(16)
 fieldGroup: b0957ce1-6c74-4f5d-b2f1-40e0e2abac03 # Films
-handle: theme
-instructions: 'Theme of the edition the movie was made'
-name: Theme
+handle: year
+instructions: null
+name: Year
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 4
   code: false
   columnType: null
   initialRows: 4
   multiline: false
-  placeholder: Theme
+  placeholder: '2023'
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none
