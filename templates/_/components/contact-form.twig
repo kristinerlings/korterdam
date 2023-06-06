@@ -16,10 +16,10 @@ Template provided by wheel form (advanced templating):https://github.com/xpertbo
 
 {% set form = wheelform.form({
     id: 1,
-    redirect: '/participate', 
-}) %}
 
-{# Change redirect later if I want to create separate thankyou page: '/contact/thankyou', #}
+}) %}
+{# Redirect to a thank you page after form submission, then add redirect below id:1
+    redirect: '/participate/thankyou',  #}
 
 {{ form.open() }}
     {{ wheelformErrors['form'] is defined ? errorList(wheelformErrors['form']) }}
@@ -80,8 +80,6 @@ Template provided by wheel form (advanced templating):https://github.com/xpertbo
             <div class="g-recaptcha" data-sitekey="{{wheelform.getSettings('recaptcha_public')}}"></div>
         </div>
     {% endif %}
-
     <button class="btn btn-success" id="submit">Send</button>
-
 </form>
 			
