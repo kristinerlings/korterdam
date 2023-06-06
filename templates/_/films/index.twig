@@ -1,14 +1,9 @@
 {% extends "_/layouts/base" %}
 
 {% block content %}
-	<h1>Korterdam Film Festival</h1>
-	<p>
-		{{ entry.paragraph}}
-	</p>
-	<section class="container__archive">
-		<h2>Kortkijk Archive</h2>
-		<a href="{{url('films') }}" class="btn__archive">Show all films</a>
-		 {% for film in craft.entries.section('films').limit(3).all()%}
+	<h1>Film Archive</h1>
+  <section>
+	 {% for film in craft.entries.section('films').limit(6).all()%}
 		<article class="archive__card">
 			<img class="card__img">
 			<div>
@@ -20,5 +15,5 @@
 			</div>
   	</article>
 		 {% endfor %}
-	</section>
+  </section>
 {% endblock %}
