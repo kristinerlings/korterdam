@@ -11,6 +11,21 @@
 	<section class="container__archive">
 		<h2>Kortkijk Archive</h2>
 		<a href="/{{('films') }}" class="btn__archive">Show all films</a>
-	{% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %}
+
+	{# {% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %} #}
+
+	  {% set films = craft.entries.section('films').limit(6).all() %}
+	{#   {% for film in films %}
+	    {% include '_/components/film-card' with {
+	      film: film,
+	      imageWidth: 226,
+	      imageHeight: 151
+	    } %}
+	  {% endfor %} #}
+	 {% include "_/components/carousel.twig" with {
+    title: 'Latest Films',
+    groupCells: 3
+  } %}
+
 	</section>
 {% endblock %}
