@@ -1,7 +1,6 @@
 		 {% for film in craft.entries.section('films').limit(limit).all()%}
-{#        {% set photo = film.image.one() %}  #}
+
 		<article class="archive__card">
-	   {#  <img src="{{photo.url}}" alt="{{film.title}}"> #}
       {% for photo in film.image.all() %}
         {% set width = imageWidth ?? 452 %}
         {% set height = imageHeight ?? 302 %}
