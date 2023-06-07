@@ -2,7 +2,7 @@
 
 
 {% block content %}
-  <a href="/films" class="back-button">Back</a>
+  <a href="{{ craft.app.request.getReferrer() }}" class="back-button">Back</a>
 	<h1>detailpage Film Archive</h1>
 	{% set asset = entry.image.one() %}
   {% if asset %}
