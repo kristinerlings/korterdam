@@ -3,7 +3,9 @@
 		<article class="archive__card">
 	   {#  <img src="{{photo.url}}" alt="{{film.title}}"> #}
       {% for photo in film.image.all() %}
-				<img class="card__image" src="{{ photo.getUrl({ width: 600, height: 300})}}" alt="{{ film.title }}"/>
+        {% set width = imageWidth ?? 452 %}
+        {% set height = imageHeight ?? 302 %}
+				<img class="card__image" src="{{ photo.getUrl({ width: width, height: width })}}" alt="{{ film.title }}"/>
 			{% endfor %}
 			<div>
 				<h3 class="card__title">{{film.title}}</h3>
