@@ -1,14 +1,24 @@
-dateModified: 1686090774
+dateModified: 1686134312
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/assets/img'
+    type: craft\fs\Local
+    url: '@web/assets/img'
 meta:
   __names__:
     2ead9e23-6bdd-43c3-9657-e72cfaca7748: Common # Common
     07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3: Films # Films
     75c3e5d8-1172-452e-93e7-c4a1bc007ad8: 'Film Archive' # Film Archive
+    79f962fa-1244-49a4-9f69-a274e35c986e: Image # Image
     177a747e-0316-461e-96d1-4a3ed7f2a387: About # About
+    249bb5e4-b293-446a-8c63-e7753010f50e: Uploads # Uploads
     938d4841-ceff-4136-8f8b-3e69bec08ad0: Description # Description
     1535a3de-5390-403d-806b-b9674e214560: Home # Home
     5148dc6c-5663-46f0-b91e-bfd9b178f8fb: Year # Year
