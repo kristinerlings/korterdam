@@ -3,20 +3,6 @@
 {% block content %}
 	<h1>Film Archive</h1>
 	<section>
-		{% for film in craft.entries.section('films').limit(6).all()%}
-			<article class="archive__card">
-				<img class="card__img">
-				<div>
-					<h3 class="card__title">{{film.title}}</h3>
-					<p class="card__paragraph">
-						{{film.paragraph}}
-					</p>
-					<p class="card__year">{{film.year}}</p>
-					<p class="card__theme">{{film.theme}}</p>
-					<a href="/films/{{film.slug}}" class="btn__card">See more</a>
-
-				</div>
-			</article>
-		{% endfor %}
+		{% include "_/components/film-card.twig" with { limit: 6, imageWidth: 452, imageHeight: 302 } %}
 	</section>
 {% endblock %}
