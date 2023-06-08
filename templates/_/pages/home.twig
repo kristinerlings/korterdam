@@ -11,6 +11,13 @@
 	<section class="container__archive">
 		<h2>Kortkijk Archive</h2>
 		<a href="/{{('films') }}" class="btn__archive">Show all films</a>
-	{% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %}
+
+	{# {% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %} #}
+
+ 	{% include "_/components/slider.twig" with { limit: 10, imageWidth: 226, imageHeight: 151 } %} 
+
+	
 	</section>
 {% endblock %}
+
+

@@ -4,61 +4,55 @@
 
 @font-face {
   font-family: 'ClashDisplay-Extralight';
-  src: url('../fonts/ClashDisplay-Extralight.otf')format("opentype");
+  src: url('../fonts/ClashDisplay-Extralight.otf') format('opentype');
   font-display: swap;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'ClashDisplay-Light';
-  src: url('../fonts/ClashDisplay-Light.otf') format("opentype");
+  src: url('../fonts/ClashDisplay-Light.otf') format('opentype');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'ClashDisplay-Regular';
-  src: url('../fonts/ClashDisplay-Regular.ttf') format("opentype");
+  src: url('../fonts/ClashDisplay-Regular.ttf') format('opentype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'ClashDisplay-Medium';
-  src: url('../fonts/ClashDisplay-Medium.otf') format("opentype");
+  src: url('../fonts/ClashDisplay-Medium.otf') format('opentype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'ClashDisplay-Semibold';
-  src: url('../fonts/ClashDisplay-Semibold.otf') format("opentype");
+  src: url('../fonts/ClashDisplay-Semibold.otf') format('opentype');
   font-display: swap;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'ClashDisplay-Bold';
-  src: url('../fonts/ClashDisplay-Bold.otf') format("opentype");
+  src: url('../fonts/ClashDisplay-Bold.otf') format('opentype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 
-
 /* end fonts */
 
 html {
   box-sizing: border-box;
-  background-color: #221E1F;
+  background-color: #221e1f;
 }
 
 *,
@@ -68,9 +62,10 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 1rem;
-  color: #E0D8C5;
+  color: #e0d8c5;
 }
 
 h1 {
@@ -81,6 +76,61 @@ h1 {
 }
 
 a {
-  color: #E0D8C5;
+  color: #e0d8c5;
+}
 
+/*slider*/
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.slider__prev,
+.slider__next {
+  background-color: #ccc;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.slider__reel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__title {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.card__paragraph,
+.card__year,
+.card__theme {
+  margin: 0.625rem 0;
+}
+
+.btn__card {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ccc;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
