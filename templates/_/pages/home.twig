@@ -14,18 +14,10 @@
 
 	{# {% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %} #}
 
-	  {% set films = craft.entries.section('films').limit(6).all() %}
-	{#   {% for film in films %}
-	    {% include '_/components/film-card' with {
-	      film: film,
-	      imageWidth: 226,
-	      imageHeight: 151
-	    } %}
-	  {% endfor %} #}
-	 {% include "_/components/carousel.twig" with {
-    title: 'Latest Films',
-    groupCells: 3
-  } %}
+ 	{% include "_/components/slider.twig" with { limit: 10, imageWidth: 226, imageHeight: 151 } %} 
 
+	
 	</section>
 {% endblock %}
+
+

@@ -1,7 +1,37 @@
-		 {% for film in craft.entries.section('films').limit(limit).all()%}
+{# <div class="slider">
 
-		<article class="archive__card">
-      {% for photo in film.image.all() %}
+            <div class="slider__nav">
+              <button type="button" class="slider__prev">
+                prev
+              </button>
+              <button type="button" class="slider__next">
+                 next
+              </button>
+            </div>
+            {% set width = imageWidth ?? 452 %}
+            {% set height = imageHeight ?? 302 %}
+            
+            <div class="slider__reel">
+                    {% include "_/components/film-card.twig" with { limit: limit, imageWidth: width, imageHeight: height } %} 
+            </div>
+            
+          </div>
+</div> #}
+
+<div class="slider">
+
+            <div class="slider__nav">
+              <button type="button" class="slider__prev">
+                prev
+              </button>
+              <button type="button" class="slider__next">
+                 next
+              </button>
+            </div>
+      <article class="cards">
+     {% for film in craft.entries.section('films').limit(limit).all()%}
+         <div class="slider__reel"> {# //create an index that tracks the number of images. Every time you click the button, the index increases by 3 (shows three images at a time) #}
+      {% for photo in film.image.all() %} 
         {% set width = imageWidth ?? 452 %}
         {% set height = imageHeight ?? 302 %}
 				<img class="card__image" src="{{ photo.getUrl({ width: width, height: width })}}" alt="{{ film.title }}"/>
@@ -13,8 +43,11 @@
 				<p class="card__theme">{{film.theme}}</p>
 				<a href="{{film.url}}" class="btn__card">See more</a>
 			</div>
-  	</article>
+          </div>
 		 {% endfor %}
+    </article>
+</div>
+
 
 		 <script>
   // Get the carousel container
