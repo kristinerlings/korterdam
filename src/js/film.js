@@ -1,46 +1,73 @@
 console.log('film js works');
 
-/*
+//Source: https://www.codewithrandom.com/2023/02/12/simple-javascript-carousel-how-to-create-a-carousel-using-css-js/?expand_article=1
 
-// Get the carousel container
-const slider = document.querySelector('.slider');
+const $carouselReel = document.querySelector('.carousel__reel');
+const $card = document.querySelectorAll('.card');
+const $btnNext = document.querySelector('.next');
+const $btnPrev = document.querySelector('.prev');
+let counter = 0;
 
-// Get the prev and next buttons
-const prevBtn = slider.querySelector('.slider__prev');
-const nextBtn = slider.querySelector('.slider__next');
+const size = $card[0].clientWidth;
+/* $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+$btnNext.addEventListener('click', () => {
+  if (counter > $card.length - 3) return;
+  $carouselReel.style.transition = 'transform 0.4s ease-in-out';
+  counter++;
+  $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+});
+$btnPrev.addEventListener('click', () => {
+  if (counter <= 0) return;
+  $carouselReel.style.transition = 'transform 0.4s ease-in-out';
+  counter--;
+  $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+});
 
-// Get the slider reel
-const reel = slider.querySelector('.slider__reel');
+//
+$carouselReel.addEventListener('transitionend', () => {
+  console.log($card[counter]);
+  if ($card[counter].id === 'lastslide') {
+    $carouselReel.style.transition = 'none';
+    counter = $card.length - 2;
+    $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+  }
+});
+$carouselReel.addEventListener('transitionend', () => {
+  console.log($card[counter]);
+  if ($card[counter].id === 'firstslide') {
+    $carouselReel.style.transition = 'none';
+    counter = $card.length - counter;
+    $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+  }
+}); */
+$carouselReel.style.transform = 'translateX(0)';
 
-// Set the initial position of the reel
-let position = 0;
+$btnNext.addEventListener('click', () => {
+  if (counter < $card.length - 3) {
+    $carouselReel.style.transition = 'transform 0.4s ease-in-out';
+    counter++;
+    $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+  }
+});
 
-// Set the number of images to display at a time
-const imagesToShow = 3;
+$btnPrev.addEventListener('click', () => {
+  if (counter > 0) {
+    $carouselReel.style.transition = 'transform 0.4s ease-in-out';
+    counter--;
+    $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+  }
+});
 
-// Calculate the width of a single slide
-const slideWidth = reel.clientWidth / imagesToShow;
+$carouselReel.addEventListener('transitionend', () => {
+  if (counter === $card.length - 3) {
+    $carouselReel.style.transition = 'none';
+    counter = 0;
+    $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+  } else if (counter === -1) {
+    $carouselReel.style.transition = 'none';
+    counter = $card.length - 4;
+    $carouselReel.style.transform = 'translateX(' + -size * counter + 'px';
+  }
+});
 
-// Set the width of the slider reel
-reel.style.width = `${slideWidth * reel.childElementCount}px`;
-
-// Function to move the carousel to the left
-const moveCarouselLeft = () => {
-    position += slideWidth;
-    position = Math.min(position, 0);
-    reel.style.transform = `translateX(${position}px)`;
-};
-
-// Function to move the carousel to the right
-const moveCarouselRight = () => {
-    position -= slideWidth;
-    position = Math.max(position, -slideWidth * (reel.childElementCount - imagesToShow));
-    reel.style.transform = `translateX(${position}px)`;
-};
-
-// Event listeners for prev and next buttons
-prevBtn.addEventListener('click', moveCarouselLeft);
-nextBtn.addEventListener('click', moveCarouselRight);
-
-
-*/
+const init = () => {};
