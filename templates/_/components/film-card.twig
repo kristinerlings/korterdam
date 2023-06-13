@@ -1,59 +1,19 @@
-		 {% for film in craft.entries.section('films').limit(limit).all()%}
+{% for film in craft.entries.section('films').limit(limit).all()%}
 
-		<article class="archive__card">
-      {% for photo in film.image.all() %}
-        {% set width = imageWidth ?? 452 %}
-        {% set height = imageHeight ?? 302 %}
-				<img class="card__image" src="{{ photo.getUrl({ width: width, height: width })}}" alt="{{ film.title }}"/>
-			{% endfor %}
-			<div>
-				<h3 class="card__title">{{film.title}}</h3>
-				<p class="card__paragraph"> {{film.paragraph}} </p>
-				<p class="card__year">{{film.year}}</p>
-				<p class="card__theme">{{film.theme}}</p>
-				<a href="{{film.url}}" class="btn__card">See more</a>
-			</div>
-  	</article>
-		 {% endfor %}
-
-		 <script>
-  // Get the carousel container
-  const slider = document.querySelector('.slider');
-
-  // Get the prev and next buttons
-  const prevBtn = slider.querySelector('.slider__prev');
-  const nextBtn = slider.querySelector('.slider__next');
-
-  // Get the slider reel
-  const reel = slider.querySelector('.slider__reel');
-
-  // Set the initial position of the reel
-  let position = 0;
-
-  // Set the number of images to display at a time
-  const imagesToShow = 3;
-
-  // Calculate the width of a single slide
-  const slideWidth = reel.clientWidth / imagesToShow;
-
-  // Set the width of the slider reel
-  reel.style.width = `${slideWidth * reel.childElementCount}px`;
-
-  // Function to move the carousel to the left
-  const moveCarouselLeft = () => {
-    position += slideWidth;
-    position = Math.min(position, 0);
-    reel.style.transform = `translateX(${position}px)`;
-  };
-
-  // Function to move the carousel to the right
-  const moveCarouselRight = () => {
-    position -= slideWidth;
-    position = Math.max(position, -slideWidth * (reel.childElementCount - imagesToShow));
-    reel.style.transform = `translateX(${position}px)`;
-  };
-
-  // Event listeners for prev and next buttons
-  prevBtn.addEventListener('click', moveCarouselLeft);
-  nextBtn.addEventListener('click', moveCarouselRight);
-</script>
+	<article class="archive__card">
+		{% for photo in film.image.all() %}
+			{% set width = imageWidth ?? 452 %}
+			{% set height = imageHeight ?? 302 %}
+			<img class="card__image" src="{{ photo.getUrl({ width: width, height: width })}}" alt="{{ film.title }}"/>
+		{% endfor %}
+		<div>
+			<h3 class="card__title">{{film.title}}</h3>
+			<p class="card__paragraph">
+				{{film.paragraph}}
+			</p>
+			<p class="card__year">{{film.year}}</p>
+			<p class="card__theme">{{film.theme}}</p>
+			<a href="{{film.url}}" class="btn__card">See more</a>
+		</div>
+	</article>
+{% endfor %}
