@@ -106,67 +106,10 @@ a {
   color: var(--color-white);
 }
 
-/*slider*/
-/* .slider {
-  position: relative;
-  overflow: hidden;
-}
-
-.slider__nav {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.slider__prev,
-.slider__next {
-  background-color: #ccc;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.cards {
-  display: flex;
-  overflow-x: hidden;
-}
-
-.slider__reel {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.card__image {
-  width: 100%;
-  height: auto;
-}
-
-.card__title {
-  margin-top: 1rem;
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
-.card__paragraph,
-.card__year,
-.card__theme {
-  margin: 0.625rem 0;
-}
-
-.btn__card {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #ccc;
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
- */
-
 /*******CAROUSEL*********/
 
 .carousel {
-  width: 75%; 
+  width: 75%;
   margin: auto;
   overflow: hidden;
   display: flex;
@@ -174,8 +117,13 @@ a {
   background-color: rgb(107, 107, 228);
   height: auto;
 }
+
 .carousel__reel {
   background-color: rgb(201, 120, 193);
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /*Carousel: film-card */

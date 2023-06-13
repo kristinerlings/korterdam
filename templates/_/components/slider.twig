@@ -1,22 +1,3 @@
-{# <div class="slider">
-
-            <div class="slider__nav">
-              <button type="button" class="slider__prev">
-                prev
-              </button>
-              <button type="button" class="slider__next">
-                 next
-              </button>
-            </div>
-            {% set width = imageWidth ?? 452 %}
-            {% set height = imageHeight ?? 302 %}
-            
-            <div class="slider__reel">
-                    {% include "_/components/film-card.twig" with { limit: limit, imageWidth: width, imageHeight: height } %} 
-            </div>
-            
-          </div>
-</div> #}
 
 <div class="container__carousel">
       <div class="carousel__nav">
@@ -30,10 +11,12 @@
            next
         </button>
       </div>
+     
+     
       <article class="carousel">
-     {% for film in craft.entries.section('films').limit(limit).all()%}
+
+      {% for film in craft.entries.section('films').limit(limit).all()%} 
      <div class="carousel__reel">
-        {#  <div class="slider__reel"> #} {# //create an index that tracks the number of images. Every time you click the button, the index increases by 3 (shows three images at a time) #}
           <article class="card">
            {% for photo in film.image.all() %} 
              {% set width = imageWidth ?? 452 %}
