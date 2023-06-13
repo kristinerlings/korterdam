@@ -17,6 +17,7 @@ export default ({ command }) => ({
         rollupOptions: {
             input: {
                 app: "./src/js/app.js",
+                film: "./src/js/film.js",
             },
         },
     },
