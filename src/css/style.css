@@ -100,6 +100,20 @@ body {
        3.  Layout
 =========================================*/
 
+/*****+******/
+.orange{
+  color: var(--color-orange);
+}
+.purple{
+  color: var(--color-purple);
+}
+
+.bold{
+  font-weight: bold; 
+}
+
+/*****+******/
+
 a {
   color: var(--color-white);
 }
