@@ -98,18 +98,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 66d7091c-cb22-4899-b656-d3be927f914c # Theme Long Version
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 13de2a06-0864-47e6-ae17-85001aa17018
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 436ef1ff-888a-45b6-848f-dcf13c26765e # Workshop Date
             instructions: null
             label: null
@@ -158,6 +146,48 @@ fieldLayouts:
             width: 100
         name: Sections
         uid: 86dc21fb-e61f-48e9-816d-cc9bd30e25d4
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 66d7091c-cb22-4899-b656-d3be927f914c # Title theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13de2a06-0864-47e6-ae17-85001aa17018
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3424eb75-09d2-417c-95cf-16afc24e0145 # Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2cf05f7-9911-4a15-96f7-58639504500a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8952a8a-bf70-4d46-a243-b05266b4ca6e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Kortrijk
+        uid: c6ba17d6-b611-42dc-a2ae-9645e23f2d90
         userCondition: null
 handle: participation
 hasTitleField: false

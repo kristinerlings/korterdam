@@ -1,9 +1,9 @@
 columnSuffix: yrlkeprh
 contentColumnType: text
 fieldGroup: acb9fa15-9ff6-492b-ba30-e046ff889f52 # participate
-handle: themeLong
+handle: titleTheme
 instructions: 'What is the theme of this year? '
-name: 'Theme Long Version'
+name: 'Title theme'
 searchable: false
 settings:
   byteLimit: null

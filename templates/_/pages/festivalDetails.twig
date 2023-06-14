@@ -19,8 +19,8 @@
 	<section class="container__what" id="what">
 		<div>
 			<h3>This editions theme:</h3>
-			<h2>My Future Kortrijk</h2> {# craft :themeLong  #}
-			<p>paragraph</p> {# craft :themeDescription #}
+			<h2>My Future Kortrij{{entry.title}}</h2> {# craft: titleTheme  #}
+			<p>paragraph{{entry.paragraph}}</p> {# craft :themeDescription #}
 		</div>
 		<div>
 			<h3>Every edition is unique</h3>
@@ -33,13 +33,13 @@
 		<h2>Save the date</h2>
 		<div>
 			<h3>Date</h3>
-			<p>23|24{# craft date #}</p>
-			<p>june 2023{# craft date #}</p>
+			<p>23|24{{entry.workshopDate}}{# craft date #}</p>
+			<p>june 2023{{entry.workshop}}{# craft date #}</p>
 		</div>
 		<div>
 			<h3>Time</h3>
-			<p>23|24{# craft date #}</p>
-			<p>june 2023{# craft date #}</p>
+			<p>6PM - 23PM{# craft time #}</p>
+			<p>both days{# craft text? #}</p>
 		</div>
 		<div>
 			<h3>Nex Edition</h3>
