@@ -31,6 +31,10 @@ const showPreviousBatch = () => {
   }
 };
 
+
+
+
+
 const init = () => {
   $btnNext.addEventListener('click', showNextBatch);
   $btnPrev.addEventListener('click', showPreviousBatch);

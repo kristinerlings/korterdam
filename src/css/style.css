@@ -181,7 +181,28 @@ footer {
 .nav_link__archive:hover {
   color: var(--color-red);
   text-decoration: none;
+
 }
+
+/* nav link active state */
+
+.nav_link__detail:is(:link, :active, :visited).active {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+.nav_link__participate:is(:link, :active, :visited).active {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+.nav_link__archive:is(:link, :active, :visited).active {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+/* end */
+
 
 .nav_link__logo {
   background-image: url('../img/logo.svg');
