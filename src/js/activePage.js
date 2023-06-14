@@ -5,9 +5,8 @@ const $nav = document.querySelectorAll('nav a');
 
 const pageDetector = () => {
     $nav.forEach((link) => {
-        if (link.href.includes(activePage)) {
+        if (link.getAttribute('href') === activePage) {
             link.classList.add('active');
-            console.log(activePage);
         }
     });
 };
