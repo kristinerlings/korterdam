@@ -1,0 +1,43 @@
+fieldLayouts:
+  da2c984b-d2a3-416e-8cf8-d4fc4988559c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 34a9562f-7f9d-4de8-b992-358120b32830
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cafd53a4-c5bb-4199-9f8e-99d4266d797d
+        userCondition: null
+handle: apply
+hasTitleField: false
+name: 'Apply now'
+section: 092d6b02-424a-4a1a-ad3b-0a6a6a273d21 # Apply now
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
