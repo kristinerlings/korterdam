@@ -19,35 +19,46 @@
 	<section class="container__what" id="what">
 		<div>
 			<h3>This editions theme:</h3>
-			<h2>My Future Kortrijk</h2> {# craft :themeLong  #}
-			<p>paragraph</p> {# craft :themeDescription #}
+			<h2>My Future Kortrij{{entry.title}}</h2> {# craft: titleTheme  #}
+			<p>paragraph{{entry.paragraph}}</p> {# craft :themeDescription #}
 		</div>
 		<div>
 			<h3>Every edition is unique</h3>
-			<p>If this edition doesn't speak to you, maybe the next will! That is because every single one is different. We lay the focus on a <span class="purple">different topic</span> each time around.</p>
+			<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a <span class="purple">different topic</span> each time around.</p>
 		</div>
 		{# add image #}
 	</section>
 
 	<section class="container__when" id="when">
 		<h2>Save the date</h2>
-		<ul>
-			<li>
-				<h3>Date</h3>
-				<p>23|24{# craft date #}</p>
-				<p>june 2023{# craft date #}</p>
-			</li>
-			<li>
-				<h3>Time</h3>
-				<p>23|24{# craft date #}</p>
-				<p>june 2023{# craft date #}</p>
-			</li>
-			<li>
-				<h3>Nex Edition</h3>
-				<p>16|17 JAN2024{# craft: newEditionDate #}</p>
-				<a href="">Subscribe to our newsletter</a>
-			</li>
-		</ul>
+		<div>
+			<h3>Date</h3>
+			<p>23|24{{entry.workshopDate}}{# craft date #}</p>
+			<p>june 2023{{entry.workshop}}{# craft date #}</p>
+		</div>
+		<div>
+			<h3>Time</h3>
+			<p>6PM - 23PM{# craft time #}</p>
+			<p>both days{# craft text? #}</p>
+		</div>
+		<div>
+			<h3>Nex Edition</h3>
+			<p>16|17 JAN2024{# craft: newEditionDate #}</p>
+			<a href="/{{('participation')}}">Participate next year</a> {# Ath this CTA is unclear #}
+		</div>
+	</section>
+
+	<section class="container__where" id="where">
+		<h2>Where do I start exploring?</h2>
+		<p>You can start the creative adventure anywhere you like, there are <span class="bold">cine spots</span> spread out in the city centre at <span class="bold">walking distance</span> from each other so you can easily navigate around the city supported with <span class="bold">direction signs</span>. If you'd like a detailed overview, feel free to explore the map&#33;</p>
+		{# show locations #}
+	</section>
+
+	<section class="container__cta--festival">
+		<h2>Want to participate<br><span class="orange">next edition?</span></h2>
+		<p>Are you between the ages of <span class="orange bold">16-25?</span></p>
+		<p>Well then you're just the person we're looking for&#33;</p>
+		<a href="/{{('participation')}}" class="btn btn--white">I'm interested&#33;</a> 
 	</section>
 
 {% endblock %}

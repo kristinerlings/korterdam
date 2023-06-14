@@ -78,7 +78,6 @@ body {
   font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
   color: var(--color-white);
   overflow-x: hidden;
-
 }
 
 :root {
@@ -101,17 +100,20 @@ body {
 =========================================*/
 
 /*****+******/
-.orange{
+.orange {
   color: var(--color-orange);
 }
-.purple{
+.purple {
   color: var(--color-purple);
 }
 
-.bold{
-  font-weight: bold; 
+.bold {
+  font-weight: bold;
 }
-
+.btn--white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
 /*****+******/
 
 a {
@@ -150,13 +152,12 @@ footer {
   padding-right: 2rem;
 }
 
-
 .nav__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-decoration: none;
   font-weight: 600;
 }
@@ -165,7 +166,6 @@ footer {
   color: var(--color-black);
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 .nav_link__detail,
@@ -191,27 +191,24 @@ footer {
   padding: 2rem 6rem;
 }
 
-
 .nav_options {
   display: flex;
   justify-content: right;
   gap: 2rem;
   align-items: center;
-
 }
-
 
 .nav_item__language {
   border: solid 1px var(--color-white);
-  padding-top: .8rem;
-  padding-bottom: .8rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   padding-left: 1rem;
   padding-right: 2.5rem;
   border-radius: var(--border-radius-large);
   background-image: url(../img/arrowdown.svg);
   background-repeat: no-repeat;
   background-position: 3.5rem center;
-  background-size: .9rem;
+  background-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -227,8 +224,8 @@ footer {
   background-size: 2rem;
   padding-left: 3.5rem;
   padding-right: 1.5rem;
-  padding-top: .8rem;
-  padding-bottom: .8rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   justify-content: right;
 }
 
@@ -245,7 +242,7 @@ footer {
 /*******BANNER*********/
 
 body {
-  margin: 0
+  margin: 0;
 }
 
 .ticker {
@@ -273,7 +270,6 @@ body {
   width: 10%;
 }
 
-
 .banner_text {
   display: flex;
   text-transform: lowercase;
@@ -285,7 +281,6 @@ body {
 
 .banner_text a:hover {
   color: var(--color-white);
-
 }
 
 @keyframes ticker {
@@ -298,7 +293,6 @@ body {
   }
 }
 
-
 /*******CAROUSEL*********/
 
 .carousel {
@@ -307,12 +301,12 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  background-color: rgb(107, 107, 228);
+  /* background-color: rgb(107, 107, 228); */
   height: auto;
 }
 
 .carousel__reel {
-  background-color: rgb(201, 120, 193);
+  /* background-color: rgb(201, 120, 193); */
   display: flex;
   flex-direction: row;
   width: fit-content;
