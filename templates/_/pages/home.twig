@@ -9,8 +9,8 @@
 	<header>
 		<h1>Visualise your voice</h1>
 		<h2>workshops and filmmaking<br>by <span class="orange">Kortrijk Film Fesetival</span></h2>
-		<a href="/{{('participation') }}" class="join">Join &amp;</a>
-		<a href="/{{('participation') }}" class="btn__archive">Show all films</a>
+		<a href="/{{('participation') }}" class="btn bg--white">Join &amp;</a>
+		<a href="/{{('participation') }}" class="btn">Show all films</a>
 		<div class="header__right">
 			{# static image here after creating public folder  #}
 			<h3>{{entry.theme}}<br><span>topic this year<span></h3>
@@ -41,7 +41,7 @@
 									<h3 class="detail__subtitle">{{ block.subtitle }}</h3>
 									<h2 class="detail__title">{{ block.infotitle }}</h2>
 									<p class="detail__paragraph">{{ block.paragraph }}</p>
-									<a href="/{{('participation') }}" class="button">{{ block.buttonText}}</a>
+									<a href="/{{('participation') }}" class="btn">{{ block.buttonText}}</a>
 								</div>
 							</div>
 			{% endswitch %}
@@ -52,7 +52,7 @@
 		<h2>Is filmmaking not your thing?</h2>
 		<p>Come and see a film at the festival</p>
 		<h3>Kortkikj film festival</h3>
-		<a href="/{{('festival-details')}}" class="button">Festival? Tell me more &amp;</a>
+		<a href="/{{('festival-details')}}" class="btn white">Festival? Tell me more &amp;</a>
 		{# static image here after creating public folder  #}
 		{# popcorn banner #}
 	</section>
@@ -69,7 +69,7 @@
 		{% for block in entry.hotspotBlock %}
 		{% switch block.type %}
 			{% case 'image' %}
-			<img class="hotspot__img" src="{{ block.image.one().url }}" alt="{{block.description}}">
+			<img class="hotspot__img" src="{{block.image.one().url }}" alt="{{block.description}}">
 			<div class="hotspot__info">
 				{% case 'infotext' %}
 					<p class="hotspot__year">{{ block.year }} <span class="">theme</span></p>
@@ -86,8 +86,8 @@
 		<div>
 			<h3> Casting call </h3>
 			<p> Age group:16 - 25</p>
-			<a href="/{{('participation') }}" class="button">I want to make a film!</a>
-			<a href="/{{('festival-details') }}">just show me the festival details</a>
+			<a href="/{{('participation') }}" class="btn">I want to make a film&#33;</a>
+			<a href="/{{('festival-details') }}" class="btn white">just show me the festival details</a>
 		</div>
 	</section>
 

@@ -1,0 +1,27 @@
+columnSuffix: oupjwhaq
+contentColumnType: text
+fieldGroup: acb9fa15-9ff6-492b-ba30-e046ff889f52 # participate
+handle: applicationState
+instructions: 'Until when is the application open? or has it been closed? '
+name: 'Application State'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field
