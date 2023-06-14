@@ -1,0 +1,118 @@
+field: 0d92d38a-7f70-452d-8708-267031490990 # Hotspot Block
+fieldLayouts:
+  c9a58e29-5232-4802-a0b0-453b4097a2f8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 30d647d9-b228-42ed-af39-c82f2ee9b0b1 # Year
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 089c83f6-87a3-4103-a994-2e6314a970f6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b74703c-5ea3-499a-b922-7bb214e7c7be # Info Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6cf2081-1cc8-40dd-bd2c-b7efb0137d2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bfc31c34-c1d9-45be-9613-734f6e445e05 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de0b53ff-7af8-446f-bab1-f1a830128f06
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7ee11726-3d10-4bcb-99ae-807284690b70
+        userCondition: null
+fields:
+  7b74703c-5ea3-499a-b922-7bb214e7c7be: # Info Title
+    columnSuffix: bhtodbst
+    contentColumnType: text
+    fieldGroup: null
+    handle: infotitle
+    instructions: 'Write the title here'
+    name: 'Info Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  30d647d9-b228-42ed-af39-c82f2ee9b0b1: # Year
+    columnSuffix: nwbkmlip
+    contentColumnType: text
+    fieldGroup: null
+    handle: year
+    instructions: 'Write the year here '
+    name: Year
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bfc31c34-c1d9-45be-9613-734f6e445e05: # Paragraph
+    columnSuffix: aktmpauo
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraph
+    instructions: 'Write text here '
+    name: Paragraph
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: infotext
+name: infoText
+sortOrder: 2
