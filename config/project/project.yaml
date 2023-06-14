@@ -1,4 +1,4 @@
-dateModified: 1686739570
+dateModified: 1686751720
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -14,13 +14,17 @@ fs:
 meta:
   __names__:
     00c08bc0-6c5b-45ba-b369-702d154371c6: 'Extra Title' # Extra Title
+    0d92d38a-7f70-452d-8708-267031490990: 'Hotspot Block' # Hotspot Block
+    00ee5f40-77e2-4edb-bbe8-0fd66a8c9f92: image # image
     2beb263e-f5a2-4dc4-8fc7-05b0a359bb20: Description # Description
     2ead9e23-6bdd-43c3-9657-e72cfaca7748: Common # Common
     5a1e7c98-42f2-432a-b3e4-0c122b2aa876: homepage # homepage
     6f0db7fc-ca44-42a2-8fff-cbf4e5e7e72f: Image # Image
+    7b74703c-5ea3-499a-b922-7bb214e7c7be: 'Info Title' # Info Title
     07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3: Films # Films
     21bc20ed-7930-49c3-9968-7d079e4a1bd3: Paragraph # Paragraph
     25ffa7df-6a7d-4d57-a2cf-953a46b9af82: 'Info Title' # Info Title
+    30d647d9-b228-42ed-af39-c82f2ee9b0b1: Year # Year
     37c95dc4-4ecb-4b31-bb83-e096f0f8fbb7: 'Information Block' # Information Block
     38eb2561-b6eb-4380-8c04-6a023e424186: 'Button text ' # Button text 
     69e50502-25ac-4c7f-a5ec-17cd4d250086: Image # Image
@@ -39,15 +43,20 @@ meta:
     3867285b-e2d9-4bf2-813e-38639300f4c4: korterdam # korterdam
     78826962-7de7-4701-b106-29463b46dc72: Subtitle # Subtitle
     a0a5f2ff-3095-45a1-8de0-99499ce5b972: Subtitle # Subtitle
+    aa058375-f842-4896-9343-26eab30b8a27: description # description
     aa1a3e63-bc1f-4863-903d-5bad285c2da6: 'Public Schema' # Public Schema
     b0957ce1-6c74-4f5d-b2f1-40e0e2abac03: Films # Films
+    b2b5e0aa-4b38-43e5-82a5-d99ee55a4c83: Image # Image
     b5cfd379-50ac-4af6-9144-d239a9dd6036: 'Info text' # Info text
     bad43b45-6309-450c-a22e-3f4566433864: 'Film Archive' # Film Archive
+    bd75df1d-d963-427e-95f3-1c16562f075d: 'Festival Date' # Festival Date
+    bfc31c34-c1d9-45be-9613-734f6e445e05: Paragraph # Paragraph
     c7f63c6e-197e-4ce8-9204-f8843d5232cd: 'Festival details' # Festival details
     d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
     d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
     df2b3eb6-296b-42f5-9347-152e42156fcb: filmarchive # filmarchive
     e4c780c9-3b42-4968-a520-733bf5cc84eb: 'Extra Title' # Extra Title
+    e4106e18-d069-4cb2-84f6-ac0846bf18c7: infoText # infoText
     fd8ec98f-11cf-4d4b-a6a6-0cb932a93541: Participation # Participation
 plugins:
   contact-form:
