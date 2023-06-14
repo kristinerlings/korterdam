@@ -30,8 +30,134 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+          -
+            elementCondition: null
+            fieldUid: 146be423-1abd-4f6e-b2ca-991e6e96f7e0 # season
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 10336735-de3e-4f1a-baca-d40021d03148
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bd75df1d-d963-427e-95f3-1c16562f075d # Festival Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1e94e22-e2e0-4f48-9f56-78a959f352c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d6f606d2-4ce4-4f44-b948-c48db769b86a # Application State
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08e96bb9-3750-41ff-a120-1c6b05b57b97
+            userCondition: null
+            warning: null
+            width: 100
+        name: Header
         uid: 4ef02767-f079-4ba4-96ba-eeb211ad73c1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 01158648-d04e-4a08-8738-8594ccb5eab2 # Theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2858d004-eecc-43f2-b394-5432249297f9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5148dc6c-5663-46f0-b91e-bfd9b178f8fb # Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4e7e5ad-697d-440e-b8d0-6858e1792ac2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 66d7091c-cb22-4899-b656-d3be927f914c # Theme Long Version
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13de2a06-0864-47e6-ae17-85001aa17018
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 436ef1ff-888a-45b6-848f-dcf13c26765e # Workshop Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4298dce-10f4-402a-a9c8-2896d4f3230b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ca77d0f-209d-47f9-a396-be4094b88e0b # Workshop Days
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58244886-b8de-49fd-a578-38939fb35657
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bbe6f10f-d63e-49cb-b09a-e7a4056c51b3 # Workshop Time 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c215cef-901f-4b28-9d63-baa22feebf88
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 17a90ad1-914f-4548-8a6e-4d916ba366a6 # Workshop Where
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 882adb8e-33c6-42a9-9e5f-0c368ec11a2b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Sections
+        uid: 86dc21fb-e61f-48e9-816d-cc9bd30e25d4
         userCondition: null
 handle: participation
 hasTitleField: false
