@@ -198,7 +198,7 @@ footer {
   font-weight: bold;
   color: var(--color-black);
 }
-
+.card__description,
 .card__paragraph,
 .card__year,
 .card__theme {
