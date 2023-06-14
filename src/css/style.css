@@ -268,7 +268,10 @@ body {
 
 .ticker {
   width: 100vw;
-  background-color: var(--color-purple);
+  background-image: url('../img/banner.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: var(--color-black);
   text-align: center;
   overflow: hidden;
