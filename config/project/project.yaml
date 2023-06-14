@@ -1,4 +1,4 @@
-dateModified: 1686763233
+dateModified: 1686774557
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -29,10 +29,11 @@ meta:
     30d647d9-b228-42ed-af39-c82f2ee9b0b1: Year # Year
     37c95dc4-4ecb-4b31-bb83-e096f0f8fbb7: 'Information Block' # Information Block
     38eb2561-b6eb-4380-8c04-6a023e424186: 'Button text ' # Button text 
-    66d7091c-cb22-4899-b656-d3be927f914c: 'Theme Long Version' # Theme Long Version
+    66d7091c-cb22-4899-b656-d3be927f914c: 'Title theme' # Title theme
     69e50502-25ac-4c7f-a5ec-17cd4d250086: Image # Image
     75c3e5d8-1172-452e-93e7-c4a1bc007ad8: 'Film Archive' # Film Archive
     79f962fa-1244-49a4-9f69-a274e35c986e: Image # Image
+    95c1b695-b4fb-431e-8eb0-79bb255a0b1d: date # date
     146be423-1abd-4f6e-b2ca-991e6e96f7e0: season # season
     177a747e-0316-461e-96d1-4a3ed7f2a387: 'Festival details' # Festival details
     249bb5e4-b293-446a-8c63-e7753010f50e: Uploads # Uploads

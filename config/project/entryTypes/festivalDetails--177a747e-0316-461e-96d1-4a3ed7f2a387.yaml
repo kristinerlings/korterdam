@@ -42,7 +42,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: theme
         uid: bda747d0-4a3e-4034-8bc5-617bb67ed8a2
         userCondition: null
 handle: festivalDetails
