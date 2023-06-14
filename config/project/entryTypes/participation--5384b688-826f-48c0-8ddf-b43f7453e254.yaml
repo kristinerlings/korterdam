@@ -33,10 +33,10 @@ fieldLayouts:
         name: Content
         uid: 4ef02767-f079-4ba4-96ba-eeb211ad73c1
         userCondition: null
-handle: participate
+handle: participation
 hasTitleField: false
-name: Participate
-section: fd8ec98f-11cf-4d4b-a6a6-0cb932a93541 # Participate
+name: Participation
+section: fd8ec98f-11cf-4d4b-a6a6-0cb932a93541 # Participation
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

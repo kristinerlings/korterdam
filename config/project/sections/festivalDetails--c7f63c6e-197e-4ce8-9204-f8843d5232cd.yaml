@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: participate
-name: Participate
+handle: festivalDetails
+name: 'Festival details'
 previewTargets:
   -
     __assoc__:
@@ -19,6 +19,6 @@ siteSettings:
   3867285b-e2d9-4bf2-813e-38639300f4c4: # korterdam
     enabledByDefault: true
     hasUrls: true
-    template: _/pages/participate.twig
-    uriFormat: participate
+    template: _/pages/festivalDetails.twig
+    uriFormat: festival-details
 type: single

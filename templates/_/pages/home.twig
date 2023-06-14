@@ -1,42 +1,44 @@
 {% extends "_/layouts/base" %}
 
+{% block head %}
+	{{ craft.vite.script("src/js/film.js" ) }}
+{% endblock %}
+
 {% block content %}
 	<h1>Kortkijk Film Festival</h1>
 	<p>
 		{{ entry.paragraph}}
 	</p>
 	<section class="container__countdown">
-			{% include "_/components/countdown.twig" %}
+		{% include "_/components/countdown.twig" %}
 	</section>
 	<section class="container__archive">
 		<h2>Kortkijk Archive</h2>
 		<a href="/{{('films') }}" class="btn__archive">Show all films</a>
-			{# {% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %} #}
- 		{% include "_/components/slider.twig" with { limit: 7, imageWidth: 100, imageHeight: 50 } %} 
+		{# {% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %} #}
+		{% include "_/components/slider.twig" with { limit: 7, imageWidth: 100, imageHeight: 50 } %}
 	</section>
 
 	<section class="container__requirements">
 		{% for block in entry.informationBlock %}
-		{% switch block.type %} 
-			{% case 'image' %}
-    	<img class="requirements__img" src="{{ block.image.one().url }}" alt="{{block.description}}">
-			<div class="requirements__info">
-				{% case 'extraTitle' %}
-      	<h2 class="info__title">{{ block.extraTitle}}</h2>
-      	<h3 class="info__subtitle">{{ block.subtitle }}</h3> 
-    	<div class="info__details">
-				{% case 'infoText' %}
-      	<h3 class="detail__subtitle">{{ block.subtitle }}</p>
-      	<h2 class="detail__title">{{ block.infotitle }}</h3>
-      	<p class="detail__paragraph">{{ block.paragraph }}</p>
-      	<button class="button">{{ block.buttonText}}</button>
-    	</div> 
-    </div>
-		{% endswitch %}
-		{% endfor %}
-</section>
+			{% switch block.type %}
+				{% case 'image' %}
+					<img class="requirements__img" src="{{ block.image.one().url }}" alt="{{block.description}}">
+					<div class="requirements__info">
+						{% case 'extraTitle' %}
+							<h2 class="info__title">{{ block.extraTitle}}</h2>
+							<h3 class="info__subtitle">{{ block.subtitle }}</h3>
+							<div class="info__details">
+								{% case 'infoText' %}
+									<h3 class="detail__subtitle">{{ block.subtitle }}</p>
+									<h2 class="detail__title">{{ block.infotitle }}</h3>
+									<p class="detail__paragraph">{{ block.paragraph }}</p>
+									<button class="button">{{ block.buttonText}}</button>
+								</div>
+							</div>
+						{% endswitch %}
+					{% endfor %}
+				</section>
 
 
-{% endblock %}
-
-
+			{% endblock %}
