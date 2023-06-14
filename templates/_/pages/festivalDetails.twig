@@ -1,8 +1,53 @@
 {% extends "_/layouts/base" %}
 
 {% block content %}
-	<h1>About</h1>
-	<p>
-		{{ entry.paragraph}}
-	</p>
+	<nav>
+		<ul>
+			<li><a href="#what">What</a></li>
+			<li><a href="#when">When</a></li>
+			<li><a href="#where">Where</a></li>
+		</ul>
+	</nav>
+	 <header class="header__festival">
+		<h1>Kort<span class="purple">kijk</span><br>Film<br>Festival</h1>  
+		<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with ranging skillsets, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
+		<div>
+			{# CRAFT - image/video#}
+			<p>Aftermovie {# year #} - {# season #} </p>
+		</div>
+	</header>
+	<section class="container__what" id="what">
+		<div>
+			<h3>This editions theme:</h3>
+			<h2>My Future Kortrijk</h2> {# craft :themeLong  #}
+			<p>paragraph</p> {# craft :themeDescription #}
+		</div>
+		<div>
+			<h3>Every edition is unique</h3>
+			<p>If this edition doesn't speak to you, maybe the next will! That is because every single one is different. We lay the focus on a <span class="purple">different topic</span> each time around.</p>
+		</div>
+		{# add image #}
+	</section>
+
+	<section class="container__when" id="when">
+		<h2>Save the date</h2>
+		<ul>
+			<li>
+				<h3>Date</h3>
+				<p>23|24{# craft date #}</p>
+				<p>june 2023{# craft date #}</p>
+			</li>
+			<li>
+				<h3>Time</h3>
+				<p>23|24{# craft date #}</p>
+				<p>june 2023{# craft date #}</p>
+			</li>
+			<li>
+				<h3>Nex Edition</h3>
+				<p>16|17 JAN2024{# craft: newEditionDate #}</p>
+				<a href="">Subscribe to our newsletter</a>
+			</li>
+		</ul>
+	</section>
+
 {% endblock %}
