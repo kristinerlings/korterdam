@@ -76,7 +76,6 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
-  padding: 1rem;
   color: var(--color-white);
 }
 
@@ -98,6 +97,10 @@ body {
        3.  Layout
 =========================================*/
 
+a {
+  color: var(--color-white);
+}
+
 main {
   margin: 0 auto;
   max-width: 1200px;
@@ -117,14 +120,33 @@ h3 {
   font-family: 'ClashDisplay-Bold';
 }
 
-a {
-  color: var(--color-white);
+footer {
+  background-color: var(--color-white);
+  display: block;
+  padding: 2rem;
 }
 
-footer {
-  color: var(--color-black);
-  background-color: var(--color-white);
+.nav__links {
+  display: flex;
+  gap: 1rem;
+  justify-content: right;
+  align-items: right;
+  padding: 2rem;
+  text-decoration: none;
 }
+
+.footer_link__item {
+  color: var(--color-black);
+  text-transform: uppercase;
+
+}
+
+.nav_link__item {
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+
 
 /*******CAROUSEL*********/
 
@@ -180,6 +202,16 @@ footer {
 .card__theme {
   margin: 0.625rem 0;
   color: var(--color-black);
+}
+
+.btn__card {
+  margin-block-start: 1rem;
+  border: solid 1px var(--color-black);
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 /*Carousel: nav-btns*/
