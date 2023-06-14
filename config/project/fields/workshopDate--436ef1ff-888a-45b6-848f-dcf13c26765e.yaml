@@ -1,0 +1,19 @@
+columnSuffix: pjhbqfcr
+contentColumnType: text
+fieldGroup: acb9fa15-9ff6-492b-ba30-e046ff889f52 # participate
+handle: workshopDate
+instructions: 'Write the start date - end date '
+name: 'Workshop Date'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: '25/09 - 10/12'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

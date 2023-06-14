@@ -1,7 +1,81 @@
 {% extends "_/layouts/base" %}
 
 {% block content %}
-  	<h1>Participate</h1>
-    {% include "_/components/contact-form.twig" %}
+  <header class="header__workshops">
+		<h1>Film<br>workshops<br>this {{entry.season}}</h1>  
+		<p>{{entry.festivalDate}}</p>
+		<a href="#how" class="btn">Tell me more</a> 
+		<a href="/{{('participation')}}" class="btn bg--white">Apply now</a> 
+		<p>{{entry.applicationState}}</p> 
+    {# add image#}
+	</header>
 
+  <section id="how" class="container__how">
+    <h2>How does it work?</h2>
+    <ul>
+      <li>
+        <h3>Cultural theme</h3>
+        <p>Every year, we have a brand new theme to keep things fresh and exciting, and this year it is the <span class="purple bold">{{entry.theme}}.</span></p>
+      </li>
+      <li>
+        <h3>Teamwork</h3>
+        <p>To make the experience more personal and engaging, we keep the team size limited to just <span class="purple bold">4-5 people</span></p>
+      </li>
+      <li>
+        <h3>Workshops</h3>
+        <p>We organise workshops that will upgrade your skills from <span class="purple bold">noob to pro</span> filmmaker in no time. Learn scriptmaking, cinematography and more...</p>
+      </li>
+      <li>
+        <h3>Film Festival</h3>
+        <p>At the end of each semester, we will <span class="purple bold">celebrate</span> your effort by throwing a film festival in the centre of Kortrijk</p>
+        <a href="/{{('festival-details')}}" class="btn">Festival? I'm interested</a>
+      </li>
+    </ul>
+      {# moving images + banner #}
+  </section>
+  <section class="container__participate">
+    <h3>{{entry.year}}&#124;{{entry.season}}<h3> 
+    <h2>Can I participate?</h2>
+    <p>If you're between the age of <p>16-25</p> and like to work in a group, then yes&#33; Every semester 30 people get chosen to participate in the workshops making films for the festival. Simply sign up in the form below and you will be notified about acceptance within 21 days</p>
+    <a href="/{{('participation')}}" class="btn">I want to participate</a> {# adjust link to apply #}
+  </section>
+
+  <section class="container__theme">
+    <h3>This years theme</h3>
+    <h2>{{entry.themeLong}}</h2>
+    <h3>The future holds endless potential for Kortrijk,<br>but the question is, <span class="orange">how do you vision it?</span></h3>
+    <p>What are your hopes and dreams for Kortrijk as a city? Are there any specific topics that deeply move you?</p>
+    {# moving banner#}
+  </section>
+
+  <section class="container__workshops">
+    <h3>Join us in film workshops</h3>
+    <h2>{{entry.workshopDays}}<br><span>{{entry.workshopTime}}</span></h2>
+    <a href="/{{('workshops')}}" class="btn">I want to apply</a> {#adjust link to apply #}
+    <div>
+      <h3>When?</h3>
+      <p>{{entry.workshopDate}}</p> 
+    </div>
+    <div>
+      <h3>Where?</h3>
+      <p>{{entry.workshopWhere}}</p> 
+    </div>
+  </section>
+
+  <section class="container__questions">
+    <h2>Commonly<br><span class="orange">asked</span> <span class="purple">questions</span></h2>
+    {# add toggle questions/answer #}
+  </section>
+
+  <section class="container__cta--participation">
+    <h2>Apply for<br><span class="orange">your spot</span> now&#33;</h2>
+    {# eye illustration #}
+    <div>
+      <p>Fill in the form now and get your acceptance notification within 21 days</p>
+      <a href="/{{('participation')}}" class="btn">Bring me to the form</a> {# adjust link to apply #}
+    </div>
+  </section>
+
+
+    {% include "_/components/contact-form.twig" %}
 {% endblock %}

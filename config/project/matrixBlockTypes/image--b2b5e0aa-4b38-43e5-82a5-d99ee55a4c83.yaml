@@ -1,0 +1,106 @@
+field: 0d92d38a-7f70-452d-8708-267031490990 # Hotspot Block
+fieldLayouts:
+  457792a3-a209-49cd-b15b-b923e04083be:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 00ee5f40-77e2-4edb-bbe8-0fd66a8c9f92 # image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a2b784a-b902-487b-ac5d-51c161c7e663
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aa058375-f842-4896-9343-26eab30b8a27 # description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0e54c42-9da2-4dff-ac80-929aa20c9390
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 54fe5ba3-ec98-4133-9d42-2c080bb91653
+        userCondition: null
+fields:
+  00ee5f40-77e2-4edb-bbe8-0fd66a8c9f92: # image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: 'Upload an image here '
+    name: image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:249bb5e4-b293-446a-8c63-e7753010f50e' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:249bb5e4-b293-446a-8c63-e7753010f50e' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  aa058375-f842-4896-9343-26eab30b8a27: # description
+    columnSuffix: mygacify
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: 'Write an image description here '
+    name: description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: image
+name: Image
+sortOrder: 1

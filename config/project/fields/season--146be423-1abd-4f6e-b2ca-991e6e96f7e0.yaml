@@ -1,0 +1,19 @@
+columnSuffix: wkiqifym
+contentColumnType: text
+fieldGroup: acb9fa15-9ff6-492b-ba30-e046ff889f52 # participate
+handle: season
+instructions: 'Which season will the participation take place? '
+name: season
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: fall
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

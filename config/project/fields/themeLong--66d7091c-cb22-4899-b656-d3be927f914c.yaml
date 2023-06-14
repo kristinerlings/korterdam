@@ -1,0 +1,19 @@
+columnSuffix: yrlkeprh
+contentColumnType: text
+fieldGroup: acb9fa15-9ff6-492b-ba30-e046ff889f52 # participate
+handle: themeLong
+instructions: 'What is the theme of this year? '
+name: 'Theme Long Version'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'The future of Kortrijk'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

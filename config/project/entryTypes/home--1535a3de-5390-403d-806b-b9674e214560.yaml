@@ -13,7 +13,7 @@ fieldLayouts:
             elementCondition: null
             id: null
             instructions: null
-            label: null
+            label: Title
             max: null
             min: null
             name: null
@@ -32,17 +32,29 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
-            instructions: null
+            fieldUid: 01158648-d04e-4a08-8738-8594ccb5eab2 # Theme
+            instructions: 'This years theme'
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 89a12e52-28ee-4f13-bc46-badf4db249f1
+            uid: 501c1a4e-5d05-4df0-8177-fe0fe8d96c0f
             userCondition: null
             warning: null
             width: 100
-        name: Content
+          -
+            elementCondition: null
+            fieldUid: bd75df1d-d963-427e-95f3-1c16562f075d # Festival Date
+            instructions: 'Write down festival date'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 782524f1-e65b-4d56-9a15-30187d325d9e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Header
         uid: b0e30bac-aa62-4a3c-a9cb-fe2de261bbb0
         userCondition: null
       -
@@ -60,8 +72,26 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Requirements
+        name: Information
         uid: 3e640912-7904-421c-8ae7-7b33b72cfb01
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0d92d38a-7f70-452d-8708-267031490990 # Hotspot Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4fbf69c5-7e8e-4bd4-8aa2-6606c66261ae
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hotspot
+        uid: 4f7218a7-fa6a-455d-8028-3dad2c2cf572
         userCondition: null
 handle: home
 hasTitleField: true
