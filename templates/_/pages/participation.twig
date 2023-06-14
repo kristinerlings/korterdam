@@ -5,34 +5,33 @@
 		<h1>Film<br>workshops<br>this {{entry.season}}</h1>  
 		<p>{{entry.festivalDate}}</p>
 		<a href="#how" class="btn">Tell me more</a> 
-		<a href="/{{('participation')}}" class="btn bg--white">Apply now</a> 
+		<a href="/{{('participation')}}" class="btn btn--white">Apply now</a> 
 		<p>{{entry.applicationState}}</p> 
     {# add image#}
 	</header>
 
   <section id="how" class="container__how">
     <h2>How does it work?</h2>
-    <ul>
-      <li>
-        <h3>Cultural theme</h3>
-        <p>Every year, we have a brand new theme to keep things fresh and exciting, and this year it is the <span class="purple bold">{{entry.theme}}.</span></p>
-      </li>
-      <li>
-        <h3>Teamwork</h3>
-        <p>To make the experience more personal and engaging, we keep the team size limited to just <span class="purple bold">4-5 people</span></p>
-      </li>
-      <li>
-        <h3>Workshops</h3>
-        <p>We organise workshops that will upgrade your skills from <span class="purple bold">noob to pro</span> filmmaker in no time. Learn scriptmaking, cinematography and more...</p>
-      </li>
-      <li>
-        <h3>Film Festival</h3>
-        <p>At the end of each semester, we will <span class="purple bold">celebrate</span> your effort by throwing a film festival in the centre of Kortrijk</p>
-        <a href="/{{('festival-details')}}" class="btn">Festival? I'm interested</a>
-      </li>
-    </ul>
+    <div>
+      <h3>Cultural theme</h3>
+      <p>Every year, we have a brand new theme to keep things fresh and exciting, and this year it is the <span class="purple bold">{{entry.theme}}.</span></p>
+    </div>
+    <div>
+      <h3>Teamwork</h3>
+      <p>To make the experience more personal and engaging, we keep the team size limited to just <span class="purple bold">4-5 people</span></p>
+    </div>
+    <div>
+      <h3>Workshops</h3>
+      <p>We organise workshops that will upgrade your skills from <span class="purple bold">noob to pro</span> filmmaker in no time. Learn scriptmaking, cinematography and more...</p>
+    </div>
+    <div>
+      <h3>Film Festival</h3>
+      <p>At the end of each semester, we will <span class="purple bold">celebrate</span> your effort by throwing a film festival in the centre of Kortrijk</p>
+      <a href="/{{('festival-details')}}" class="btn">Festival? I'm interested</a>
+    </div>
       {# moving images + banner #}
   </section>
+  
   <section class="container__participate">
     <h3>{{entry.year}}&#124;{{entry.season}}<h3> 
     <h2>Can I participate?</h2>
