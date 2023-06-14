@@ -1,4 +1,4 @@
-dateModified: 1686731901
+dateModified: 1686737841
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -26,13 +26,13 @@ meta:
     69e50502-25ac-4c7f-a5ec-17cd4d250086: Image # Image
     75c3e5d8-1172-452e-93e7-c4a1bc007ad8: 'Film Archive' # Film Archive
     79f962fa-1244-49a4-9f69-a274e35c986e: Image # Image
-    177a747e-0316-461e-96d1-4a3ed7f2a387: About # About
+    177a747e-0316-461e-96d1-4a3ed7f2a387: 'Festival details' # Festival details
     249bb5e4-b293-446a-8c63-e7753010f50e: Uploads # Uploads
     938d4841-ceff-4136-8f8b-3e69bec08ad0: Description # Description
     1535a3de-5390-403d-806b-b9674e214560: Home # Home
     3424eb75-09d2-417c-95cf-16afc24e0145: Subtitle # Subtitle
     5148dc6c-5663-46f0-b91e-bfd9b178f8fb: Year # Year
-    5384b688-826f-48c0-8ddf-b43f7453e254: Participate # Participate
+    5384b688-826f-48c0-8ddf-b43f7453e254: Participation # Participation
     13181b27-bdca-4e23-af9e-6ba7a5023d1f: Home # Home
     50654ac9-b523-4e34-8181-5184d7734b96: Films # Films
     01158648-d04e-4a08-8738-8594ccb5eab2: Theme # Theme
@@ -43,12 +43,12 @@ meta:
     b0957ce1-6c74-4f5d-b2f1-40e0e2abac03: Films # Films
     b5cfd379-50ac-4af6-9144-d239a9dd6036: 'Info text' # Info text
     bad43b45-6309-450c-a22e-3f4566433864: 'Film Archive' # Film Archive
-    c7f63c6e-197e-4ce8-9204-f8843d5232cd: About # About
+    c7f63c6e-197e-4ce8-9204-f8843d5232cd: 'Festival details' # Festival details
     d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
     d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
     df2b3eb6-296b-42f5-9347-152e42156fcb: filmarchive # filmarchive
     e4c780c9-3b42-4968-a520-733bf5cc84eb: 'Extra Title' # Extra Title
-    fd8ec98f-11cf-4d4b-a6a6-0cb932a93541: Participate # Participate
+    fd8ec98f-11cf-4d4b-a6a6-0cb932a93541: Participation # Participation
 plugins:
   contact-form:
     edition: standard

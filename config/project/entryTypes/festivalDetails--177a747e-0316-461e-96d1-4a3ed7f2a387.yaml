@@ -45,10 +45,10 @@ fieldLayouts:
         name: Content
         uid: bda747d0-4a3e-4034-8bc5-617bb67ed8a2
         userCondition: null
-handle: about
+handle: festivalDetails
 hasTitleField: true
-name: About
-section: c7f63c6e-197e-4ce8-9204-f8843d5232cd # About
+name: 'Festival details'
+section: c7f63c6e-197e-4ce8-9204-f8843d5232cd # Festival details
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
