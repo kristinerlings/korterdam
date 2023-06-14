@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 2ead9e23-6bdd-43c3-9657-e72cfaca7748 # Common
+handle: informationBlock
+instructions: 'Fill in the matrix '
+name: 'Information Block'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_informationblock}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

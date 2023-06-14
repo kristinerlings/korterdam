@@ -45,6 +45,24 @@ fieldLayouts:
         name: Content
         uid: b0e30bac-aa62-4a3c-a9cb-fe2de261bbb0
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 37c95dc4-4ecb-4b31-bb83-e096f0f8fbb7 # Information Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83d747f1-9ac2-4c10-b5ce-909bc4aaeed7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Requirements
+        uid: 3e640912-7904-421c-8ae7-7b33b72cfb01
+        userCondition: null
 handle: home
 hasTitleField: true
 name: Home

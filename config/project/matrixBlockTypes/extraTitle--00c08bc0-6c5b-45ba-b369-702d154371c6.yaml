@@ -1,0 +1,78 @@
+field: 37c95dc4-4ecb-4b31-bb83-e096f0f8fbb7 # Information Block
+fieldLayouts:
+  08dca273-b8f7-411e-a9e8-a9556d8a728a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e4c780c9-3b42-4968-a520-733bf5cc84eb # Extra Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3736d428-a4bc-4362-a893-c970aa493345
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 78826962-7de7-4701-b106-29463b46dc72 # Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d582f4ea-f51d-4ea0-839d-6224a74cae79
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b6fb6e7a-322a-4476-94a0-9deae1d795f7
+        userCondition: null
+fields:
+  78826962-7de7-4701-b106-29463b46dc72: # Subtitle
+    columnSuffix: qtpngrzm
+    contentColumnType: text
+    fieldGroup: null
+    handle: subtitle
+    instructions: 'Write subtitle here '
+    name: Subtitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e4c780c9-3b42-4968-a520-733bf5cc84eb: # Extra Title
+    columnSuffix: mkesbawn
+    contentColumnType: text
+    fieldGroup: null
+    handle: extraTitle
+    instructions: 'Write title here'
+    name: 'Extra Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: extraTitle
+name: 'Extra Title'
+sortOrder: 2

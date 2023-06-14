@@ -1,0 +1,150 @@
+field: 37c95dc4-4ecb-4b31-bb83-e096f0f8fbb7 # Information Block
+fieldLayouts:
+  6e7ca72d-c35f-4864-9f55-459110269ee0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a0a5f2ff-3095-45a1-8de0-99499ce5b972 # Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 440c263e-de1e-4b8f-a4c4-18feba0981df
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 25ffa7df-6a7d-4d57-a2cf-953a46b9af82 # Info Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 536373c6-c988-4ae9-a877-d64df58367b3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 21bc20ed-7930-49c3-9968-7d079e4a1bd3 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5581d9fe-b51f-4547-95e0-49e09b5237ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 38eb2561-b6eb-4380-8c04-6a023e424186 # Button text 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66e3ba1a-2da1-4270-b09e-5532dc9e7473
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0aaf58c8-4a75-429e-bd46-b4169778f2d7
+        userCondition: null
+fields:
+  21bc20ed-7930-49c3-9968-7d079e4a1bd3: # Paragraph
+    columnSuffix: sypxfhss
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraph
+    instructions: 'Write text here '
+    name: Paragraph
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  25ffa7df-6a7d-4d57-a2cf-953a46b9af82: # Info Title
+    columnSuffix: mezngdts
+    contentColumnType: text
+    fieldGroup: null
+    handle: infotitle
+    instructions: 'Write title here'
+    name: 'Info Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  38eb2561-b6eb-4380-8c04-6a023e424186: # Button text 
+    columnSuffix: jaczyzxz
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: 'Write CTA here '
+    name: 'Button text '
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a0a5f2ff-3095-45a1-8de0-99499ce5b972: # Subtitle
+    columnSuffix: xacnxpis
+    contentColumnType: text
+    fieldGroup: null
+    handle: subtitle
+    instructions: 'write subtitle here '
+    name: Subtitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: infoText
+name: 'Info text'
+sortOrder: 3
