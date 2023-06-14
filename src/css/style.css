@@ -138,12 +138,14 @@ footer {
 .footer_link__item {
   color: var(--color-black);
   text-transform: uppercase;
+  text-decoration: none;
 
 }
 
 .nav_link__item {
   color: var(--color-white);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 
@@ -212,6 +214,7 @@ footer {
   color: var(--color-black);
   padding: 0.5rem 1rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /*Carousel: nav-btns*/
