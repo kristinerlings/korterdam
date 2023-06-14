@@ -6,14 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Kortkijk Film Festival</title>
 		{{ craft.vite.script("src/js/app.js" ) }}
-		{{ craft.vite.script("src/js/film.js" ) }}
-		<link rel="icon" type="image/x-icon" href="/favicon/logo.png">
+		<link rel="icon" type="image/x-icon" href="/favicon/logo.png"> {% block head %}{% endblock %}
+
+		</head>
+		<body>
+			{% include "_/partials/nav.twig" %}
+			<main>
+			{% block content %}{% endblock %}
+			</main>
+			{% include "_/partials/footer.twig" %}
 
 
-	</head>
-	<body>
-		{% include "_/partials/nav.twig" %}
-		{% block content %}{% endblock %}
-
-	</body>
-</html>
+		</body>
+	</html>
