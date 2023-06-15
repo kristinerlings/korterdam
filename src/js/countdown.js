@@ -1,4 +1,7 @@
-const countdownElement = document.getElementById('countdown');
+const countdownDays = document.querySelector('.countdown__days');
+const countdownHours = document.querySelector('.countdown__hrs');
+const countdownMinutes = document.querySelector('.countdown__min');
+const countdownSeconds = document.querySelector('.countdown__sec');
 const finalDate = new Date('2023-06-23T18:00:00');
 
 const updateCountdown = () => {
@@ -11,15 +14,15 @@ const updateCountdown = () => {
     const minutes = Math.floor(((remainingSeconds % 86400) % 3600) / 60);
     const seconds = remainingSeconds % 60;
 
-    countdownElement.innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
-
-    // Check festival status
-    if (currentTime >= finalDate) {
-      countdownElement.textContent = 'Festival has started';
-    } else if (remainingSeconds <= -172800) {
-      // 2 days after festival started:
-      countdownElement.textContent = 'Festival countdown has ended!';
-    }
+    countdownDays.textContent = `${days}`;
+    countdownHours.textContent = `${hours}`;
+    countdownMinutes.textContent = `${minutes}`;
+    countdownSeconds.textContent = `${seconds}`;
+  } else if (currentTime >= finalDate) {
+    countdownDays.textContent = `0`;
+    countdownHours.textContent = `0`;
+    countdownMinutes.textContent = `0`;
+    countdownSeconds.textContent = `0`;
   }
 };
 
