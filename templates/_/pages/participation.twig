@@ -36,7 +36,7 @@
     <h3>{{entry.year}}&#124;{{entry.season}}<h3> 
     <h2>Can I participate?</h2>
     <p>If you're between the age of <p>16-25</p> and like to work in a group, then yes&#33; Every semester 30 people get chosen to participate in the workshops making films for the festival. Simply sign up in the form below and you will be notified about acceptance within 21 days</p>
-    <a href="/{{('participation')}}" class="btn">I want to participate</a> {# adjust link to apply #}
+    <a href="/{{('apply')}}" class="btn">I want to participate</a> 
   </section>
 
   <section class="container__theme">
@@ -50,7 +50,7 @@
   <section class="container__workshops">
     <h3>Join us in film workshops</h3>
     <h2>{{entry.workshopDays}}<br><span>{{entry.workshopTime}}</span></h2>
-    <a href="/{{('workshops')}}" class="btn">I want to apply</a> {#adjust link to apply #}
+    <a href="/{{('apply')}}" class="btn">I want to apply</a> 
     <div>
       <h3>When?</h3>
       <p>{{entry.workshopDate}}</p> 
@@ -71,10 +71,8 @@
     {# eye illustration #}
     <div>
       <p>Fill in the form now and get your acceptance notification within 21 days</p>
-      <a href="/{{('participation')}}" class="btn">Bring me to the form</a> {# adjust link to apply #}
+      <a href="/{{('apply')}}" class="btn">Bring me to the form</a>
     </div>
   </section>
 
-
-    {% include "_/components/contact-form.twig" %}
 {% endblock %}

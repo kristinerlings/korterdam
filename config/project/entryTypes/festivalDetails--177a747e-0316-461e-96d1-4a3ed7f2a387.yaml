@@ -32,13 +32,85 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d025c469-fb9a-4479-964c-d3ab09f70cb0 # Paragraph
+            fieldUid: 79f962fa-1244-49a4-9f69-a274e35c986e # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f82b8437-7635-46ca-af05-ad40a241e552
+            uid: 9f2d5514-e833-4991-a3b4-3a577675ccda
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 938d4841-ceff-4136-8f8b-3e69bec08ad0 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 603b6d52-f340-4284-a4b0-53a9a45befec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 66d7091c-cb22-4899-b656-d3be927f914c # Title theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2b4cd1a-08f0-4f6f-8a41-571ecc9c6c27
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 781744bc-da29-4e3b-a99b-54bd265f50bf # Theme Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6336a60c-73ae-4fb2-a96e-368944d0f350
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 742c5b07-c3ba-485a-9b23-7ba710766241 # Theme Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c5421c0-6ca2-4de3-92bf-90e382f9cc32
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5148dc6c-5663-46f0-b91e-bfd9b178f8fb # Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43f8812b-7483-4549-b8a6-9a66d4135695
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 146be423-1abd-4f6e-b2ca-991e6e96f7e0 # season
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 773f0d08-f36d-4f04-9feb-472ab6ba003d
             userCondition: null
             warning: null
             width: 100
@@ -50,49 +122,13 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 436ef1ff-888a-45b6-848f-dcf13c26765e # Workshop Date
+            fieldUid: c9b3b20d-4c9e-454a-b9c0-6f6827dcf308 # Festival Dates
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c1145f15-6af8-410e-9b9d-dd7e98209c40
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 2ca77d0f-209d-47f9-a396-be4094b88e0b # Workshop Days
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2398b9df-d207-4787-a4a5-7e11bd59ea65
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: bbe6f10f-d63e-49cb-b09a-e7a4056c51b3 # Workshop Time 
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9725b0fe-2b5d-4c15-889c-f8ae2484f825
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 95c1b695-b4fb-431e-8eb0-79bb255a0b1d # date
-            instructions: 'When is the next edition date and year? '
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6244d9c2-5be1-4971-a8f5-4789bfe5196b
+            uid: 68c4dccd-c028-47ab-801b-b39603777bc4
             userCondition: null
             warning: null
             width: 100

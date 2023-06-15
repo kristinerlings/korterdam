@@ -1,0 +1,46 @@
+field: c9b3b20d-4c9e-454a-b9c0-6f6827dcf308 # Festival Dates
+fieldLayouts:
+  019f8298-ef0e-478f-ad52-fbaf1cf1f51b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cff2a037-464e-45c1-9113-33558f7b7412 # Next Edition
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 313a900c-6019-418c-b990-131a95c6d103
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: aba52ac1-2f19-4de5-b820-866526c2dc7c
+        userCondition: null
+fields:
+  cff2a037-464e-45c1-9113-33558f7b7412: # Next Edition
+    columnSuffix: oojvtxdk
+    contentColumnType: string(120)
+    fieldGroup: null
+    handle: nextEdition
+    instructions: 'When does the next year''s festival take place? '
+    name: 'Next Edition'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 30
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: '16|17 jan 2024'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: nextYear
+name: 'Next Year'
+sortOrder: 3
