@@ -1,13 +1,3 @@
-		{# Set the final date and time of the event #}
 
-		{% set finalDate = '2023-06-18 18:00:00' %}
+		<p id="countdown"></p>
 
-			{# Calculate the remaining time #}
-		{% set currentTime = now|date('Y-m-d H:i:s') %}
-		{% set remainingSeconds = date(finalDate).timestamp - date(currentTime).timestamp %}
-		{% set remainingDays = remainingSeconds // 86400 %}
-		{% set remainingHours = (remainingSeconds % 86400) // 3600 %}
-		{% set remainingMinutes = ((remainingSeconds % 86400) % 3600) // 60 %}
-
-		{# Display the countdown #}
-		<p>Countdown: {{ remainingDays }} days, {{ remainingHours }} hours, {{ remainingMinutes }} minutes</p>
