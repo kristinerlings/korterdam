@@ -9,10 +9,14 @@
 	<label for="themeFilter">Filter by Theme:</label>
 	<select id="themeFilter">
 		<option value="">All Edition themes</option>
-		<option value="Cultural Fusion">Cultural Fusion - 2021</option>
-		<option value="Landscapes of identity">Landscapes of Identity - 2022</option>
-		<option value="Taboo Land">Taboo Land - 2023</option>
-		<!-- Add more options for each theme -->
+		{% set themes = [] %}
+		{% for film in craft.entries.section('films').limit(limit).all() %}
+			{% set theme = film.theme %}
+			{% if theme and theme not in themes %}
+				{% set themes = themes|merge([theme]) %}
+				<option value="{{ theme }}">{{ theme }}</option>
+			{% endif %}
+		{% endfor %}
 	</select>
 </div>
 
@@ -42,6 +46,4 @@
 			</div>
 		</article>
 	{% endfor %}
-
-
 </article>
