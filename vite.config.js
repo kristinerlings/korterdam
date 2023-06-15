@@ -10,30 +10,29 @@ const viteRestartValue = (() => {
 })();
 
 export default ({ command }) => ({
-    base: command === "serve" ? "" : "/dist/",
-    build: {
-        manifest: true,
-        outDir: "./web/dist/",
-        rollupOptions: {
-            input: {
-                app: "./src/js/app.js",
-                film: "./src/js/film.js",
-                pageDetector: "./src/js/activePage.js",
-                filterFilm: "./src/js/filterFilm.js",
-            },
-        },
+  base: command === 'serve' ? '' : '/dist/',
+  build: {
+    manifest: true,
+    outDir: './web/dist/',
+    rollupOptions: {
+      input: {
+        app: './src/js/app.js',
+        filmCarousel: './src/js/carouselFilm.js',
+        pageDetector: './src/js/activePage.js',
+        filterFilm: './src/js/filterFilm.js',
+      },
     },
-    server: {
-        host: "0.0.0.0",
-        strictPort: true,
-        port: 3000,
-        origin: "https://korterdam.ddev.site:3000",
-    },
-    plugins: [
-        legacy({
-            targets: ['defaults', 'not IE 11']
-        }),
-        viteRestartValue
-    ],
-    
+  },
+  server: {
+    host: '0.0.0.0',
+    strictPort: true,
+    port: 3000,
+    origin: 'https://korterdam.ddev.site:3000',
+  },
+  plugins: [
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+    }),
+    viteRestartValue,
+  ],
 });
