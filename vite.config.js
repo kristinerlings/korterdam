@@ -18,6 +18,7 @@ export default ({ command }) => ({
             input: {
                 app: "./src/js/app.js",
                 film: "./src/js/film.js",
+                pageDetector: "./src/js/activePage.js",
             },
         },
     },

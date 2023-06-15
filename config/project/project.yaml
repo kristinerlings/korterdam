@@ -1,4 +1,4 @@
-dateModified: 1686776848
+dateModified: 1686779995
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -33,6 +33,7 @@ meta:
     69e50502-25ac-4c7f-a5ec-17cd4d250086: Image # Image
     75c3e5d8-1172-452e-93e7-c4a1bc007ad8: 'Film Archive' # Film Archive
     79f962fa-1244-49a4-9f69-a274e35c986e: Image # Image
+    092d6b02-424a-4a1a-ad3b-0a6a6a273d21: 'Apply now' # Apply now
     95c1b695-b4fb-431e-8eb0-79bb255a0b1d: date # date
     146be423-1abd-4f6e-b2ca-991e6e96f7e0: season # season
     177a747e-0316-461e-96d1-4a3ed7f2a387: 'Festival details' # Festival details
@@ -60,6 +61,7 @@ meta:
     bd75df1d-d963-427e-95f3-1c16562f075d: 'Festival Date' # Festival Date
     bfc31c34-c1d9-45be-9613-734f6e445e05: Paragraph # Paragraph
     c7f63c6e-197e-4ce8-9204-f8843d5232cd: 'Festival details' # Festival details
+    c456b98d-413d-4b32-85a8-5d73e10d34a4: 'Apply now' # Apply now
     d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
     d6f606d2-4ce4-4f44-b948-c48db769b86a: 'Application State' # Application State
     d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
