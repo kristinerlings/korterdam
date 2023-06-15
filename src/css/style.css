@@ -411,6 +411,33 @@ body {
 
 }
 
+.detail__card {
+  padding: 1rem;
+  background-image: url(../img/cardbackground.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.detail__card__grid {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.detail__card__line {
+  border-left: solid 2px var(--color-black);
+  padding-left: 1rem;
+}
+
+.btn__card__container {
+  display: flex;
+  justify-content: end;
+}
+
 /*Carousel: nav-btns*/
 .carousel__nav {
   display: flex;
@@ -458,31 +485,5 @@ body {
   height: auto;
 }
 
-.detail__card {
-  padding: 1rem;
-  background-image: url(../img/cardbackground.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-}
-
-.detail__card__grid {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: top;
-}
-
-.detail__card__line {
-  border-left: solid 2px var(--color-black);
-  padding-left: 1rem;
-}
-
-.btn__card__container {
-  display: flex;
-  justify-content: end;
-}
 
 /*////////////// FILM DETAIL ///////////////*/
