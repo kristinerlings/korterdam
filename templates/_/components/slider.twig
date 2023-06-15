@@ -2,45 +2,56 @@
 
 
 <div class="container__carousel">
-      <div class="carousel__nav">
-      <a href="/{{('film-archive') }}" class="btn__carousel">See more films</a>
-        <button type="button" class="btn__carousel prev">
-          prev
-        </button>
-        <button type="button" class="btn__carousel next">
-           next
-        </button>
-      </div>
-     
-     
-      <article class="carousel">
-      
-{% set batchSize = 3 %}
-{% set films = craft.entries.section('films').limit(limit).all() %}
+	<div class="carousel__nav">
+		<a href="/{{('film-archive') }}" class="btn__carousel">See more films</a>
+		<button type="button" class="btn__carousel prev">
+			prev
+		</button>
+		<button type="button" class="btn__carousel next">
+			next
+		</button>
+	</div>
 
- <article class="carousel">
-    {% set batchSize = 3 %}
-    {% set films = craft.entries.section('films').limit(limit).all() %}
 
-    {% for filmBatch in films|batch(batchSize) %}
-      <div class="carousel__reel{% if loop.first %} show{% endif %}">
-        {% for film in filmBatch %}
-          <article class="card" id="card-{{ loop.index }}"> {#  unique ID for each card, loop.index for current iteration index  #}
-            {% for photo in film.image.all() %}
-              {% set width = imageWidth ?? 452 %}
-              {% set height = imageHeight ?? 302 %}
-              <img class="card__image" src="{{ photo.getUrl({ width: width, height: width })}}" alt="{{ film.title }}"/>
-            {% endfor %}
-            <div class="detail__card"> 
-              <h3 class="card__title">{{film.title}}</h3>
-              <p class="card__description">{{film.description}}</p>
-              <p class="card__year">{{film.year}}</p>
-              <p class="card__theme">{{film.theme}}</p>
-              <a href="{{film.url}}" class="btn__card">Read more</a>
-            </div>
-          </article>
-        {% endfor %}
-      </div>
-    {% endfor %}
-  </article>
-</div>
+	<article class="carousel">
+
+		{% set batchSize = 3 %}
+		{% set films = craft.entries.section('films').limit(limit).all() %}
+
+		<article class="carousel">
+			{% set batchSize = 3 %}
+			{% set films = craft.entries.section('films').limit(limit).all() %}
+
+			{% for filmBatch in films|batch(batchSize) %}
+				<div class="carousel__reel{% if loop.first %} show{% endif %}">
+					{% for film in filmBatch %}
+						<article
+							class="card" id="card-{{ loop.index }}">
+							{#  unique ID for each card, loop.index for current iteration index  #}
+							{% for photo in film.image.all() %}
+								{% set width = imageWidth ?? 452 %}
+								{% set height = imageHeight ?? 302 %}
+								<img class="card__image" src="{{ photo.getUrl({ width: width, height: width })}}" alt="{{ film.title }}"/>
+							{% endfor %}
+							<div class="detail__card">
+								<div class="detail__card__grid">
+									<div>
+										<p class="card__year">{{film.year}}</p>
+										<p class="card__theme">{{film.theme}}</p>
+									</div>
+									<div class="detail__card__line">
+										<h3 class="card__title">{{film.title}}</h3>
+										<p class="card__description">{{film.description}}</p>
+									</div>
+
+								</div>
+								<div class="btn__card__container">
+									<a href="{{film.url}}" class="btn__card">Read more</a>
+								</div>
+							</div>
+						</article>
+					{% endfor %}
+				</div>
+			{% endfor %}
+		</article>
+	</div>
