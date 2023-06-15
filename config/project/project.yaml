@@ -1,4 +1,4 @@
-dateModified: 1686830929
+dateModified: 1686871596
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -20,7 +20,9 @@ meta:
     2ca77d0f-209d-47f9-a396-be4094b88e0b: 'Workshop Days' # Workshop Days
     2ead9e23-6bdd-43c3-9657-e72cfaca7748: Common # Common
     5a1e7c98-42f2-432a-b3e4-0c122b2aa876: homepage # homepage
+    05c44ec2-7082-4b6e-b3a2-7cf318c9a217: Default # Default
     5e97a2d8-8dc9-4fa2-af52-c84143e906df: 'Festival time' # Festival time
+    6c35f5e9-051e-4272-a21d-69303ab5397f: 'Archive Themes' # Archive Themes
     6f0db7fc-ca44-42a2-8fff-cbf4e5e7e72f: Image # Image
     7b74703c-5ea3-499a-b922-7bb214e7c7be: 'Info Title' # Info Title
     7c64e7ab-11d3-4a59-a2e2-41f4e21cd6be: festival # festival

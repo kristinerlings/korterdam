@@ -9,7 +9,7 @@
 	<div class="filter__container">
 		<label for="themeFilter">Filter by Theme:</label>
 		<select class="themeFilter" id="themeFilter">
-			<option value="">All Edition themes</option>
+			<option value="">All edition themes</option>
 			{% set themes = [] %}
 			{% for film in craft.entries.section('films').limit(limit).all() %}
 				{% set theme = film.theme %}
@@ -25,21 +25,20 @@
 	</div>
 </div>
 
-<section>
-	<div class="theme__description__container">
-		<h2 class="theme__title"></h2>
-		<p class="theme__description"></p>
-	</div>
+<section class="theme__description__container">
+	<h2 class="theme__title"></h2>
+	<p class="theme__year"></p>
+	<p class="theme__description"></p>
 </section>
 
-<section>
+
+<section class="archive__themes__section hidden">
 	{% for archiveTheme in craft.entries.section('archiveThemes').all() %}
 		<div class="archive__theme">
 			<div class="archive__theme__info">
 				<h2 class="archive__theme__title">{{ archiveTheme.title }}</h2>
 				<p class="archive__theme__year">{{ archiveTheme.year }}</p>
-				<p class="archive__theme__description">{{ archiveTheme.themeDescription }}</p>
-
+				<p class="archive__theme__description">{{ archiveTheme.paragraph }}</p>
 			</div>
 		</div>
 	{% endfor %}

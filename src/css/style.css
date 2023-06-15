@@ -78,6 +78,7 @@ body {
   font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
   color: var(--color-white);
   overflow-x: hidden;
+
 }
 
 :root {
@@ -100,6 +101,10 @@ body {
 =========================================*/
 
 /*****+******/
+
+.hidden {
+  display: none;
+}
 
 .orange {
   color: var(--color-orange);
@@ -131,6 +136,11 @@ a {
 main {
   margin: 0 auto;
   max-width: 1100px;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
 }
 
 h1 {
@@ -497,8 +507,8 @@ body {
   align-items: center;
 }
 
-.archive__img{
-  width:50%;
+.archive__img {
+  width: 50%;
 }
 
 
@@ -524,6 +534,7 @@ body {
   row-gap: 3rem;
   justify-content: center;
   height: auto;
+  margin-top: 5rem;
 }
 
 /****** SORT FILMS *******/
@@ -563,6 +574,34 @@ select {
   background-color: var(--color-black);
   color: var(--color-white);
 }
+
+
+
+.theme__description__container {
+  text-align: center;
+  margin-top: 5rem;
+  max-width: 70%;
+  margin-inline: auto;
+
+}
+
+.theme__title {
+  font-family: 'ClashDisplay-SemiBold', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+
+}
+
+.theme__year {
+  font-family: 'ClashDisplay-regular', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.theme__description {
+  font-weight: 200;
+}
+
 
 
 
