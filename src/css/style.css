@@ -494,5 +494,11 @@ body {
   height: auto;
 }
 
+/****** FILTER FILMS *******/
+
+.archive__card.hidden {
+  display: none;
+}
+
 
 /*////////////// FILM DETAIL ///////////////*/

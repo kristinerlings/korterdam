@@ -19,6 +19,7 @@ export default ({ command }) => ({
                 app: "./src/js/app.js",
                 film: "./src/js/film.js",
                 pageDetector: "./src/js/activePage.js",
+                filterFilm: "./src/js/filterFilm.js",
             },
         },
     },

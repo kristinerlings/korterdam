@@ -1,30 +1,47 @@
-<article class="archive__cards__container">
+<div class="sort__container">
+	<label for="sortFilms">Sort by title:</label>
+	<button id="sortAscButton">A-Z</button>
+	<button id="sortDescButton">Z-A</button>
+</div>
 
-	{% for film in craft.entries.section('films').limit(limit).all()%}
+
+<div class="filter__container">
+	<label for="themeFilter">Filter by Theme:</label>
+	<select id="themeFilter">
+		<option value="">All Edition themes</option>
+		<option value="Cultural Fusion">Cultural Fusion - 2021</option>
+		<option value="Landscapes of identity">Landscapes of Identity - 2022</option>
+		<option value="Taboo Land">Taboo Land - 2023</option>
+		<!-- Add more options for each theme -->
+	</select>
+</div>
+
+
+<article class="archive__cards__container">
+	{% for film in craft.entries.section('films').limit(limit).all() %}
 		<article class="archive__card">
 			{% for photo in film.image.all() %}
 				{% set width = imageWidth ?? 452 %}
 				{% set height = imageHeight ?? 302 %}
-				<img class="card__image" src="{{ photo.getUrl({ width: width, height: width })}}" alt="{{ film.title }}"/>
+				<img class="card__image" src="{{ photo.getUrl({ width: width, height: width }) }}" alt="{{ film.title }}"/>
 			{% endfor %}
 			<div class="detail__card">
 				<div class="detail__card__grid">
 					<div>
-						<p class="card__year">{{film.year}}</p>
-						<p class="card__theme">{{film.theme}}</p>
+						<p class="card__year">{{ film.year }}</p>
+						<p class="card__theme">{{ film.theme }}</p>
 					</div>
 					<div class="detail__card__line">
-						<h3 class="card__title">{{film.title}}</h3>
-						<p class="card__description">{{film.description}}</p>
+						<h3 class="card__title">{{ film.title }}</h3>
+						<p class="card__description">{{ film.description }}</p>
 					</div>
 				</div>
 				<div class="btn__card__container">
-					<a href="{{film.url}}" class="btn__card">Read more</a>
+					<a href="{{ film.url }}" class="btn__card">Read more</a>
 				</div>
-
 			</div>
-
 		</article>
 	{% endfor %}
+
 
 </article>
