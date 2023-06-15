@@ -28,12 +28,13 @@ const updateCountdown = () => {
     countdownSeconds.textContent = `0`;
     if (
       currentTime >= finalDate &&
-      currentTime <= finalDate + twoDaysInSeconds) {
+      currentTime <= finalDate + twoDaysInSeconds
+    ) {
       countdownTitle.textContent = `The event has started!`;
       countdownStatus.textContent = `See you there!`;
     } else {
-       countdownTitle.textContent = `The event has ended!`;
-       countdownStatus.textContent = `See you in January!`;
+      countdownTitle.textContent = `The event has ended!`;
+      countdownStatus.textContent = `See you next time!`;
     }
   }
 };
