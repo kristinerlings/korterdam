@@ -1,5 +1,5 @@
 fieldLayouts:
-  0b7fd7c7-76b9-4ce5-83e4-b6cfe723a214:
+  48654d0b-52b8-4cf7-8950-b4c85b54aa8e:
     tabs:
       -
         elementCondition: null
@@ -13,7 +13,7 @@ fieldLayouts:
             elementCondition: null
             id: null
             instructions: null
-            label: null
+            label: 'Theme title'
             max: null
             min: null
             name: null
@@ -26,19 +26,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: b61bf599-71ef-4865-9223-67877164ab0a
+            uid: 9aa23580-abb9-4ceb-a66b-1b80011e8236
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 3424eb75-09d2-417c-95cf-16afc24e0145 # Subtitle
+            fieldUid: 5148dc6c-5663-46f0-b91e-bfd9b178f8fb # Year
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4c3fcb17-176d-43a7-9179-c3032cbba4d0
+            uid: af6fd0d1-5272-4e08-b2d3-b36fe93788ce
             userCondition: null
             warning: null
             width: 100
@@ -50,18 +50,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a4ef0948-687d-4425-874f-efa3150cd669
+            uid: fee35464-feb4-4323-a127-eda5f89fedc0
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 543dead8-10a5-4dae-b037-6cb2ae2c6b04
+        uid: 66f008ac-dec3-4e16-8530-d5b9214b74c7
         userCondition: null
-handle: filmArchive
+handle: default
 hasTitleField: true
-name: 'Film Archive'
-section: 75c3e5d8-1172-452e-93e7-c4a1bc007ad8 # Film Archive
+name: Default
+section: 6c35f5e9-051e-4272-a21d-69303ab5397f # Archive Themes
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,5 +1,5 @@
 columnSuffix: qvtidnby
-contentColumnType: string(16)
+contentColumnType: text
 fieldGroup: b0957ce1-6c74-4f5d-b2f1-40e0e2abac03 # Films
 handle: year
 instructions: null
@@ -7,7 +7,7 @@ name: Year
 searchable: false
 settings:
   byteLimit: null
-  charLimit: 4
+  charLimit: null
   code: false
   columnType: null
   initialRows: 4

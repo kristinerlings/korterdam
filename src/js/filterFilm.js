@@ -1,7 +1,6 @@
 console.log('filterFilm js works');
 
 ////// FILTERING //////
-
 const applyFilter = (selectedTheme) => {
     const cards = document.querySelectorAll('.archive__card');
     cards.forEach((card) => {
@@ -11,6 +10,41 @@ const applyFilter = (selectedTheme) => {
             card.classList.add('hidden');
         }
     });
+
+    const archiveThemes = document.querySelectorAll('.archive__theme');
+    const themeDescriptionContainer = document.querySelector('.theme__description__container');
+    const themeTitle = document.querySelector('.theme__title');
+    const themeYear = document.querySelector('.theme__year');
+    const themeDescription = document.querySelector('.theme__description');
+    let isAllEditionThemes = false;
+
+    archiveThemes.forEach((theme) => {
+        const title = theme.querySelector('.archive__theme__title').textContent;
+        const year = theme.querySelector('.archive__theme__year').textContent;
+        const description = theme.querySelector('.archive__theme__description').textContent;
+
+        if (title === selectedTheme) {
+            themeTitle.textContent = title;
+            themeYear.textContent = year;
+            themeDescription.textContent = description;
+        }
+
+
+
+        // Check if the selected theme is 'All Edition themes'
+        if (title === 'All Edition themes') {
+            isAllEditionThemes = true;
+        }
+    });
+
+    // Handle 'All Edition themes' separately
+    if (selectedTheme === '') {
+        themeTitle.textContent = 'All Edition themes';
+        themeYear.textContent = '2021 - 2023';
+        themeDescription.textContent = 'The different stories from all the way back to the first edition of the Kortkijk film festival';
+    }
+
+
 };
 
 const themeFilter = document.getElementById('themeFilter');
@@ -38,8 +72,6 @@ const sortFilmsByTitle = (sortOrder) => {
         filmsContainer.appendChild(film);
     });
 };
-
-
 
 const init = () => {
     applyFilter(themeFilter.value);
