@@ -2,7 +2,6 @@ const activePage = window.location.pathname;
 
 const $nav = document.querySelectorAll('nav a');
 
-
 const pageDetector = () => {
     $nav.forEach((link) => {
         if (link.getAttribute('href') === activePage) {
@@ -10,7 +9,6 @@ const pageDetector = () => {
         }
     });
 };
-
 
 const init = () => {
     pageDetector();
