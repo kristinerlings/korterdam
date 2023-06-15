@@ -287,14 +287,19 @@ body {
 
 .ticker div {
   display: inline-block;
-  width: 160%;
+  width: 200%;
   position: absolute;
   overflow: hidden;
   animation: ticker 10s linear infinite;
 }
 
+.ticker:hover div {
+  animation-play-state: paused;
+}
+
 .ticker span {
   float: left;
+  font-weight: 600;
   width: 10%;
 }
 
@@ -311,15 +316,19 @@ body {
   color: var(--color-white);
 }
 
+
+
 @keyframes ticker {
   0% {
     left: 0%;
   }
 
   100% {
-    left: -60%;
+    left: -80%;
   }
 }
+
+
 
 /*******CAROUSEL*********/
 
@@ -483,6 +492,12 @@ body {
   flex-direction: row;
   /* background-color: rgb(107, 107, 228); */
   height: auto;
+}
+
+/****** FILTER FILMS *******/
+
+.archive__card.hidden {
+  display: none;
 }
 
 
