@@ -12,13 +12,17 @@
 		{% set themes = [] %}
 		{% for film in craft.entries.section('films').limit(limit).all() %}
 			{% set theme = film.theme %}
-			{% if theme and theme not in themes %}
-				{% set themes = themes|merge([theme]) %}
-				<option value="{{ theme }}">{{ theme }}</option>
+			{% set year = film.year %}
+			{% if theme and theme ~ '-' ~ year not in themes %}
+				{% set themes = themes|merge([theme ~ '-' ~ year]) %}
+				<option value="{{ theme }}">{{ theme }}
+					-
+					{{ year }}</option>
 			{% endif %}
 		{% endfor %}
 	</select>
 </div>
+
 
 
 <article class="archive__cards__container">
