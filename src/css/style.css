@@ -489,6 +489,7 @@ body {
 /*////////////// FILM ARCHIVE ///////////////*/
 /******* Film Archive - REQUIREMENTS *********/
 
+
 .title-main__archive {
   color: var(--color-red);
   font-size: 2.5rem;
@@ -505,6 +506,7 @@ body {
   display: flex;
   gap: 4rem;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .archive__img {
