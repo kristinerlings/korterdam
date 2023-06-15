@@ -1,12 +1,12 @@
-import legacy from "@vitejs/plugin-legacy";
-import ViteRestart from "vite-plugin-restart";
+import legacy from '@vitejs/plugin-legacy';
+import ViteRestart from 'vite-plugin-restart';
 
 const viteRestartValue = (() => {
-    try {
-        return ViteRestart({ reload: ["./templates/**/*"] });
-    } catch {
-        return ViteRestart.default({ reload: ["./templates/**/*"] });
-    }
+  try {
+    return ViteRestart({ reload: ['./templates/**/*'] });
+  } catch {
+    return ViteRestart.default({ reload: ['./templates/**/*'] });
+  }
 })();
 
 export default ({ command }) => ({
@@ -20,6 +20,7 @@ export default ({ command }) => ({
         filmCarousel: './src/js/carouselFilm.js',
         pageDetector: './src/js/activePage.js',
         filterFilm: './src/js/filterFilm.js',
+        countdown: './src/js/countdown.js',
       },
     },
   },
