@@ -22,6 +22,7 @@ const initializeFlickityCarousel = () => {
     contain: true,
     groupCells: 3,
     wrapAround: true,
+    pageDots: true,
   });
 };
 
