@@ -488,8 +488,9 @@ body {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3rem;
   /* background-color: rgb(107, 107, 228); */
   height: auto;
 }
