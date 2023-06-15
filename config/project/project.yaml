@@ -1,4 +1,4 @@
-dateModified: 1686779995
+dateModified: 1686830929
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -20,8 +20,10 @@ meta:
     2ca77d0f-209d-47f9-a396-be4094b88e0b: 'Workshop Days' # Workshop Days
     2ead9e23-6bdd-43c3-9657-e72cfaca7748: Common # Common
     5a1e7c98-42f2-432a-b3e4-0c122b2aa876: homepage # homepage
+    5e97a2d8-8dc9-4fa2-af52-c84143e906df: 'Festival time' # Festival time
     6f0db7fc-ca44-42a2-8fff-cbf4e5e7e72f: Image # Image
     7b74703c-5ea3-499a-b922-7bb214e7c7be: 'Info Title' # Info Title
+    7c64e7ab-11d3-4a59-a2e2-41f4e21cd6be: festival # festival
     07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3: Films # Films
     17a90ad1-914f-4548-8a6e-4d916ba366a6: 'Workshop Where' # Workshop Where
     21bc20ed-7930-49c3-9968-7d079e4a1bd3: Paragraph # Paragraph
@@ -35,17 +37,23 @@ meta:
     79f962fa-1244-49a4-9f69-a274e35c986e: Image # Image
     092d6b02-424a-4a1a-ad3b-0a6a6a273d21: 'Apply now' # Apply now
     95c1b695-b4fb-431e-8eb0-79bb255a0b1d: date # date
+    98d49e2d-86c6-4289-b06a-87abe8170249: TIME # TIME
     146be423-1abd-4f6e-b2ca-991e6e96f7e0: season # season
     177a747e-0316-461e-96d1-4a3ed7f2a387: 'Festival details' # Festival details
     249bb5e4-b293-446a-8c63-e7753010f50e: Uploads # Uploads
     436ef1ff-888a-45b6-848f-dcf13c26765e: 'Workshop Date' # Workshop Date
+    742c5b07-c3ba-485a-9b23-7ba710766241: 'Theme Image' # Theme Image
     938d4841-ceff-4136-8f8b-3e69bec08ad0: Description # Description
     1535a3de-5390-403d-806b-b9674e214560: Home # Home
     3424eb75-09d2-417c-95cf-16afc24e0145: Subtitle # Subtitle
+    4093f8c4-6f3a-4909-ad4c-297b5c3a6276: Dates # Dates
     5148dc6c-5663-46f0-b91e-bfd9b178f8fb: Year # Year
     5384b688-826f-48c0-8ddf-b43f7453e254: Participation # Participation
+    8158f218-94c7-4c39-a11e-7f6de09630c3: 'Next Year' # Next Year
     13181b27-bdca-4e23-af9e-6ba7a5023d1f: Home # Home
+    45387f25-9783-4a6d-aada-e154b5916684: Days # Days
     50654ac9-b523-4e34-8181-5184d7734b96: Films # Films
+    781744bc-da29-4e3b-a99b-54bd265f50bf: 'Theme Description' # Theme Description
     01158648-d04e-4a08-8738-8594ccb5eab2: Theme # Theme
     3867285b-e2d9-4bf2-813e-38639300f4c4: korterdam # korterdam
     78826962-7de7-4701-b106-29463b46dc72: Subtitle # Subtitle
@@ -54,6 +62,7 @@ meta:
     aa1a3e63-bc1f-4863-903d-5bad285c2da6: 'Public Schema' # Public Schema
     acb9fa15-9ff6-492b-ba30-e046ff889f52: participate # participate
     b0957ce1-6c74-4f5d-b2f1-40e0e2abac03: Films # Films
+    b2b0efff-a348-427e-91c4-879917a7c1a2: 'Time Info' # Time Info
     b2b5e0aa-4b38-43e5-82a5-d99ee55a4c83: Image # Image
     b5cfd379-50ac-4af6-9144-d239a9dd6036: 'Info text' # Info text
     bad43b45-6309-450c-a22e-3f4566433864: 'Film Archive' # Film Archive
@@ -61,11 +70,14 @@ meta:
     bd75df1d-d963-427e-95f3-1c16562f075d: 'Festival Date' # Festival Date
     bfc31c34-c1d9-45be-9613-734f6e445e05: Paragraph # Paragraph
     c7f63c6e-197e-4ce8-9204-f8843d5232cd: 'Festival details' # Festival details
+    c9b3b20d-4c9e-454a-b9c0-6f6827dcf308: 'Festival Dates' # Festival Dates
     c456b98d-413d-4b32-85a8-5d73e10d34a4: 'Apply now' # Apply now
+    cff2a037-464e-45c1-9113-33558f7b7412: 'Next Edition' # Next Edition
     d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
     d6f606d2-4ce4-4f44-b948-c48db769b86a: 'Application State' # Application State
     d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
     df2b3eb6-296b-42f5-9347-152e42156fcb: filmarchive # filmarchive
+    df6a9725-b11c-454a-824e-21b41b24d28a: 'Month Year' # Month Year
     e4c780c9-3b42-4968-a520-733bf5cc84eb: 'Extra Title' # Extra Title
     e4106e18-d069-4cb2-84f6-ac0846bf18c7: infoText # infoText
     fd8ec98f-11cf-4d4b-a6a6-0cb932a93541: Participation # Participation

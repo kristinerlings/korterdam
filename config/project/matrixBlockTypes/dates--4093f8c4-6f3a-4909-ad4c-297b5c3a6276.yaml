@@ -1,0 +1,78 @@
+field: c9b3b20d-4c9e-454a-b9c0-6f6827dcf308 # Festival Dates
+fieldLayouts:
+  17054e62-e6e1-4ab6-a220-7e28910ec51e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 45387f25-9783-4a6d-aada-e154b5916684 # Days
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f4f10659-1ec2-46cf-999a-19c895881814
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: df6a9725-b11c-454a-824e-21b41b24d28a # Month Year
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0dd3a253-0031-4598-afbd-85906d11aafb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c17d9175-491c-4903-af01-3026f7004e7f
+        userCondition: null
+fields:
+  45387f25-9783-4a6d-aada-e154b5916684: # Days
+    columnSuffix: qymivfqr
+    contentColumnType: string(120)
+    fieldGroup: null
+    handle: days
+    instructions: 'Write which days the festival takes palce'
+    name: Days
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 30
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 23|24
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  df6a9725-b11c-454a-824e-21b41b24d28a: # Month Year
+    columnSuffix: mduavybx
+    contentColumnType: string(120)
+    fieldGroup: null
+    handle: monthYear
+    instructions: 'Which month & year does it take place?'
+    name: 'Month Year'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 30
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'JUNE 2023'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: dates
+name: Dates
+sortOrder: 1

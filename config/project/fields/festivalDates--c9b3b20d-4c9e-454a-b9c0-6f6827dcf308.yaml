@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 7c64e7ab-11d3-4a59-a2e2-41f4e21cd6be # festival
+handle: festivalDates
+instructions: 'Information for this years festival'
+name: 'Festival Dates'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_festivaldates}}'
+  maxBlocks: 3
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

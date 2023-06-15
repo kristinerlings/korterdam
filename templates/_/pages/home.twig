@@ -9,8 +9,8 @@
 	<header class="header__home">
 		<h1>Visualise your voice</h1>
 		<h2>workshops and filmmaking<br>by <span class="orange">Kortkijk Film Festival</span></h2>
-		<a href="/{{('participation') }}" class="btn btn--white">Join &amp;</a>
-		<a href="/{{('participation') }}" class="btn">Show all films</a>
+		<a href="/{{('participation') }}" class="btn">Join &amp;</a>
+		<a href="#join" class="btn btn--white">Can I join?</a>
 		<div class="header__right">
 			{# static image here after creating public folder  #}
 			<h3>{{entry.theme}}<br><span>topic this year<span></h3>
@@ -27,7 +27,7 @@
 	</section>
 
   {# Adjust the extraTitle: take it out and make it static later #}
-	<section class="container__requirements">
+	<section id="join" class="container__requirements">
 		{% for block in entry.informationBlock %}
 			{% switch block.type %}
 				{% case 'image' %}
