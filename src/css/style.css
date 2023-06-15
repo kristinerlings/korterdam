@@ -100,9 +100,11 @@ body {
 =========================================*/
 
 /*****+******/
+
 .orange {
   color: var(--color-orange);
 }
+
 .purple {
   color: var(--color-purple);
 }
@@ -110,10 +112,12 @@ body {
 .bold {
   font-weight: bold;
 }
+
 .btn--white {
   background-color: var(--color-white);
   color: var(--color-black);
 }
+
 /*****+******/
 
 a {
@@ -320,7 +324,7 @@ body {
 /*******CAROUSEL*********/
 
 .carousel {
-  width: 75%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
   display: flex;
@@ -347,16 +351,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 12rem;
+  width: 20rem;
   height: auto;
-  background-color: var(--color-white);
+
   margin-inline: 2rem;
-  border-radius: var(--border-radius);
 }
 
 .card__image {
   width: 100%;
-  height: auto;
+  height: 230px;
+  object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .card__title {
@@ -374,11 +379,25 @@ body {
   color: var(--color-black);
 }
 
+.card__theme {
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+.card__description {
+  font-size: 0.875rem;
+}
+
+.card__year {
+  font-family: 'ClashDisplay-SemiBold', sans-serif;
+  font-size: 3rem;
+  text-align: right;
+}
+
 .btn__card {
   margin-block-start: 1rem;
-  border: solid 1px var(--color-black);
+  border: solid 2px var(--color-black);
   border-radius: var(--border-radius);
-  background-color: var(--color-white);
   color: var(--color-black);
   padding: 0.5rem 2.5rem 0.5rem 1rem;
   cursor: pointer;
@@ -387,7 +406,9 @@ body {
   background-repeat: no-repeat;
   background-position: 7rem;
   background-size: 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  text-align: right;
+
 }
 
 /*Carousel: nav-btns*/
@@ -413,3 +434,55 @@ body {
 
 /*////////////// HOMEPAGE ///////////////*/
 /******* Homepage - REQUIREMENTS *********/
+
+
+/*////////////// FILM ARCHIVE ///////////////*/
+/******* Film Archive - REQUIREMENTS *********/
+
+.archive__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: auto;
+  margin-inline: 2rem;
+}
+
+.archive__cards__container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(107, 107, 228); */
+  height: auto;
+}
+
+.detail__card {
+  padding: 1rem;
+  background-image: url(../img/cardbackground.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.detail__card__grid {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.detail__card__line {
+  border-left: solid 2px var(--color-black);
+  padding-left: 1rem;
+}
+
+.btn__card__container {
+  display: flex;
+  justify-content: end;
+}
+
+/*////////////// FILM DETAIL ///////////////*/
