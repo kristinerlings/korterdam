@@ -20,6 +20,9 @@
 			{% block content %}{% endblock %}
 		</main>
 		<footer>
-			{% include "_/partials/footer.twig" %}</body>
+			{% include "_/partials/footer.twig" %}
+		</footer>
+		{% set myJsFile = "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" %}
+		{% do view.registerJsFile(myJsFile) %}
 	</body>
-</html></footer></html></body></html>
+</html>
