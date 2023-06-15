@@ -1,32 +1,9 @@
 {# https://flickity.metafizzy.co/options.html - check section groupCells + codepen #}
 
-
-<div class="container__carousel">
-	<div class="carousel__nav">
-		<a href="/{{('film-archive') }}" class="btn__carousel">See more films</a>
-		<button type="button" class="btn__carousel prev">
-			prev
-		</button>
-		<button type="button" class="btn__carousel next">
-			next
-		</button>
-	</div>
-
-
-	<article class="carousel">
-
-		{% set batchSize = 3 %}
-		{% set films = craft.entries.section('films').limit(limit).all() %}
-
-		<article class="carousel">
-			{% set batchSize = 3 %}
+	<article class="main-carousel">
 			{% set films = craft.entries.section('films').limit(limit).all() %}
-
-			{% for filmBatch in films|batch(batchSize) %}
-				<div class="carousel__reel{% if loop.first %} show{% endif %}">
-					{% for film in filmBatch %}
-						<article
-							class="card" id="card-{{ loop.index }}">
+					{% for film in films %}
+						<article class="card" id="card-{{ loop.index }}">
 							{#  unique ID for each card, loop.index for current iteration index  #}
 							{% for photo in film.image.all() %}
 								{% set width = imageWidth ?? 452 %}
@@ -52,6 +29,4 @@
 						</article>
 					{% endfor %}
 				</div>
-			{% endfor %}
 		</article>
-	</div>
