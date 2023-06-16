@@ -11,7 +11,7 @@
 		<select class="themeFilter" id="themeFilter">
 			<option value="">All edition themes</option>
 			{% set themes = [] %}
-			{% for film in craft.entries.section('films').limit(limit).all() %}
+			{% for film in craft.entries.section('films').all() %}
 				{% set theme = film.theme %}
 				{% set year = film.year %}
 				{% if theme and theme ~ '-' ~ year not in themes %}
@@ -46,7 +46,7 @@
 
 
 <article class="archive__cards__container">
-	{% for film in craft.entries.section('films').limit(limit).all() %}
+	{% for film in craft.entries.section('films').all() %}
 		<article class="archive__card">
 			{% for photo in film.image.all() %}
 				{% set width = imageWidth ?? 452 %}
