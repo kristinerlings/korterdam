@@ -6,24 +6,27 @@
 {% endblock %}
 
 {% block content %}
-	<header class="header__home">
-		<h1 class="hidden">Visualise your voice</h1>
-		<a href="/{{('participation') }}" class="btn__text">Join &amp;</a>
-		<img class="img__title" src="{{ siteUrl }}public/1-title.svg" alt="Visualise your voice">{#  do it differently? #}
-		<h2>workshops and filmmaking<br>by
-			<span class="orange">Kortkijk Film Festival</span>
-		</h2>
-		<a href="#join" class="btn btn--white">Can I join?</a>
+	<section class="header__home">
+		<h1 class="hidden">Welcome to Korkijk Film Festival</h1>
+		<div class="header__left">
+			<a href="/{{('participation') }}" class="btn__text"><span class="underline">Join</span> &amp;</a>
+			<h2 class="hidden">Visualise your voice</h2>
+			<img class="img__title" src="{{ siteUrl }}public/1-title.svg" width="648.2" height="176" alt="Visualise your voice">{#  do it differently? #}
+			<div class="line"></div>
+			<h3 class="header__subtitle">workshops and filmmaking<br>by<span class="subtitle--span orange">Kortkijk Film Festival</span></h3>
+			<a href="#join" id="join" class="btn btn--white">Can I join?</a>
+		</div>
 		<div class="header__right">
-			{% if entry.headerImage.one() is defined %}
-			<img class="img__header" src="{{ entry.headerImage.one().url }}" alt="{{entry.imageDescription}}"> 
+			{% set asset = entry.headerImage.one() %}
+			{% if asset %}
+			<img class="img__header" src="{{ asset.getUrl({width:712, height:518 })}}" alt="{{entry.imageDescription}}"> 
 			{% endif %}
-			<h3>{{entry.theme}}<br><span>topic this year<span></h3>
-			<p>festival date</p>
+			<h3 class="right__theme">{{entry.theme}}<br><span class="theme--size">topic this year<span></h3>
+			<p class="">festival date</p>
 			<p>{{entry.festivalDate}}</p>
 			{#  redactor line breaks #}
 		</div>
-	</header>
+	</section>
 
 
 	<section class="container__countdown">

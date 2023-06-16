@@ -1,0 +1,144 @@
+@import url(style.css);
+
+
+/*
+:root {
+  --color-white: #fceed2;
+  --color-orange: #fb6d33;
+  --color-purple: #b759eb;
+  --color-black: #221e1f;
+  --color-red: #db4132;
+
+  /*create clamp/responsive later*/
+  /*--font-size-h1: 4.375rem; 70px*/
+  /*--font-size-h2: 3.12rem; 50px*/
+  /*--font-size-h3: 3rem; 48px*/
+
+  /*--font-size-xl: 2.5rem; /*40px*/
+  /*--font-size-l: 1.875rem; /*30px*/
+  /*--font-size-m: 1.5rem; /*24px*/
+  /*--font-size-s: 1.25rem; /*20px*/
+  /*--font-size-body: 1.125rem; /*18px*/
+
+  /*--border-radius: 0.2rem;
+  /*--border-radius-large: 2rem;
+
+  /*--ff-clash-regular: 'ClashDisplay-Regular', sans-serif;
+  /*--ff-clash-medium: 'ClashDisplay-Medium', sans-serif;
+  /*--ff-clash-semibold: 'ClashDisplay-Semibold', sans-serif;
+  /*--ff-clash-bold: 'ClashDisplay-Bold', sans-serif;
+
+ /* --ff-montserrat: 'Montserrat', sans-serif;
+
+  /*--font-weight-regular: 400;
+  /*--font-weight-medium: 500;
+  /*--font-weight-semibold: 600;
+  /*--font-weight-bold: 700;
+}*/
+
+/*////////////// HOMEPAGE ///////////////*/
+/******* Homepage - header *********/
+
+
+/******* Homepage - REQUIREMENTS *********/
+
+
+/******* Homepage - Festival *********/
+
+/******* Homepage - hotspots *********/
+
+/******* Homepage - film/img *********/
+
+/******* Homepage - casting call *********/
+
+.header__home {
+  height: 75vh; /* give space for event countdown  */  
+  display:flex; 
+  gap:4rem;
+  margin-block-start: 2rem;
+}
+.btn__text {
+  font-family: var(--ff-clash-regular);
+  font-size: var(--font-size-h3);
+  text-decoration: none;
+}
+.underline{
+  border-bottom: 0.125rem solid var(--color-white);
+}
+
+/*left*/
+.header__left{
+  width: 55%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.img__title{
+margin-block-start: 1.56rem; 
+
+}
+
+.header__subtitle{
+  text-align: end;
+  font-family: var(--ff-montserrat);
+  font-size: var(--font-size-l);
+  text-transform: lowercase;
+  font-weight: var(--font-weight-regular);
+  margin-block-start: 1rem;
+  line-height: 1.2;
+}
+
+.header__left > .line{
+  margin-block-start: 1.3rem;
+  height:0.125rem;
+}
+
+.subtitle--span{
+  font-family: var(--ff-clash--medium);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium));
+  text-transform: capitalize;
+}
+
+
+/*Right*/
+.header__right{
+ width: 50%;
+ position:relative;  
+}
+
+.img__header, .img__title{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.img__header{
+  z-index: -10;
+}
+
+.right__theme{
+  z-index: 10;
+  padding: 3.7rem; 
+  border-radius: 100%;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  width: 45%;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--ff-montserrat);
+  text-transform: none;
+  text-align: center;
+}
+
+.theme--size{
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+}
+
+#join{
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end
+}
