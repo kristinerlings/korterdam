@@ -2,6 +2,7 @@
 
 {% block head %}
 	{{ craft.vite.script("src/js/carouselFilm.js" ) }}
+	{{ craft.vite.script("src/js/countdown.js" ) }}
 {% endblock %}
 
 
@@ -23,12 +24,14 @@
 				</div>
 			</header>
 
-			<section class="container__countdown">
-				<h2 class="hidden">Festival Countdown</h2>
-				<p>Can't wait to see the films?</p>
-				<p>Not long to go, only...</p>
-				{% include "_/components/countdown.twig" %}
-			</section>
+
+	<section class="container__countdown">
+		<h2 class="hidden">Festival Countdown</h2>
+		<p class="countdown__title">Can't wait to see the films?</p>
+		<p class="countdown__status">Not long to go, only...</p>
+		{% include "_/components/countdown.twig" %}
+	</section>
+
 
 			{# Adjust the extraTitle: take it out and make it static later #}
 			<section id="join" class="container__requirements">
