@@ -3,6 +3,7 @@
 {% block content %}
 
 	<div class="festival-details__container">
+
 		<nav class="festival-details__nav">
 			<ul>
 				<li><a class="sidebar-link what__nav" href="#what">What</a></li>
@@ -10,9 +11,9 @@
 				<li><a class="sidebar-link where__nav" href="#where">Where</a></li>
 			</ul>
 		</nav>
-		<header class="header__festival">
-			<h1>Kort<span class="purple">kijk</span><br>Film<br>Festival</h1>
-			<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with ranging skillsets, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
+		<section class="nav-section header__festival" id="what">
+
+
 			<div>
 				{% set asset = entry.image.one() %}
 				{% if asset %}
@@ -23,24 +24,31 @@
 					-
 					{{entry.season}}</p>
 			</div>
-		</header>
-		<section class="nav-section container__what" id="what">
-
+			<div class="header__festival__text">
+				<h1>Kort<span class="purple">kijk</span><br>Film<br>Festival</h1>
+				<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with ranging skillsets, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
+			</div>
+		</section>
+		<section class="container__what">
 			<div>
-				<h3>This editions theme:</h3>
-				<h2>{{entry.titleTheme}}</h2>
-				<p>{{entry.themeDescription}}</p>
+				<div class="what__theme">
+					<h3>This editions theme:</h3>
+					<h2>{{entry.titleTheme}}</h2>
+					<p>{{entry.themeDescription}}</p>
+				</div>
+				<div class="what__unique">
+					<h3>Every edition is unique</h3>
+					<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a
+						<span class="purple">different topic</span>
+						each time around.</p>
+				</div>
 			</div>
 			<div>
-				<h3>Every edition is unique</h3>
-				<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a
-					<span class="purple">different topic</span>
-					each time around.</p>
+				{% set asset = entry.themeImage.one() %}
+				{% if asset %}
+					<img src="{{asset.getUrl()}}" alt="{{entry.imageDescription}}">
+				{% endif %}
 			</div>
-			{% set asset = entry.themeImage.one() %}
-			{% if asset %}
-				<img src="{{asset.getUrl()}}" alt="{{entry.imageDescription}}">
-			{% endif %}
 		</section>
 
 		<section class="nav-section container__when" id="when">
@@ -95,4 +103,5 @@
 			<a href="/{{('participation')}}" class="btn btn--white">I'm interested&#33;</a>
 		</section>
 
-	{% endblock %}
+	</div>
+{% endblock %}
