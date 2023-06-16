@@ -1,9 +1,13 @@
 {% extends "_/layouts/base" %}
 
+{% block head %}
+	{{ craft.vite.script("src/js/countdown.js" ) }}
+{% endblock %}
+
 
 {% block content %}
 <section class="container__detailpage">
-	<article class="detailpage__main">
+	<section class="detailpage__main">
 	<a href="{{ craft.app.request.getReferrer() }}" class="back-button">Back</a>
 	<div class="detailpage__info">
 		<h1>detailpage Film Archive</h1>
@@ -18,9 +22,9 @@
 		<div>
 		<p>{{entry.paragraph}}</p>
 	</div>
-	</article>
+	</section>
 
-	<div class="detailpage__crew">
+	<section class="detailpage__crew">
 	<h3>Cast &#38; crew</h3>
 		<div class="crew__container">
 		{% for block in entry.crewBlock %}
@@ -30,9 +34,9 @@
 			{% endswitch %}
 		{% endfor %}
 		</div>
-	</div>
+	</section>
 
-	<div class="detailpage__images">
+	<section class="detailpage__images">
 		<h3>Take a peak in the behind the scenes</h3>
 		<div class="line"></div>
 		<div class="crew__container">
@@ -49,7 +53,7 @@
 			{% endswitch %}
 		{% endfor %}
 		</div>
-	</div>
+	</section>
 </section>
 
 {% endblock %}

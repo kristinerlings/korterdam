@@ -39,6 +39,7 @@ const updateCountdown = () => {
   }
 };
 
+
 const init = () => {
   updateCountdown();
   // Update every second
