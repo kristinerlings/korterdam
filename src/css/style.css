@@ -88,15 +88,23 @@ body {
   --color-red: #db4132;
 
   /*create clamp/responsive later*/
-  --font-size-h1: 4.375rem; /*70px*/
-  --font-size-h2: 3.12rem; /*50px*/
-  --font-size-h3: 3rem; /*48px*/
+  --font-size-h1: 4.375rem;
+  /*70px*/
+  --font-size-h2: 3.12rem;
+  /*50px*/
+  --font-size-h3: 3rem;
+  /*48px*/
 
-  --font-size-xl: 2.5rem; /*40px*/
-  --font-size-l: 1.875rem; /*30px*/
-  --font-size-m: 1.5; /*24px*/
-  --font-size-s: 1.25rem; /*20px*/
-  --font-size-body: 1.125rem; /*18px*/
+  --font-size-xl: 2.5rem;
+  /*40px*/
+  --font-size-l: 1.875rem;
+  /*30px*/
+  --font-size-m: 1.5;
+  /*24px*/
+  --font-size-s: 1.25rem;
+  /*20px*/
+  --font-size-body: 1.125rem;
+  /*18px*/
 
   --border-radius: 0.2rem;
   --border-radius-large: 2rem;
@@ -320,7 +328,6 @@ body {
   color: var(--color-black);
   text-align: center;
   overflow: hidden;
-  white-space: nowrap;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
   font-weight: 500;
@@ -367,10 +374,18 @@ body {
   }
 }
 
+@media (prefers-reduced-motion) {
+  .ticker div {
+    animation: none;
+  }
+}
+
 /******* HEADER *********/
 .header__home {
-  height: 60vh; /* give space for event countdown  */
+  height: 60vh;
+  /* give space for event countdown  */
 }
+
 .btn__text {
   font-family: var(--ff-clash-regular);
   font-size: var(--font-size-h3);
