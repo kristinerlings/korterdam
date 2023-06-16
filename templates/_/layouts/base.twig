@@ -7,6 +7,8 @@
 		<title>Kortkijk Film Festival</title>
 		{{ craft.vite.script("src/js/app.js" ) }}
 		{{ craft.vite.script("src/js/activePage.js" ) }}
+		{{ craft.vite.script("src/js/gsap.js" ) }}
+
 		{% block head %}{% endblock %}
 		<link rel="icon" type="image/x-icon" href="/favicon/logo.png">
 	</head>
@@ -24,5 +26,9 @@
 		</footer>
 		{% set myJsFile = "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" %}
 		{% do view.registerJsFile(myJsFile) %}
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+
 	</body>
 </html>
