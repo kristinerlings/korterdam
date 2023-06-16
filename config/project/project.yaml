@@ -1,4 +1,4 @@
-dateModified: 1686871596
+dateModified: 1686921941
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -27,6 +27,7 @@ meta:
     7b74703c-5ea3-499a-b922-7bb214e7c7be: 'Info Title' # Info Title
     7c64e7ab-11d3-4a59-a2e2-41f4e21cd6be: festival # festival
     07f3f03d-4dfe-47f5-9635-86b9e7ee9eb3: Films # Films
+    8e96af37-4fa0-4ddf-b947-2605400c65b7: 'Header Image' # Header Image
     17a90ad1-914f-4548-8a6e-4d916ba366a6: 'Workshop Where' # Workshop Where
     21bc20ed-7930-49c3-9968-7d079e4a1bd3: Paragraph # Paragraph
     25ffa7df-6a7d-4d57-a2cf-953a46b9af82: 'Info Title' # Info Title
@@ -82,6 +83,7 @@ meta:
     df6a9725-b11c-454a-824e-21b41b24d28a: 'Month Year' # Month Year
     e4c780c9-3b42-4968-a520-733bf5cc84eb: 'Extra Title' # Extra Title
     e4106e18-d069-4cb2-84f6-ac0846bf18c7: infoText # infoText
+    f2edb808-7c9b-44a9-a2e8-9247304f3cf0: imageDescription # imageDescription
     fd8ec98f-11cf-4d4b-a6a6-0cb932a93541: Participation # Participation
 plugins:
   contact-form:

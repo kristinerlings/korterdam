@@ -1,0 +1,19 @@
+columnSuffix: klijfoim
+contentColumnType: text
+fieldGroup: 2ead9e23-6bdd-43c3-9657-e72cfaca7748 # Common
+handle: imageDescription
+instructions: 'Write an image description for better accessibility. This will not be visible on the website. '
+name: imageDescription
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'Image of a person looking up'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
