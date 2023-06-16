@@ -1,9 +1,9 @@
-const countdownDays = document.querySelector('.countdown__days');
-const countdownHours = document.querySelector('.countdown__hrs');
-const countdownMinutes = document.querySelector('.countdown__min');
-const countdownSeconds = document.querySelector('.countdown__sec');
-const countdownTitle = document.querySelector('.countdown__title');
-const countdownStatus = document.querySelector('.countdown__status');
+const countdownDays = document.querySelector('.c__days');
+const countdownHours = document.querySelector('.c__hrs');
+const countdownMinutes = document.querySelector('.c__min');
+const countdownSeconds = document.querySelector('.c__sec');
+const countdownTitle = document.querySelector('.c__title');
+const countdownStatus = document.querySelector('.c__status');
 const finalDate = new Date('2023-06-23T18:00:00');
 
 const updateCountdown = () => {
