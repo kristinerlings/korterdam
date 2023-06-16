@@ -87,12 +87,19 @@ body {
   --color-black: #221e1f;
   --color-red: #db4132;
 
-  --font-size-h1: 4.375rem;
-  /*70px - create clamp/responsive later*/
+  /*create clamp/responsive later*/
+  --font-size-h1: 4.375rem; /*70px*/
+  --font-size-h2: 3.12rem; /*50px*/
+  --font-size-h3: 3rem; /*48px*/
+
+  --font-size-xl: 2.5rem; /*40px*/
+  --font-size-l: 1.875rem; /*30px*/
+  --font-size-m: 1.5; /*24px*/
+  --font-size-s: 1.25rem; /*20px*/
+  --font-size-body: 1.125rem; /*18px*/
 
   --border-radius: 0.2rem;
   --border-radius-large: 2rem;
-  /*adjust rem later*/
 
   --ff-clash-regular: 'ClashDisplay-Regular', sans-serif;
   --ff-clash-medium: 'ClashDisplay-Medium', sans-serif;
@@ -133,9 +140,21 @@ body {
   font-weight: bold;
 }
 
+.btn {
+  border: solid 0.125rem var(--color-black);
+  border-radius: var(--border-radius);
+  color: var(--color-black);
+  padding: 0.6rem 3.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.875rem;
+  background-color: none;
+}
+
 .btn--white {
   background-color: var(--color-white);
   color: var(--color-black);
+  border: none;
 }
 
 /*****+******/
@@ -347,6 +366,16 @@ body {
     left: -80%;
   }
 }
+
+/******* HEADER *********/
+.header__home {
+  height: 60vh; /* give space for event countdown  */
+}
+.btn__text {
+  font-family: var(--ff-clash-regular);
+  font-size: var(--font-size-h3);
+}
+
 
 /*******EVENT COUNTDOWN*********/
 
