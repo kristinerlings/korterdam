@@ -1,54 +1,49 @@
 {% extends "_/layouts/base" %}
 
-{% block head %}
-	{{ craft.vite.script("src/js/countdown.js" ) }}
-{% endblock %}
-
 
 {% block content %}
 <section class="container__detailpage">
-	<section class="detailpage__main">
-	<a href="{{ craft.app.request.getReferrer() }}" class="back-button">Back</a>
-	<div class="detailpage__info">
-		<h1>detailpage Film Archive</h1>
+	<a href="{{ craft.app.request.getReferrer() }}" class="btn back-button">Go back</a>
+	<section class="detailpage__header">
+		<h1 class="hidden">detailpage for Film Archive</h1>
 		{% set asset = entry.image.one() %}
 		{% if asset %}
-			<img class="card__image" src="{{ asset.getUrl() }}" alt="{{ entry.title }}"/>
+			<img class="header__img--detail" src="{{ asset.getUrl({width:665, height:468}) }}" alt="{{ entry.title }}"/>
 		{% endif %}
-		<h2>{{entry.title}}</h2>
-		<div> 
-			<p>{{entry.theme}} 	&#124; {{entry.year}}</p>
-			<p>Runtime: {{entry.runtime}}</p>
+		<div class="header__info--detail"> 
+			<h2 class="detail__title">{{entry.title}}</h2>
+			<p class="detail__details">{{entry.theme}}  &nbsp;&#124;&nbsp; {{entry.year}} <span class="detail__runtime">Runtime: {{entry.runtime}}</span></p>
 		<div>
-		<p>{{entry.paragraph}}</p>
-	</div>
+		<p class="detail__paragraph">{{entry.paragraph}}</p>
 	</section>
 
+
 	<section class="detailpage__crew">
-	<h3>Cast &#38; crew</h3>
+		<h3 class="crew__title">Cast &#38; crew</h3>
 		<div class="crew__container">
 		{% for block in entry.crewBlock %}
 			{% switch block.type %}
 						{% case 'crew' %} 
     	<p class="crew">{{ block.roleCrew }}</p>
+			<p>&#124;</p>
 			{% endswitch %}
 		{% endfor %}
 		</div>
 	</section>
 
-	<section class="detailpage__images">
-		<h3>Take a peak in the behind the scenes</h3>
+	<section class="detailpage__album">
+		<h3 class="album__title">Take a peak in the behind the scenes</h3>
 		<div class="line"></div>
-		<div class="crew__container">
+		<div class="album__images">
 		{% for block in entry.imageBlock %}
 			{% switch block.type %}
 				{% case 'images' %} 
 				{% set asset = block.img.one() %}
 				{% if asset %}
-				<div class="crew__img--container">
+			{# 	<div class="detail__img--container"> #}
 					<img class="crew__img" src="{{ asset.getUrl({width: 304, height:239})}}" alt="{{block.imgDescription}}">
-					<p class="hidden">{{block.imgParagraph}}</p>
-				</div>
+					{# <p class="purple hidden">{{block.imgParagraph}}</p> #}
+			{# 	</div> #}
 				{% endif %}
 			{% endswitch %}
 		{% endfor %}
