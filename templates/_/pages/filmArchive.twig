@@ -6,7 +6,19 @@
 
 
 {% block content %}
-	<h1>Film Archive</h1>
+
+	<section class="info__archive">
+		<div>
+			<p class="title-start__archive">Travel to the</p>
+			<h1 class="title-main__archive">Past of kortkijk</h1>
+			<p class="description__archive">Get ready to embark on a thrilling journey through the vibrant world of Kortkijk Film Festival! Each year, the festival has revolved around a
+				<span class="red bold">unique theme</span>, bringing young minds together and unlocking the true potential of the city's youngsters and harnessing their creative energy to shape the future of Kortrijk's cultural landscape.
+			</p>
+		</div>
+		<img class="archive__img" src="/public/filmarchive.png" alt="kortrijk building">
+	</section>
+
+
 	<section>
 		{% include "_/components/film-card.twig" with { limit: 6, imageWidth: 452, imageHeight: 302 } %}
 	</section>

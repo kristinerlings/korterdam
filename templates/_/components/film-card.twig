@@ -1,28 +1,48 @@
-<div class="sort__container">
-	<label for="sortFilms">Sort by title:</label>
-	<button id="sortAscButton">A-Z</button>
-	<button id="sortDescButton">Z-A</button>
+<div class="sorter-filter__wrapper">
+	<div class="sort__container">
+		<label for="sortFilms">Sort by title:</label>
+		<button id="sortAscButton">A-Z</button>
+		<button id="sortDescButton">Z-A</button>
+	</div>
+
+
+	<div class="filter__container">
+		<label for="themeFilter">Filter by Theme:</label>
+		<select class="themeFilter" id="themeFilter">
+			<option value="">All edition themes</option>
+			{% set themes = [] %}
+			{% for film in craft.entries.section('films').limit(limit).all() %}
+				{% set theme = film.theme %}
+				{% set year = film.year %}
+				{% if theme and theme ~ '-' ~ year not in themes %}
+					{% set themes = themes|merge([theme ~ '-' ~ year]) %}
+					<option value="{{ theme }}">{{ theme }}
+						-
+						{{ year }}</option>
+				{% endif %}
+			{% endfor %}
+		</select>
+	</div>
 </div>
 
+<section class="theme__description__container">
+	<h2 class="theme__title"></h2>
+	<p class="theme__year"></p>
+	<p class="theme__description"></p>
+</section>
 
-<div class="filter__container">
-	<label for="themeFilter">Filter by Theme:</label>
-	<select id="themeFilter">
-		<option value="">All Edition themes</option>
-		{% set themes = [] %}
-		{% for film in craft.entries.section('films').limit(limit).all() %}
-			{% set theme = film.theme %}
-			{% set year = film.year %}
-			{% if theme and theme ~ '-' ~ year not in themes %}
-				{% set themes = themes|merge([theme ~ '-' ~ year]) %}
-				<option value="{{ theme }}">{{ theme }}
-					-
-					{{ year }}</option>
-			{% endif %}
-		{% endfor %}
-	</select>
-</div>
 
+<section class="archive__themes__section hidden">
+	{% for archiveTheme in craft.entries.section('archiveThemes').all() %}
+		<div class="archive__theme">
+			<div class="archive__theme__info">
+				<h2 class="archive__theme__title">{{ archiveTheme.title }}</h2>
+				<p class="archive__theme__year">{{ archiveTheme.year }}</p>
+				<p class="archive__theme__description">{{ archiveTheme.paragraph }}</p>
+			</div>
+		</div>
+	{% endfor %}
+</section>
 
 
 <article class="archive__cards__container">
