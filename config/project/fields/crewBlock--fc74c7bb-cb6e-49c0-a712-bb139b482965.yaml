@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b0957ce1-6c74-4f5d-b2f1-40e0e2abac03 # Films
+handle: crewBlock
+instructions: 'Add as many cast and crews you need.'
+name: 'crew Block'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_crewblock}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

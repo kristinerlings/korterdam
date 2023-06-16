@@ -1,0 +1,19 @@
+columnSuffix: jfvnjume
+contentColumnType: string(60)
+fieldGroup: b0957ce1-6c74-4f5d-b2f1-40e0e2abac03 # Films
+handle: runtime
+instructions: 'How long does the film take? specify if it''s min or hrs.'
+name: Runtime
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 15
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: '7 min'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
