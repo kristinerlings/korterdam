@@ -12,21 +12,27 @@
 		<h1>Kort<span class="purple">kijk</span><br>Film<br>Festival</h1>  
 		<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with ranging skillsets, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
 		<div>
-			<img src="{{entry.image.one().url }}" alt="{{entry.description}}"> {# better way to fetch the img? #}
+			{% set asset = entry.image.one() %}
+			{% if asset %}
+			<img src="{{asset.getUrl() }}" alt="{{entry.description}}"> 
+			{% endif %}
 			<p>Aftermovie {{entry.year}} - {{entry.season}}</p>
 		</div>
 	</header>
 	<section class="container__what" id="what">
 		<div>
 			<h3>This editions theme:</h3>
-			<h2>My Future Kortrijk{{entry.titleTheme}}</h2> 
-			<p>paragraph{{entry.themeDescription}}</p> 
+			<h2>{{entry.titleTheme}}</h2> 
+			<p>{{entry.themeDescription}}</p> 
 		</div>
 		<div>
 			<h3>Every edition is unique</h3>
 			<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a <span class="purple">different topic</span> each time around.</p>
 		</div>
-		{# add image #}
+		{% set asset = entry.themeImage.one() %}
+			{% if asset %}
+			<img src="{{asset.getUrl()}}" alt="{{entry.imageDescription}}"> 
+			{% endif %}
 	</section>
 
 	<section class="container__when" id="when"> 

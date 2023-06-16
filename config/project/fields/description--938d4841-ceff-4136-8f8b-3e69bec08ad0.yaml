@@ -1,18 +1,18 @@
 columnSuffix: gzolupan
-contentColumnType: text
+contentColumnType: string(500)
 fieldGroup: b0957ce1-6c74-4f5d-b2f1-40e0e2abac03 # Films
 handle: description
-instructions: 'short movie description for the movie preview block'
+instructions: 'Short movie description for the movie preview block'
 name: Description
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 125
   code: false
   columnType: null
   initialRows: 4
   multiline: false
-  placeholder: 'short movie description'
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

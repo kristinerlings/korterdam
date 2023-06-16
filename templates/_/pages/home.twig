@@ -9,13 +9,15 @@
 	<header class="header__home">
 		<h1 class="hidden">Visualise your voice</h1>
 		<a href="/{{('participation') }}" class="btn__text">Join &amp;</a>
-		{# logo here #}
+		<img class="img__title" src="{{ siteUrl }}public/1-title.svg" alt="Visualise your voice">{#  do it differently? #}
 		<h2>workshops and filmmaking<br>by
 			<span class="orange">Kortkijk Film Festival</span>
 		</h2>
 		<a href="#join" class="btn btn--white">Can I join?</a>
 		<div class="header__right">
-			<img class="img__header" src="{# {{ block.headerImage.one().url }} #}" alt="{# {{block.imageDescription}} #}"> 
+			{% if entry.headerImage.one() is defined %}
+			<img class="img__header" src="{{ entry.headerImage.one().url }}" alt="{{entry.imageDescription}}"> 
+			{% endif %}
 			<h3>{{entry.theme}}<br><span>topic this year<span></h3>
 			<p>festival date</p>
 			<p>{{entry.festivalDate}}</p>
@@ -39,7 +41,10 @@
 				{% for block in entry.informationBlock %}
 					{% switch block.type %}
 						{% case 'image' %}
-							<img class="requirements__img" src="{{ block.image.one().url }}" alt="{{block.description}}">
+							{% set asset = block.image.one() %}
+							{% if asset %}
+							<img class="requirements__img" src="{{ asset.getUrl()}}" alt="{{block.description}}">
+							{% endif %}
 							<div class="requirements__info">
 								{% case 'extraTitle' %}
 									<h2 class="info__title">{{ block.extraTitle}}</h2>
@@ -78,7 +83,10 @@
 							{% for block in entry.hotspotBlock %}
 								{% switch block.type %}
 									{% case 'image' %}
-										<img class="hotspot__img" src="{{block.image.one().url }}" alt="{{block.description}}">
+										{% set asset = block.image.one() %}
+										{% if asset %}
+										<img class="hotspot__img" src="{{ asset.getUrl({ width: 452, height: 302 }) }}" alt="{{block.description}}">
+										{% endif %}
 										<div class="hotspot__info">
 											{% case 'infotext' %}
 												<p class="hotspot__year">{{ block.year }}
