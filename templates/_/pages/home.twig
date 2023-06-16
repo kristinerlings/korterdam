@@ -5,24 +5,23 @@
 	{{ craft.vite.script("src/js/countdown.js" ) }}
 {% endblock %}
 
-
 {% block content %}
 	<header class="header__home">
-		<h1>Visualise your voice</h1>
+		<h1 class="hidden">Visualise your voice</h1>
+		<a href="/{{('participation') }}" class="btn__text">Join &amp;</a>
+		{# logo here #}
 		<h2>workshops and filmmaking<br>by
 			<span class="orange">Kortkijk Film Festival</span>
 		</h2>
-		<a href="/{{('participation') }}" class="btn">Join &amp;</a>
 		<a href="#join" class="btn btn--white">Can I join?</a>
-		<div
-			class="header__right">
-			{# static image here after creating public folder  #}
+		<div class="header__right">
+			<img class="img__header" src="{# {{ block.headerImage.one().url }} #}" alt="{# {{block.imageDescription}} #}"> 
 			<h3>{{entry.theme}}<br><span>topic this year<span></h3>
-					<p>festival date</p>
-					<p>{{entry.festivalDate}}</p>
-					{#  No linebreak? changed to redactor and still no? #}
-				</div>
-			</header>
+			<p>festival date</p>
+			<p>{{entry.festivalDate}}</p>
+			{#  redactor line breaks #}
+		</div>
+	</header>
 
 
 	<section class="container__countdown">
