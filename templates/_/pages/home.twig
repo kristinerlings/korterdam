@@ -9,25 +9,28 @@
 	<section class="header__home">
 		<h1 class="hidden">Welcome to Korkijk Film Festival</h1>
 		<div class="header__left">
-			<a href="/{{('participation') }}" class="btn__text"><span class="underline">Join</span> &amp;</a>
+			<a href="/{{('participation') }}" class="btn__left"><span class="underline">Join</span> &amp;</a>
 			<h2 class="hidden">Visualise your voice</h2>
-			<img class="img__title" src="{{ siteUrl }}public/1-title.svg" width="648.2" height="176" alt="Visualise your voice">{#  do it differently? #}
+			<img class="img__left--title" src="{{ siteUrl }}public/1-title.svg" width="648.2" height="176" alt="Visualise your voice">{#  do it differently? #}
 			<div class="line"></div>
 			<h3 class="header__subtitle">workshops and filmmaking<br>by<span class="subtitle--span orange">Kortkijk Film Festival</span></h3>
-			<a href="#join" id="join" class="btn btn--white">Can I join?</a>
+			<div class="header__btn">
+				<a href="#join" id="join" class="btn btn--white">Can I join?</a>
+			</div>
 		</div>
 		<div class="header__right">
 			{% set asset = entry.headerImage.one() %}
 			{% if asset %}
-			<img class="img__header" src="{{ asset.getUrl({width:712, height:518 })}}" alt="{{entry.imageDescription}}"> 
+			<img class="right__img--header" src="{{ asset.getUrl({width:712, height:518 })}}" alt="{{entry.imageDescription}}"> 
 			{% endif %}
 			<h3 class="right__theme">{{entry.theme}}<br><span class="theme--size">topic this year<span></h3>
-			<p class="">festival date</p>
-			<p>{{entry.festivalDate}}</p>
+			<div class="right__date">
+				<p>Festival date</p>
+				<p>{{entry.festivalDate}}</p> {#  adjust 2 separate - br #}
+			</div>
 			{#  redactor line breaks #}
 		</div>
 	</section>
-
 
 	<section class="container__countdown">
 		<h2 class="hidden">Festival Countdown</h2>
@@ -40,7 +43,7 @@
 
 
 			{# Adjust the extraTitle: take it out and make it static later #}
-			<section id="join" class="container__requirements">
+	<section id="btn__join" class="container__requirements">
 				{% for block in entry.informationBlock %}
 					{% switch block.type %}
 						{% case 'image' %}
@@ -62,7 +65,7 @@
 									</div>
 								{% endswitch %}
 							{% endfor %}
-						</section>
+	</section>
 
 						<section class="container__festival">
 							<h2>Is filmmaking not your thing?</h2>
