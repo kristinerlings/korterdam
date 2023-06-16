@@ -2,80 +2,97 @@
 
 {% block content %}
 
-<div class="festival-details__container">
-	<nav class="festival-details__nav">
-		<ul>
-			<li><a class="what__nav"href="#what">What</a></li>
-			<li><a class="when__nav" href="#when">When</a></li>
-			<li><a class="where__nav"href="#where">Where</a></li>
-		</ul>
-	</nav>
-	 <header class="header__festival">
-		<h1>Kort<span class="purple">kijk</span><br>Film<br>Festival</h1>  
-		<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with ranging skillsets, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
-		<div>
-			{% set asset = entry.image.one() %}
+	<div class="festival-details__container">
+		<nav class="festival-details__nav">
+			<ul>
+				<li><a class="sidebar-link what__nav" href="#what">What</a></li>
+				<li><a class="sidebar-link when__nav" href="#when">When</a></li>
+				<li><a class="sidebar-link where__nav" href="#where">Where</a></li>
+			</ul>
+		</nav>
+		<header class="header__festival">
+			<h1>Kort<span class="purple">kijk</span><br>Film<br>Festival</h1>
+			<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with ranging skillsets, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
+			<div>
+				{% set asset = entry.image.one() %}
+				{% if asset %}
+					<img src="{{asset.getUrl() }}" alt="{{entry.description}}">
+				{% endif %}
+				<p>Aftermovie
+					{{entry.year}}
+					-
+					{{entry.season}}</p>
+			</div>
+		</header>
+		<section class="nav-section container__what" id="what">
+
+			<div>
+				<h3>This editions theme:</h3>
+				<h2>{{entry.titleTheme}}</h2>
+				<p>{{entry.themeDescription}}</p>
+			</div>
+			<div>
+				<h3>Every edition is unique</h3>
+				<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a
+					<span class="purple">different topic</span>
+					each time around.</p>
+			</div>
+			{% set asset = entry.themeImage.one() %}
 			{% if asset %}
-			<img src="{{asset.getUrl() }}" alt="{{entry.description}}"> 
+				<img src="{{asset.getUrl()}}" alt="{{entry.imageDescription}}">
 			{% endif %}
-			<p>Aftermovie {{entry.year}} - {{entry.season}}</p>
-		</div>
-	</header>
-	<section class="container__what" id="what">
-		<div>
-			<h3>This editions theme:</h3>
-			<h2>{{entry.titleTheme}}</h2> 
-			<p>{{entry.themeDescription}}</p> 
-		</div>
-		<div>
-			<h3>Every edition is unique</h3>
-			<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a <span class="purple">different topic</span> each time around.</p>
-		</div>
-		{% set asset = entry.themeImage.one() %}
-			{% if asset %}
-			<img src="{{asset.getUrl()}}" alt="{{entry.imageDescription}}"> 
-			{% endif %}
-	</section>
+		</section>
 
-	<section class="container__when" id="when"> 
-		<h2>Save the date</h2>
-		{% for block in entry.festivalDates %}
-		{% switch block.type %}
-			{% case 'dates' %}
-		<div>
-			<h3>Date</h3>
-			<p>{{block.days}}</p>
-			<p>{{block.monthYear}}</p>
-		</div>
-		{% case 'time' %}
-		<div>
-			<h3>Time</h3>
-			<p>{{block.festivalTime}}</p>
-			<p>{{block.timeInfo}}</p>
-		</div>
-		{% case 'nextYear' %}
-		<div>
-			<h3>Nex Edition</h3>
-			<p>{{block.nextEdition}}</p>
-			<a href="/{{('participation')}}">Participate next year</a> {# Ath this CTA is unclear #}
-		</div>
-		{% endswitch %}
-		{% endfor %}
-	</section>
-	
+		<section class="nav-section container__when" id="when">
 
-	<section class="container__where" id="where">
-		<h2>Where do I start exploring?</h2>
-		<p>You can start the creative adventure anywhere you like, there are <span class="bold">cine spots</span> spread out in the city centre at <span class="bold">walking distance</span> from each other so you can easily navigate around the city supported with <span class="bold">direction signs</span>. If you'd like a detailed overview, feel free to explore the map&#33;</p>
-		{# show locations #}
-		{# create craft location base? #}
-	</section>
+			<h2>Save the date</h2>
+			{% for block in entry.festivalDates %}
+				{% switch block.type %}
+					{% case 'dates' %}
+						<div>
+							<h3>Date</h3>
+							<p>{{block.days}}</p>
+							<p>{{block.monthYear}}</p>
+						</div>
+					{% case 'time' %}
+						<div>
+							<h3>Time</h3>
+							<p>{{block.festivalTime}}</p>
+							<p>{{block.timeInfo}}</p>
+						</div>
+					{% case 'nextYear' %}
+						<div>
+							<h3>Nex Edition</h3>
+							<p>{{block.nextEdition}}</p>
+							<a href="/{{('participation')}}">Participate next year</a>
+							{# Ath this CTA is unclear #}
+						</div>
+				{% endswitch %}
+			{% endfor %}
+		</section>
 
-	<section class="container__cta--festival">
-		<h2>Want to participate<br><span class="orange">next edition?</span></h2>
-		<p>Are you between the ages of <span class="orange bold">16-25?</span></p>
-		<p>Well then you're just the person we're looking for&#33;</p>
-		<a href="/{{('participation')}}" class="btn btn--white">I'm interested&#33;</a> 
-	</section>
 
-{% endblock %}
+		<section class="nav-section container__where" id="where">
+
+			<h2>Where do I start exploring?</h2>
+			<p>You can start the creative adventure anywhere you like, there are
+				<span class="bold">cine spots</span>
+				spread out in the city centre at
+				<span class="bold">walking distance</span>
+				from each other so you can easily navigate around the city supported with
+				<span class="bold">direction signs</span>. If you'd like a detailed overview, feel free to explore the map&#33;</p>
+			{# show locations #}
+			{# create craft location base? #}
+		</section>
+
+		<section class="container__cta--festival">
+			<h2>Want to participate<br><span class="orange">next edition?</span>
+			</h2>
+			<p>Are you between the ages of
+				<span class="orange bold">16-25?</span>
+			</p>
+			<p>Well then you're just the person we're looking for&#33;</p>
+			<a href="/{{('participation')}}" class="btn btn--white">I'm interested&#33;</a>
+		</section>
+
+	{% endblock %}

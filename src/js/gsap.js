@@ -17,3 +17,36 @@ ScrollTrigger.create({
         }
     }
 });
+
+////// Festival details navigation "WHAT, WHEN, WHERE" //////
+
+// Select all the sections and the sidebar links
+const sections = document.querySelectorAll(".nav-section");
+const links = document.querySelectorAll(".sidebar-link");
+
+// Add a scroll event listener
+window.addEventListener("scroll", function () {
+    // Get the current scroll position
+    const scrollPosition = window.scrollY;
+
+    // Iterate through each section
+    sections.forEach(function (section, index) {
+        // Calculate the top and bottom positions of the section
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        // Check if the current scroll position is within the section
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            // Remove the active class from all the links
+            links.forEach(function (link) {
+                link.classList.remove("activesection");
+            });
+
+            // Add the active class to the corresponding link in the sidebar
+            links[index].classList.add("activesection");
+        }
+    });
+});
+
+
+
