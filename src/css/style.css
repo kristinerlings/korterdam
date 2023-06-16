@@ -139,7 +139,6 @@ main {
 }
 
 p {
-  font-weight: 200;
   line-height: 1.5;
 }
 
@@ -294,13 +293,14 @@ body {
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
-  padding-top: 1rem;
+  padding-top: .5rem;
   padding-bottom: 2rem;
   font-weight: 500;
+
 }
 
 .ticker div {
-  display: inline-block;
+
   width: 200%;
   position: absolute;
   overflow: hidden;
@@ -309,17 +309,21 @@ body {
 
 .ticker:hover div {
   animation-play-state: paused;
+
 }
 
 .ticker span {
   float: left;
   font-weight: 600;
   width: 10%;
+
 }
 
 .banner_text {
   display: flex;
   text-transform: lowercase;
+  align-items: center;
+
 }
 
 .banner_text a {
