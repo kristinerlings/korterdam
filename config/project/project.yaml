@@ -1,4 +1,4 @@
-dateModified: 1686931220
+dateModified: 1687038378
 email:
   fromEmail: lilou.barbier@student.howest.be
   fromName: korterdam
@@ -39,6 +39,7 @@ meta:
     38eb2561-b6eb-4380-8c04-6a023e424186: 'Button text ' # Button text 
     66d7091c-cb22-4899-b656-d3be927f914c: 'Title theme' # Title theme
     69e50502-25ac-4c7f-a5ec-17cd4d250086: Image # Image
+    72a211c4-03a1-454d-b909-b090a991a167: 'Film name' # Film name
     75c3e5d8-1172-452e-93e7-c4a1bc007ad8: 'Film Archive' # Film Archive
     79f962fa-1244-49a4-9f69-a274e35c986e: Image # Image
     88c45f24-f1c1-4cb6-ae17-18c0d1c1e053: imgParagraph # imgParagraph
@@ -50,6 +51,7 @@ meta:
     249bb5e4-b293-446a-8c63-e7753010f50e: Uploads # Uploads
     436ef1ff-888a-45b6-848f-dcf13c26765e: 'Workshop Date' # Workshop Date
     742c5b07-c3ba-485a-9b23-7ba710766241: 'Theme Image' # Theme Image
+    821d3bba-21ee-45c5-b315-72d2a91930df: 'Location image' # Location image
     938d4841-ceff-4136-8f8b-3e69bec08ad0: Description # Description
     1535a3de-5390-403d-806b-b9674e214560: Home # Home
     3424eb75-09d2-417c-95cf-16afc24e0145: Subtitle # Subtitle
@@ -64,6 +66,7 @@ meta:
     781744bc-da29-4e3b-a99b-54bd265f50bf: 'Theme Description' # Theme Description
     01158648-d04e-4a08-8738-8594ccb5eab2: Theme # Theme
     3867285b-e2d9-4bf2-813e-38639300f4c4: korterdam # korterdam
+    20807577-a764-4736-bac7-ae3554c40fee: image # image
     78826962-7de7-4701-b106-29463b46dc72: Subtitle # Subtitle
     a0a5f2ff-3095-45a1-8de0-99499ce5b972: Subtitle # Subtitle
     aa058375-f842-4896-9343-26eab30b8a27: description # description
@@ -75,8 +78,10 @@ meta:
     b5cfd379-50ac-4af6-9144-d239a9dd6036: 'Info text' # Info text
     bad43b45-6309-450c-a22e-3f4566433864: 'Film Archive' # Film Archive
     bbe6f10f-d63e-49cb-b09a-e7a4056c51b3: 'Workshop Time ' # Workshop Time 
+    bc3fd3ff-6679-4723-b740-f0798ca24883: film # film
     bd75df1d-d963-427e-95f3-1c16562f075d: 'Festival Date' # Festival Date
     bfc31c34-c1d9-45be-9613-734f6e445e05: Paragraph # Paragraph
+    c0fa9721-49ef-4fac-98d1-5f2d5c09a938: 'Location point' # Location point
     c7f63c6e-197e-4ce8-9204-f8843d5232cd: 'Festival details' # Festival details
     c9b3b20d-4c9e-454a-b9c0-6f6827dcf308: 'Festival Dates' # Festival Dates
     c456b98d-413d-4b32-85a8-5d73e10d34a4: 'Apply now' # Apply now
@@ -84,13 +89,17 @@ meta:
     d025c469-fb9a-4479-964c-d3ab09f70cb0: Paragraph # Paragraph
     d6f606d2-4ce4-4f44-b948-c48db769b86a: 'Application State' # Application State
     d95e7483-5ac0-4182-9e02-37b1870fb31b: korterdam # korterdam
+    dd37730f-caf8-4b04-8621-e27cb9c88a21: 'location link' # location link
     df2b3eb6-296b-42f5-9347-152e42156fcb: filmarchive # filmarchive
+    df4cbeb9-ebab-4530-8485-a1cbd36ca111: location # location
     df6a9725-b11c-454a-824e-21b41b24d28a: 'Month Year' # Month Year
     dfd90484-8d75-4661-b68e-6edd82a8939c: Runtime # Runtime
     e4c780c9-3b42-4968-a520-733bf5cc84eb: 'Extra Title' # Extra Title
     e4106e18-d069-4cb2-84f6-ac0846bf18c7: infoText # infoText
     f027d213-19a5-451a-8ee6-c86d441498e0: roleCrew # roleCrew
     f2edb808-7c9b-44a9-a2e8-9247304f3cf0: imageDescription # imageDescription
+    f5b448dc-f974-4c03-90b5-7838f6f626e6: 'Location film' # Location film
+    fae375a3-7086-4ec7-95fb-eea056d5294c: Location # Location
     fc74c7bb-cb6e-49c0-a712-bb139b482965: 'crew Block' # crew Block
     fd8ec98f-11cf-4d4b-a6a6-0cb932a93541: Participation # Participation
     ff305797-d1ee-4669-9d0e-9a821dc9fc3f: imgDescription # imgDescription

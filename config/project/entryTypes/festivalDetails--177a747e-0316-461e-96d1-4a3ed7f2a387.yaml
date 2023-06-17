@@ -147,6 +147,24 @@ fieldLayouts:
         name: when
         uid: 308bb011-8531-4649-9fbc-29ec3f3b556b
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c0fa9721-49ef-4fac-98d1-5f2d5c09a938 # Location point
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a1cd324-6f47-44a2-a404-427de2e2e308
+            userCondition: null
+            warning: null
+            width: 100
+        name: where
+        uid: e1264525-11fa-498c-a200-b4162e7c083d
+        userCondition: null
 handle: festivalDetails
 hasTitleField: true
 name: 'Festival details'
