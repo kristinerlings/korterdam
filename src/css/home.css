@@ -1,5 +1,5 @@
 @import url(style.css);
-
+@import url(flickity.css);
 
 /*
 :root {
@@ -58,7 +58,7 @@
 
 
 .header__home {
-  height: 58vh; /* give space for event countdown  */  
+  height: 65vh; /* give space for event countdown  */  
   display:flex; 
   gap:4rem;
   margin-block-start: 2rem;
@@ -103,7 +103,7 @@
   height:0.125rem;
 }
 
-.subtitle--span{
+.subtitle--font{
   font-family: var(--ff-clash--medium);
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium));
@@ -193,17 +193,22 @@
 
 .container__requirements{
   display: flex;
-  margin: 5rem 0rem;
+  margin: 8rem 0rem 0em;
   gap: 1.5rem;
+  height: 80vh;
+ /*  padding: 0rem 4rem; */
 }
 .requirements__img{
   width: 50%;
   height: auto;
   object-fit: cover;
   border-radius: var(--border-radius);
+  
 }
 .requirements__info{
   text-align: left;
+  width:50%;
+  align-self: flex-end;
 }
 
 .info__details--home{
@@ -212,7 +217,7 @@
   background-color: var(--color-white);
   color: var(--color-black);
   border-radius: var(--border-radius);
-  padding: 3.5rem;
+  padding: 3.4rem;
   background: var(--color-white) url(../img/cardbackground.svg) no-repeat center;
   background-size: cover;
 }
@@ -259,44 +264,182 @@
 
 /******** TICKET-FESTIVAL CONTAINER *******/
 
+
 .container__festival{
-height: 70vh;
-display:grid;
-grid-template-columns: 1fr 2fr 1fr;
-grid-template-rows: 1fr 1fr 2fr;
+  height: 90vh;
   background-image: url('../img/1-bg-filmfestival.png');
   background-repeat: no-repeat;
   background-size: fill;
   background-position: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; 
+  margin-right: -50vw;
+}
+
+.festival__wrap{
+  width: 80%;
+  margin: 0rem auto;
+  display:grid; 
+  grid-template-columns:20% 70% 10%; /* repeat(5, 1fr); */
+  grid-template-rows:25% 15% 20% 40%;/* repeat(5, 1fr); */
+  grid-column-gap: 0rem;
 }
 
 .festival__title--home{
   font-family: var(--ff-clash-medium);
   font-size: var(--font-size-h2);
-  grid-column: 1/3;
-  grid-row: 1/2;
 }
-
 .festival__subtitle--home{
   font-family: var(--ff-montserrat);
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-medium);
-  margin-block-end: 1rem;
-  grid-row: 1/2;
+  margin-top:.5rem;
+}
+
+.wrap__title{
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.img__ticket{
+  object-fit: cover; 
+  grid-area: 4 / 1 / 5 / 3; 
+  justify-self: center;
+  transform: rotate(-8deg);
+}
+
+.festival__cta--home{
+  grid-area: 4 / 2 / 5 / 4; 
+  justify-self: flex-end; 
+  padding-inline-end: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ /*  align-items: flex-end; */
+  text-align: center;
+  width: auto;
 }
 
 .festival__cta--home > h3{
-    font-weight: bold;
-  font-size: 35px;
+  font-weight: bold;
+  font-size: 2.18rem;
   font-family: var(--ff-clash-medium);
   text-transform: uppercase;
-  padding-block-end: 1rem;
-  text-align: end;
-
+  padding-block-end: .1rem;
+  text-align: start;
 }
 
 .festival__cta--home > .btn {
-  color: var(--color-white);
-  border: 1px solid var(--color-white);
-  text-align: end;
+  text-align: center;
+  width: 15rem; 
+  padding: 1rem 0rem;
 }
+
+/* .bg__wrapper--home{
+  background-image: url('../img/1-arrow-countd-sh2.svg');
+    background-repeat: no-repeat;
+  background-size: fill;
+  background-position: right;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; 
+  margin-right: -50vw;
+}
+ */
+
+
+ /*----- TRAVEL TO THE PAST----*/
+
+.container__archive{
+  height: 90vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.archive__intro{
+  margin-block-start:10rem;
+  background-image: url('../img/1-arrow-past.svg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: left center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; 
+  margin-right: -50vw;
+}
+
+.intro__title--wrapper{
+  width: 80%;
+  margin: 0rem auto;
+}
+
+.intro__title--wrapper h2{
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-h2);
+  color: var(--color-white);
+  margin-inline-start: 5%;
+}
+
+.archive__subtitle{
+  margin-inline-start: 5%;
+  font-family: var(--ff-montserrat);
+  font-size: var(--font-size-m);
+}
+
+.btn__l--white{
+  /* margin: 2.9rem 0rem; */
+  color: var(--color-white);
+  border: solid 2px var(--color-white);
+  width: 11.8rem;
+  /* height: 3rem;  */
+  border-radius: var(--border-radius);
+  padding: 0.5rem 2.87rem 0.5rem 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn__l--white:hover{
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.container__archive .btn__l--white{
+  margin-block: .8rem;
+  margin-inline-start: 5%;
+}
+
+
+/*carousel*/
+.main-carousel{
+  padding-block-start: 2rem; 
+}
+
+ /*----- HOTSOPT --------*/
+
+
+ .container__hotspot{
+ display:flex;
+ flex-direction:column;
+ }
+
+.hotspot__intro{
+  font-family: var(--ff-montserrat);
+  font-size: var(--font-size-l);
+  padding: 3.5rem 0rem 0rem;
+  color: var(--color-white);
+}
+
+.hotspot__title--wrapper{
+  width: 80%;
+}
+ .hotspot__wrapper{
+
+  
+ }
