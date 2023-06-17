@@ -21,6 +21,7 @@ export default ({ command }) => ({
         pageDetector: './src/js/activePage.js',
         filterFilm: './src/js/filterFilm.js',
         countdown: './src/js/countdown.js',
+        gsap: './src/js/gsap.js',
       },
     },
   },
