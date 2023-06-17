@@ -54,29 +54,32 @@
 		<section class="nav-section container__when" id="when">
 
 			<h2>Save the date</h2>
+
+			<div class="date-info__container">
 			{% for block in entry.festivalDates %}
 				{% switch block.type %}
 					{% case 'dates' %}
 						<div>
 							<h3>Date</h3>
-							<p>{{block.days}}</p>
+							<h2>{{block.days}}</h2>
 							<p>{{block.monthYear}}</p>
 						</div>
 					{% case 'time' %}
 						<div>
 							<h3>Time</h3>
-							<p>{{block.festivalTime}}</p>
+							<h2>{{block.festivalTime}}</h2>
 							<p>{{block.timeInfo}}</p>
 						</div>
 					{% case 'nextYear' %}
 						<div>
-							<h3>Nex Edition</h3>
+							<h3>Next Edition</h3>
 							<p>{{block.nextEdition}}</p>
 							<a href="/{{('participation')}}">Participate next year</a>
 							{# Ath this CTA is unclear #}
 						</div>
 				{% endswitch %}
 			{% endfor %}
+			</div>
 		</section>
 
 

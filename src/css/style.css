@@ -599,31 +599,41 @@ body {
   position: relative;
   left: 10%;
   margin-right: 3%;
-
+  margin-top: 3rem;
 }
 
 .header__festival {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
+  margin-right: 5%;
+
 }
+
+.header__festival img {
+  width: 35rem;
+  height: auto;
+}
+
+
 
 .header__festival__text {
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
+  align-items: flex-start;
 
 }
 
 .header__festival__text span {
   text-decoration: 1px underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 7px;
 
 }
 
 .header__festival__text h1 {
   font-family: var(--ff-clash-semibold);
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .container__what {
@@ -635,9 +645,9 @@ body {
   background-image: url(../img/whatbackground.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right;
-  padding: 4rem 10rem 4rem 2rem;
+  background-size: contain;
+  background-position: top;
+  padding: 3rem 10rem 4rem 2rem;
   border-radius: var(--border-radius);
   color: var(--color-black);
   margin-bottom: 1rem;
@@ -652,7 +662,7 @@ body {
 }
 
 .what__theme h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: var(--ff-clash-medium);
   margin-bottom: 1rem;
 }
@@ -663,7 +673,7 @@ body {
 }
 
 .what__unique h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: var(--ff-clash-medium);
   margin-bottom: .5rem;
 }
@@ -675,6 +685,74 @@ body {
 .what__unique .purple {
   font-weight: var(--font-weight-bold);
 }
+
+.container__when {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  background-image: url(../img/dateinfo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container__when div {
+  color: var(--color-black);
+  padding: 4rem;
+}
+
+.container__when a {
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: solid 0.125rem var(--color-black);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  padding: 0.6rem 3.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.875rem;
+  background-color: none;
+}
+
+.container__when a:hover {
+  background-color: transparent;
+  color: var(--color-black);
+}
+
+.container__when h3 {
+  font-size: 1.8rem;
+  font-family: var(--ff-montserrat);
+  text-transform: uppercase;
+  border-bottom: solid 2px var(--color-black);
+  margin-bottom: .5rem;
+}
+
+.container__when h2 {
+  font-size: 2rem;
+  font-family: var(--ff-clash-medium);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.date-info__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.date-info__container div {
+  background-image: url(../img/cardbackground.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+
 
 .festival-details__nav {
   position: fixed;
@@ -751,6 +829,7 @@ body {
   gap: 4rem;
   align-items: center;
   margin-bottom: 5rem;
+  margin-top: 3rem;
 }
 
 .archive__img {
