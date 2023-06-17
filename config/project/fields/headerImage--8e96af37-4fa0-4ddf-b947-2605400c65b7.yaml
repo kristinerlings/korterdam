@@ -20,10 +20,10 @@ settings:
   minRelations: null
   previewMode: full
   restrictFiles: true
-  restrictLocation: false
+  restrictLocation: true
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:249bb5e4-b293-446a-8c63-e7753010f50e' # Uploads
-  restrictedLocationSubpath: null
+  restrictedLocationSubpath: /web/assets/img
   selectionCondition:
     __assoc__:
       -
@@ -36,7 +36,7 @@ settings:
         - class
         - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

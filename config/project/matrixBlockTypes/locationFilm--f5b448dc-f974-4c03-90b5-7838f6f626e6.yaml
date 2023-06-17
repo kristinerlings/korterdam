@@ -1,0 +1,165 @@
+field: c0fa9721-49ef-4fac-98d1-5f2d5c09a938 # Location point
+fieldLayouts:
+  f085c127-95c5-4dba-806b-7406f2ce685a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: bc3fd3ff-6679-4723-b740-f0798ca24883 # film
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2324f31-e5c8-4372-95ce-cded2b15ac55
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: df4cbeb9-ebab-4530-8485-a1cbd36ca111 # location
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b684d72-f525-47b2-af1c-b70f964c2760
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 20807577-a764-4736-bac7-ae3554c40fee # image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da5713be-a4e4-4ec9-bec5-4e922c57105d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dd37730f-caf8-4b04-8621-e27cb9c88a21 # location link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4ba4dc4-e85e-4bed-9341-8ee32019955e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c4f1c758-fc03-4eac-9efd-e192dba62b21
+        userCondition: null
+fields:
+  20807577-a764-4736-bac7-ae3554c40fee: # image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:249bb5e4-b293-446a-8c63-e7753010f50e' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:249bb5e4-b293-446a-8c63-e7753010f50e' # Uploads
+      restrictedLocationSubpath: /web/assets/img
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  bc3fd3ff-6679-4723-b740-f0798ca24883: # film
+    columnSuffix: akvrptpp
+    contentColumnType: text
+    fieldGroup: null
+    handle: film
+    instructions: null
+    name: film
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  dd37730f-caf8-4b04-8621-e27cb9c88a21: # location link
+    columnSuffix: azgfoaor
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: locationLink
+    instructions: null
+    name: 'location link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  df4cbeb9-ebab-4530-8485-a1cbd36ca111: # location
+    columnSuffix: gytcxxmv
+    contentColumnType: text
+    fieldGroup: null
+    handle: location
+    instructions: null
+    name: location
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: locationFilm
+name: 'Location film'
+sortOrder: 1

@@ -22,6 +22,7 @@ export default ({ command }) => ({
         filterFilm: './src/js/filterFilm.js',
         countdown: './src/js/countdown.js',
         gsap: './src/js/gsap.js',
+        locations: './src/js/locations.js',
       },
     },
   },

@@ -44,6 +44,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 95c1b695-b4fb-431e-8eb0-79bb255a0b1d # date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4868eac3-901f-44bd-a79a-d6cb7460934d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: bd75df1d-d963-427e-95f3-1c16562f075d # Festival Date
             instructions: 'Write down festival date'
             label: null
