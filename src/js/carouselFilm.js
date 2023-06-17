@@ -3,14 +3,14 @@ import '../css/flickity.css';
 /*For more flickity options: https://flickity.metafizzy.co/options */
 
 const generateCarouselCells = () => {
-  const carouselContainer = document.querySelector('.main-carousel');
-  const carouselArticles = document.querySelectorAll('.card');
+  const $carouselContainer = document.querySelector('.main-carousel');
+  const $carouselArticles = document.querySelectorAll('.card');
 
-  carouselArticles.forEach((filmCardArticle) => {
+  $carouselArticles.forEach((filmCardArticle) => {
     const cell = document.createElement('div');
     cell.classList.add('carousel-cell');
     cell.appendChild(filmCardArticle);
-    carouselContainer.appendChild(cell);
+    $carouselContainer.appendChild(cell);
   });
 };
 

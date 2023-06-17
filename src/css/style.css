@@ -90,23 +90,16 @@ body {
   --color-red: #db4132;
 
   /*create clamp/responsive later*/
-  --font-size-h1: 4.375rem;
-  /*70px*/
-  --font-size-h2: 3.12rem;
-  /*50px*/
-  --font-size-h3: 3rem;
-  /*48px*/
 
-  --font-size-xl: 2.5rem;
-  /*40px*/
-  --font-size-l: 1.875rem;
-  /*30px*/
-  --font-size-m: 1.5;
-  /*24px*/
-  --font-size-s: 1.25rem;
-  /*20px*/
-  --font-size-body: 1.125rem;
-  /*18px*/
+  --font-size-h1: 4.375rem; /*70px*/
+  --font-size-h2: 3.12rem; /*50px*/
+  --font-size-h3: 3rem; /*48px*/
+
+  --font-size-xl: 2.5rem; /*40px*/
+  --font-size-l: 1.875rem; /*30px*/
+  --font-size-m: 1.5rem; /*24px*/
+  --font-size-s: 1.25rem; /*20px*/
+  --font-size-body: 1.125rem; /*18px*/
 
   --border-radius: 0.2rem;
   --border-radius-large: 2rem;
@@ -179,7 +172,8 @@ a {
 
 main {
   margin: 0 auto;
-  max-width: 80%
+  max-width: 80%;
+
 }
 
 
@@ -191,7 +185,7 @@ p {
 h1 {
   font-size: 2rem;
   margin-block-end: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: 'ClashDisplay-Bold', sans-serif;
 }
 
@@ -411,7 +405,6 @@ body {
   font-family: var(--ff-clash-regular);
   font-size: var(--font-size-h3);
 }
-
 
 /*******EVENT COUNTDOWN*********/
 
@@ -971,3 +964,117 @@ select {
 }
 
 /*////////////// FILM DETAIL ///////////////*/
+
+/** detailpage - images **/
+.detailpage__album {
+  display: flex;
+  flex-direction: column;
+}
+
+.album__title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--ff-clash-medium);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-l);
+}
+
+.line {
+  background-color: var(--color-white);
+  height: 0.09rem;
+}
+/* 
+.album__images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  padding:1rem 0rem 5rem; 
+} */
+.album__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 1rem 0rem 5rem;
+}
+
+.crew__img {
+  flex: 10%; /* Adjust the value as needed to determine the width of each image container */
+  /* padding: 1rem 0.5rem; */
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.back-button {
+  margin: 2.9rem 0rem;
+  color: var(--color-white);
+  border: solid 0.1rem var(--color-white);
+}
+
+/** detailpage - film-information **/
+.container__detailpage {
+  padding-block-start: 2rem;
+  width: 100%;
+}
+.detailpage__header {
+  display: flex;
+  margin-block-start: 4.9rem;
+}
+
+.header__img--detail {
+  width: 55%;
+  height: auto;
+  /* padding-inline-end: 1rem; */
+  margin-inline-end: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.header__info--detail {
+  width: 45%;
+  height: auto;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+  padding: 3.5rem;
+  background: var(--color-white) url(../img/cardbackground.svg) no-repeat center;
+  background-size: cover;
+}
+
+.detail__title {
+  font-family: var(--ff-clash-medium);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-l);
+  margin-block-end: 1rem;
+  line-height: 3rem;
+}
+
+.detail__details {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--font-weight-medium);
+}
+
+.detail__paragraph {
+  padding-block-start: 1rem;
+  font-size: 16px;
+}
+
+.detailpage__crew {
+  padding: 2rem 0rem;
+}
+
+.crew__title {
+  font-family: var(--ff-clash-medium);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-m)
+}
+
+.crew__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  gap: 1rem;
+  padding: 0.5rem 0rem 5rem;
+}

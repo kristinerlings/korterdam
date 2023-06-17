@@ -1,4 +1,5 @@
 import '../css/style.css';
+import '../css/home.css';
 
 // Accept HMR as per: https://vitejs.dev/guide/api-hmr.html
 if (import.meta.hot) {
@@ -8,5 +9,3 @@ if (import.meta.hot) {
 }
 
 console.log('app js works');
-
-

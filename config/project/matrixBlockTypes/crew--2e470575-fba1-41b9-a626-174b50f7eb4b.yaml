@@ -1,0 +1,46 @@
+field: fc74c7bb-cb6e-49c0-a712-bb139b482965 # crew Block
+fieldLayouts:
+  44c01d07-d48d-4f77-8410-6056dc2c45ef:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f027d213-19a5-451a-8ee6-c86d441498e0 # roleCrew
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d21bcc3e-b8e9-4fc6-ba9f-8b77b7b10ee8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f6c208fb-d245-4648-b234-950b52d70f90
+        userCondition: null
+fields:
+  f027d213-19a5-451a-8ee6-c86d441498e0: # roleCrew
+    columnSuffix: kkwciyvr
+    contentColumnType: text
+    fieldGroup: null
+    handle: roleCrew
+    instructions: 'Write down the crew. Make sure to specify their role as well. '
+    name: roleCrew
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'Producer: Gabriel Martens'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: crew
+name: crew
+sortOrder: 1
