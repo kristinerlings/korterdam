@@ -11,78 +11,83 @@
 				<li><a class="sidebar-link where__nav" href="#where">Where</a></li>
 			</ul>
 		</nav>
-		<section class="nav-section header__festival" id="what">
+		<div class="nav-section">
+
+			<section class="header__festival" id="what">
 
 
-			<div>
-				{% set asset = entry.image.one() %}
-				{% if asset %}
-					<img src="{{asset.getUrl() }}" alt="{{entry.description}}">
-				{% endif %}
-				<p>Aftermovie
-					{{entry.year}}
-					-
-					{{entry.season}}</p>
-			</div>
-			<div class="header__festival__text">
-				<h1><span class="orange">Kort</span><span class="purple">kijk</span><br>Film<br>Festival</h1>
-				<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with <strong>ranging skillsets</strong>, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
-			</div>
-		</section>
-		<section class="container__what">
-			<div>
-				<div class="what__theme">
-					<h3>This editions theme:</h3>
-					<h2>{{entry.titleTheme}}</h2>
-					<p>{{entry.themeDescription}}</p>
+				<div>
+					{% set asset = entry.image.one() %}
+					{% if asset %}
+						<img src="{{asset.getUrl() }}" alt="{{entry.description}}">
+					{% endif %}
+					<p>Aftermovie
+						{{entry.year}}
+						-
+						{{entry.season}}</p>
 				</div>
-				<div class="what__unique">
-					<h3>Every edition is unique</h3>
-					<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a
-						<span class="purple">different topic</span>
-						each time around.</p>
+				<div class="header__festival__text">
+					<h1>
+						<span class="orange">Kort</span>
+						<span class="purple">kijk</span><br>Film<br>Festival</h1>
+					<p>2 times a year the inspiring movies of youngsters are showcased around Kortrijk. They come from people with
+						<strong>ranging skillsets</strong>, but the most important aspect is the message they bring forward. Let yourself be inspired and come enjoy some real cinema&#33;</p>
 				</div>
-			</div>
-			<div>
-				{% set asset = entry.themeImage.one() %}
-				{% if asset %}
-					<img src="{{asset.getUrl()}}" alt="{{entry.imageDescription}}">
-				{% endif %}
-			</div>
-		</section>
-
+			</section>
+			<section class="container__what">
+				<div>
+					<div class="what__theme">
+						<h3>This editions theme:</h3>
+						<h2>{{entry.titleTheme}}</h2>
+						<p>{{entry.themeDescription}}</p>
+					</div>
+					<div class="what__unique">
+						<h3>Every edition is unique</h3>
+						<p>If this edition doesn't speak to you, maybe the next will&#33; That is because every single one is different. We lay the focus on a
+							<span class="purple">different topic</span>
+							each time around.</p>
+					</div>
+				</div>
+				<div>
+					{% set asset = entry.themeImage.one() %}
+					{% if asset %}
+						<img src="{{asset.getUrl()}}" alt="{{entry.imageDescription}}">
+					{% endif %}
+				</div>
+			</section>
+		</div>
 		<div class="container__when__bleed">
 
-		<section class="nav-section container__when" id="when">
+			<section class="nav-section container__when" id="when">
 
-			<h2 class="container__when__title">Save the date</h2>
+				<h2 class="container__when__title">Save the date</h2>
 
-			<div class="date-info__container">
-			{% for block in entry.festivalDates %}
-				{% switch block.type %}
-					{% case 'dates' %}
-						<div>
-							<h3>Date</h3>
-							<h2>{{block.days}}</h2>
-							<p>{{block.monthYear}}</p>
-						</div>
-					{% case 'time' %}
-						<div>
-							<h3>Time</h3>
-							<h2>{{block.festivalTime}}</h2>
-							<p>{{block.timeInfo}}</p>
-						</div>
-					{% case 'nextYear' %}
-						<div>
-							<h3>Next Edition</h3>
-							<p>{{block.nextEdition}}</p>
-							<a href="/{{('participation')}}">Make a film!</a>
-							{# Ath this CTA is unclear #}
-						</div>
-				{% endswitch %}
-			{% endfor %}
-			</div>
-		</section>
+				<div class="date-info__container">
+					{% for block in entry.festivalDates %}
+						{% switch block.type %}
+							{% case 'dates' %}
+								<div>
+									<h3>Date</h3>
+									<h2>{{block.days}}</h2>
+									<p>{{block.monthYear}}</p>
+								</div>
+							{% case 'time' %}
+								<div>
+									<h3>Time</h3>
+									<h2>{{block.festivalTime}}</h2>
+									<p>{{block.timeInfo}}</p>
+								</div>
+							{% case 'nextYear' %}
+								<div>
+									<h3>Next Edition</h3>
+									<p>{{block.nextEdition}}</p>
+									<a href="/{{('participation')}}">Make a film!</a>
+									{# Ath this CTA is unclear #}
+								</div>
+						{% endswitch %}
+					{% endfor %}
+				</div>
+			</section>
 		</div>
 
 

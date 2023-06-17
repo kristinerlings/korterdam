@@ -66,6 +66,8 @@
 html {
   box-sizing: border-box;
   background-color: var(--color-black);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -207,13 +209,6 @@ footer {
 
 /*******TOP NAVIGATION*********/
 
-.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  border-bottom: solid 2px var(--color-white);
-  transition: .5s;
-}
 
 
 .container__nav {
@@ -327,6 +322,12 @@ footer {
   background-repeat: no-repeat;
   background-position: 1rem center;
   background-size: 2rem;
+}
+
+.sticky {
+  border-bottom: solid 2px var(--color-white);
+  transition: .5s;
+  z-index: 1000;
 }
 
 /*******BANNER*********/
@@ -646,9 +647,9 @@ body {
   background-image: url(../img/whatbackground.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: top;
-  padding: 3rem 10rem 4rem 2rem;
+  padding: 3rem 0rem 4rem 2rem;
   border-radius: var(--border-radius);
   color: var(--color-black);
   margin-bottom: 1rem;
@@ -666,6 +667,10 @@ body {
   font-size: 1.6rem;
   font-family: var(--ff-clash-medium);
   margin-bottom: 1rem;
+}
+
+.what__theme p {
+  max-width: 80%;
 }
 
 .what__unique {
