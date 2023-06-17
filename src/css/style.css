@@ -638,6 +638,7 @@ body {
 .header__festival__text h1 {
   font-family: var(--ff-clash-semibold);
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 .container__what {
@@ -808,10 +809,16 @@ body {
 
 .container__where {
   position: relative;
-  right: 15%;
-  width: 30%;
+  left: 10%;
+  width: 80%;
   margin: 0rem auto;
   padding: 8rem 0 8rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.container__where__text {
+  width: 40%;
 }
 
 .container__where h2 {
@@ -864,6 +871,190 @@ body {
   color: var(--color-white);
   border: solid 2px var(--color-white);
 }
+
+.location1 {
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.location2 {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.location3 {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.location4 {
+  position: absolute;
+  top: 15%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  pointer-events: none;
+}
+
+.location5 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  pointer-events: none;
+}
+
+.location1--active,
+.location2--active,
+.location3--active,
+.location4--active,
+.location5--active {
+  z-index: 10;
+}
+
+
+.location-pin,
+.location-pin2,
+.location-pin3,
+.location-pin4,
+.location-pin5 {
+  background-image: url(../img/location-pin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 3.5rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.location-pin:hover,
+.location-pin2:hover,
+.location-pin3:hover,
+.location-pin4:hover,
+.location-pin5:hover {
+  background-image: url(../img/location-pin-selected.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 3.5rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.location-info,
+.location-info2,
+.location-info3 {
+  background-image: url(../img/location-popup.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  left: 10%;
+  visibility: hidden;
+
+}
+
+.location-info4,
+.location-info5 {
+  background-image: url(../img/location-popup2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  right: 10%;
+  visibility: hidden;
+}
+
+.location-info--active,
+.location-info2--active,
+.location-info3--active {
+  background-image: url(../img/location-popup.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  left: 10%;
+  visibility: visible;
+}
+
+.location-info4--active,
+.location-info5--active {
+  background-image: url(../img/location-popup2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  visibility: visible;
+}
+
+.location-pin--active,
+.location-pin2--active,
+.location-pin3--active,
+.location-pin4--active,
+.location-pin5--active {
+  background-image: url(../img/location-pin-selected.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 3.5rem;
+
+}
+
+
+.locations h3 {
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-s);
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  border-bottom: solid 2px var(--color-black);
+}
+
+.location-info img,
+.location-info2 img,
+.location-info3 img,
+.location-info4 img,
+.location-info5 img {
+  border-radius: var(--border-radius);
+  margin-right: 2rem;
+}
+
+
+
+
+
+
 
 
 
