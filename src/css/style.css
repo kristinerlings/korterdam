@@ -415,26 +415,37 @@ body {
 /*******EVENT COUNTDOWN*********/
 
 .container__countdown {
-  display:grid;
+  background-image: url('../img/1-arrow-countd-p2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 15%;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; 
+  margin-right: -50vw;
+  
+}
+.countdown__wrapper{
+  display: grid;
   grid-template-columns: 25% 50% 25%;
   font-family: var(--ff-montserrat);
   font-weight: var(--font-weight-regular);
   color: var(--color-purple);
-  background-image: url('../img/1-arrow-count-sh.svg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right 15%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .countdown {
-  display:flex;
+  display: flex;
 }
 
 .countdown__info {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-block-end: .5rem;
+  padding-block-end: 0.5rem;
   gap: 0.5rem;
   color: var(--color-white);
 }
@@ -444,8 +455,7 @@ body {
 .countdown__min,
 .countdown__sec {
   text-align: center;
-    margin: 0 4rem;
-
+  margin: 0 5rem;
 }
 
 .c__days,
