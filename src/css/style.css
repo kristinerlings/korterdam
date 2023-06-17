@@ -944,10 +944,11 @@ body {
 .location4--active,
 .location5--active {
   z-index: 10;
+  pointer-events: all;
 }
 
 
-.location-pin,
+.location-pin1,
 .location-pin2,
 .location-pin3,
 .location-pin4,
@@ -962,7 +963,7 @@ body {
   pointer-events: all;
 }
 
-.location-pin:hover,
+.location-pin1:hover,
 .location-pin2:hover,
 .location-pin3:hover,
 .location-pin4:hover,
@@ -977,7 +978,7 @@ body {
   pointer-events: all;
 }
 
-.location-info,
+.location-info1,
 .location-info2,
 .location-info3 {
   background-image: url(../img/location-popup.svg);
@@ -1009,7 +1010,7 @@ body {
   visibility: hidden;
 }
 
-.location-info--active,
+.location-info1--active,
 .location-info2--active,
 .location-info3--active {
   background-image: url(../img/location-popup.svg);
@@ -1039,7 +1040,7 @@ body {
   visibility: visible;
 }
 
-.location-pin--active,
+.location-pin1--active,
 .location-pin2--active,
 .location-pin3--active,
 .location-pin4--active,
@@ -1063,7 +1064,7 @@ body {
   border-bottom: solid 2px var(--color-black);
 }
 
-.location-info img,
+.location-info1 img,
 .location-info2 img,
 .location-info3 img,
 .location-info4 img,
@@ -1072,11 +1073,33 @@ body {
   margin-right: 2rem;
 }
 
+.location-info1 a,
+.location-info2 a,
+.location-info3 a,
+.location-info4 a,
+.location-info5 a {
+  color: var(--color-black);
+  text-decoration: none;
+  color: var(--color-white);
+  padding: .5rem 1rem;
+  background-color: var(--color-red);
+  border-radius: var(--border-radius);
+}
 
+.location-info1 a:hover,
+.location-info2 a:hover,
+.location-info3 a:hover,
+.location-info4 a:hover,
+.location-info5 a:hover {
+  text-decoration: none;
+  padding: .5rem 1rem;
+  background-color: var(--color-black);
+  border-radius: var(--border-radius);
+}
 
-
-
-
+.location-link {
+  margin-top: 1rem;
+}
 
 
 

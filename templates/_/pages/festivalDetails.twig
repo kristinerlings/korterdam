@@ -110,71 +110,28 @@
 						<span class="bold">direction signs</span>. If you'd like a detailed overview, feel free to explore the map&#33;</p>
 				</article>
 				<article class="locations">
-					<div class="location1">
-						<div class="location-info">
-							<div>
-								<h3>Film:</h3>
-								<p>A movie</p>
-								<h3>Location:</h3>
-								<p>Stadsschouwburg</p>
-							</div>
-							<img src="/public/filmarchive.png" alt="location img" width="200px">
-						</div>
-						<div class="location-pin"></div>
+					{% for block in entry.locationPoint %}
+						{% if loop.index <= 5 %}
+							<div class="location{{ loop.index }}">
+								<div class="location-info{{ loop.index }}">
+									<div>
+										<h3>Film:</h3>
+										<p>{{ block.film }}</p>
+										<h3>Location:</h3>
+										<p class="location-link">
+											<a href="{{ block.locationLink }}">{{ block.location }}</a>
+										</p>
 
-					</div>
-					<div class="location2">
-						<div class="location-info2">
-							<div>
-								<h3>Film:</h3>
-								<p>The shoe club</p>
-								<h3>Location:</h3>
-								<p>Stadsschouwburg</p>
+									</div>
+									<img src="{{ block.image[0].url }}" alt="location img" width="200px">
+								</div>
+								<div class="location-pin{{ loop.index }}"></div>
 							</div>
-							<img src="/public/filmarchive.png" alt="location img" width="200px">
-						</div>
-						<div class="location-pin2"></div>
-					</div>
-
-					<div class="location3">
-						<div class="location-info3">
-							<div>
-								<h3>Film:</h3>
-								<p>Bing bing</p>
-								<h3>Location:</h3>
-								<p>Stadsschouwburg</p>
-							</div>
-							<img src="/public/filmarchive.png" alt="location img" width="200px">
-						</div>
-						<div class="location-pin3"></div>
-					</div>
-
-					<div class="location4">
-						<div class="location-info4">
-							<div>
-								<h3>Film:</h3>
-								<p>Bing Bong</p>
-								<h3>Location:</h3>
-								<p>Stadsschouwburg</p>
-							</div>
-							<img src="/public/filmarchive.png" alt="location img" width="200px">
-						</div>
-						<div class="location-pin4"></div>
-					</div>
-					<div class="location5">
-						<div class="location-info5">
-							<div>
-								<h3>Film:</h3>
-								<p>yahoo</p>
-								<h3>Location:</h3>
-								<p>Stadsschouwburg</p>
-							</div>
-							<img src="/public/filmarchive.png" alt="location img" width="200px">
-						</div>
-						<div class="location-pin5"></div>
-					</div>
-
+						{% endif %}
+					{% endfor %}
 				</article>
+
+
 			</section>
 		</div>
 

@@ -1,5 +1,5 @@
-const pin1 = document.querySelector(".location-pin");
-const popup1 = document.querySelector(".location-info");
+const pin1 = document.querySelector(".location-pin1");
+const popup1 = document.querySelector(".location-info1");
 const pin2 = document.querySelector(".location-pin2");
 const popup2 = document.querySelector(".location-info2");
 const pin3 = document.querySelector(".location-pin3");
@@ -19,8 +19,8 @@ const toggleLocations = () => {
 
     pin1.addEventListener("click", () => {
         console.log("show location1");
-        popup1.classList.toggle("location-info--active");
-        pin1.classList.toggle("location-pin--active");
+        popup1.classList.toggle("location-info1--active");
+        pin1.classList.toggle("location-pin1--active");
         popup2.classList.remove("location-info2--active");
         pin2.classList.remove("location-pin2--active");
         popup3.classList.remove("location-info3--active");
@@ -43,8 +43,8 @@ const toggleLocations = () => {
         console.log("show location2");
         popup2.classList.toggle("location-info2--active");
         pin2.classList.toggle("location-pin2--active");
-        popup1.classList.remove("location-info--active");
-        pin1.classList.remove("location-pin--active");
+        popup1.classList.remove("location-info1--active");
+        pin1.classList.remove("location-pin1--active");
         popup3.classList.remove("location-info3--active");
         pin3.classList.remove("location-pin3--active");
         pin4.classList.remove("location-pin4--active");
@@ -66,8 +66,8 @@ const toggleLocations = () => {
         pin3.classList.toggle("location-pin3--active");
         popup2.classList.remove("location-info2--active");
         pin2.classList.remove("location-pin2--active");
-        popup1.classList.remove("location-info--active");
-        pin1.classList.remove("location-pin--active");
+        popup1.classList.remove("location-info1--active");
+        pin1.classList.remove("location-pin1--active");
         pin4.classList.remove("location-pin4--active");
         popup4.classList.remove("location-info4--active");
         pin5.classList.remove("location-pin5--active");
@@ -85,8 +85,8 @@ const toggleLocations = () => {
         pin4.classList.toggle("location-pin4--active");
         popup2.classList.remove("location-info2--active");
         pin2.classList.remove("location-pin2--active");
-        popup1.classList.remove("location-info--active");
-        pin1.classList.remove("location-pin--active");
+        popup1.classList.remove("location-info1--active");
+        pin1.classList.remove("location-pin1--active");
         popup3.classList.remove("location-info3--active");
         pin3.classList.remove("location-pin3--active");
         pin5.classList.remove("location-pin5--active");
@@ -104,8 +104,8 @@ const toggleLocations = () => {
         pin5.classList.toggle("location-pin5--active");
         popup2.classList.remove("location-info2--active");
         pin2.classList.remove("location-pin2--active");
-        popup1.classList.remove("location-info--active");
-        pin1.classList.remove("location-pin--active");
+        popup1.classList.remove("location-info1--active");
+        pin1.classList.remove("location-pin1--active");
         popup3.classList.remove("location-info3--active");
         pin3.classList.remove("location-pin3--active");
         pin4.classList.remove("location-pin4--active");
