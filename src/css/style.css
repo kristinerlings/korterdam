@@ -426,6 +426,10 @@ body {
   font-family: var(--ff-montserrat);
   font-weight: var(--font-weight-regular);
   color: var(--color-purple);
+  background-image: url('../img/1-arrow-count-sh.svg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: right 15%;
 }
 
 .countdown {
