@@ -13,9 +13,9 @@
 			<h2 class="hidden">Visualise your voice</h2>
 			<img class="img__left--title" src="{{ siteUrl }}public/1-title.svg" width="648.2" height="176" alt="Visualise your voice">{#  do it differently? #}
 			<div class="line"></div>
-			<h3 class="header__subtitle">workshops and filmmaking<br>by<span class="subtitle--span orange">Kortkijk Film Festival</span></h3>
+			<h3 class="header__subtitle">workshops and filmmaking<br>by <span class="subtitle--font orange">Kortkijk Film Festival</span></h3>
 			<div class="header__btn">
-				<a href="#join" id="join" class="btn btn--white">Can I join?</a>
+				<a href="#join" class="btn btn--white">Can I join?</a>
 			</div>
 		</div>
 		<div class="header__right">
@@ -26,24 +26,27 @@
 			<h3 class="right__theme">{{entry.theme}}<br><span class="theme--size">topic this year<span></h3>
 			<div class="right__date">
 				<p>Festival date</p>
-				<p>{{entry.festivalDate}}</p> {#  adjust 2 separate - br #}
+				<p>{# {{entry.date}} #}{{entry.festivalDate}}</p> {#  adjust 2 separate - br #}
 			</div>
 			{#  redactor line breaks #}
 		</div>
 	</section>
 
-	<section class="container__countdown">
-		<h2 class="hidden">Festival Countdown</h2>
-		<div class="countdown__info">
-		<p class="countdown__title">Can't wait to see the films?</p>
-		<p class="countdown__status">Not long to go, only...</p>
-		</div>
-		{% include "_/components/countdown.twig" %}
-	</section>
-
+{# 	<div class="bg__wrapper--home"> #}
+		<section class="container__countdown">
+	 		<div class="countdown__wrapper"> 
+				<h2 class="hidden">Festival Countdown</h2>
+				<div class="countdown__info">
+					<p class="countdown__title">Can't wait to see the films?</p>
+					<p class="countdown__status">Not long to go, only...</p>
+				</div>
+				{% include "_/components/countdown.twig" %}
+  		</div> 
+		</section>
 
 			{# Adjust the extraTitle: take it out and make it static later #}
-	<section id="join" class="container__requirements">
+	
+		<section id="join" class="container__requirements">
 				{% for block in entry.informationBlock %}
 					{% switch block.type %}
 						{% case 'image' %}
@@ -53,8 +56,10 @@
 							{% endif %}
 							<div class="requirements__info">
 								{% case 'extraTitle' %}
-									<h2 class="info__title">Are you between<br>the ages of <span class="orange semibold">16-25?</span></h2>
-									<h3 class="info__subtitle">Then perhaps you're the person we're looking for!</h3>
+									<div class="info__title--wrapper">
+										<h2 class="info__title">Are you between<br>the ages of <span class="orange semibold">16-25?</span></h2>
+										<h3 class="info__subtitle">Then perhaps you're the person we're looking for!</h3>
+									<div>
 									<div class="info__details--home">
 										{% case 'infoText' %}
 											<h3 class="detail__subtitle--home">{{ block.subtitle }}</h3>
@@ -66,29 +71,45 @@
 									</div>
 								{% endswitch %}
 							{% endfor %}
-	</section>
-
-						<section class="container__festival">
-							<h2 class="festival__title--home">Is filmmaking not your thing?</h2>
-							<p class="festival__subtitle--home">Come and see a film at the festival</p>
-							<div class="festival__cta--home">
-								<h3><span class="orange">Kort</span><span class="purple">kikj</span><br>film festival</h3>
-								<a href="/{{('festival-details')}}" class="btn white">Festival? Tell me more &amp;</a>
-							<div>
-							{# static image here after creating public folder  #}
+			</section>
+	
+			<section class="container__festival">
+							<div class="festival__wrap">
+								<div class="wrap__title">
+									<h2 class="festival__title--home">Is filmmaking not your thing?</h2>
+									<p class="festival__subtitle--home">- Come and see a film at the festival</p>
+								</div>
+								<img class="img__ticket" src="{{ siteUrl }}public/1-ticket.svg" width="742" height="357" alt="Fake ticket with information">
+								<div class="festival__cta--home">
+									<h3><span class="orange">Kort</span><span class="purple">kikj</span><br>film festival</h3>
+									<a href="/{{('festival-details')}}" class="btn btn__l--white">Festival? Tell me more</a>
+								</div>
+								<h3 class="hidden">We know you like free stuff and so do we</h3> {# if image does not show, then display text  #}
+								<p class="hidden">That's why we provide you with free popcorn and films. No need for tickets, we only ask you to have good time.</p>
+							</div>
 							{# popcorn banner #}
-						</section>
+			</section>
+		{# </div> #}
 
-						<section class="container__archive">
-							<h2>Travel to the past of Kortkijk</h2>
-							<p>Take a little peak at some of the previous films</p>
-							{# {% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %} #}
-							{% include "_/components/slider.twig" with { limit: 9, imageWidth: 452, imageHeight: 302 } %}
+			<section class="container__archive">
+							<div class="archive__intro">
+								<div class="intro__title--wrapper">
+									<h2>Travel to the past of Kortkijk</h2>
+								</div>
+							</div>
+								<p class="archive__subtitle">Take a little peak at some of the previous films</p>
+								<a href="/{{('film-archive') }}" class="btn btn__l--white">See more films</a>
+								{# {% include "_/components/film-card.twig" with { limit: 3, imageWidth: 226, imageHeight: 151 } %} #}
+								{% include "_/components/slider.twig" with { limit: 9, imageWidth: 452, imageHeight: 302 } %}
+			</section>
 
-						</section>
-
-						<section class="container__hotspot">
-							<h2>A hotspot on some of the previous themes</h2>
+			<section class="container__hotspot">
+							<div class="hotspot__intro">
+								<div class="hotspot__title--wrapper">
+									<h2>A hotspot on some of the previous themes</h2>
+								</div>
+							</div>
+							<div class="hotspot__wrapper">
 							{% for block in entry.hotspotBlock %}
 								{% switch block.type %}
 									{% case 'image' %}
@@ -106,21 +127,30 @@
 											</div>
 										{% endswitch %}
 								{% endfor %}
-							</section>
+							</div>
+							<article class="hotspot__film">
+								<h2 class="hidden">Images from prevous years</h2>
+								<img class="img__film" src="{{ siteUrl }}public/1-film-images.svg" width="2043" height="358" alt="images from past themes">
+							</article>
+			</section>
+				
 
-							<section class="container__cta--home">
+			<section class="container__cta--home">
+								<div class="cta__text--wrapper">
 								<h2>Interested in
 									<span class="orange">making a film?<span></h2>
-										<p>Have a look at the participation details</p>
-										<div>
-											<h3>
-												Casting call
-											</h3>
-											<p>
-												Age group:16 - 25</p>
-											<a href="/{{('participation') }}" class="btn">I want to make a film&#33;</a>
-											<a href="/{{('festival-details') }}" class="btn white">just show me the festival details</a>
-										</div>
-									</section>
+										<p class="home__cta--sub">Have a look at the participation details</p>
+								</div>
+								<div class="cta__casting">
+									<div class="casting__wrapper">
+										<img class="img__left--title" src="{{ siteUrl }}public/1-casting.png" width="455" height="222" alt="Person filming">
+										<h3>Casting call</h3>
+										<p>Age group:16 - 25</p>
+										<a href="/{{('participation')}}" class="btn__casting">I want to make a film</a>
+									<a href="/{{('festival-details') }}" class="btn__casting--details">just show me the festival details</a>
+									</div>
+									
+								</div>
+			</section>
 
 								{% endblock %}
