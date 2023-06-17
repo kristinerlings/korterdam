@@ -1,5 +1,10 @@
 {% extends "_/layouts/base" %}
 
+{% block head %}
+	{{ craft.vite.script("src/js/locations.js" ) }}
+{% endblock %}
+
+
 {% block content %}
 	<div class="festival-details__container">
 
@@ -15,15 +20,17 @@
 			<section class="header__festival" id="what">
 
 
-				<div>
+				<div class="trailer">
 					{% set asset = entry.image.one() %}
 					{% if asset %}
-						<img src="{{asset.getUrl() }}" alt="{{entry.description}}">
+						<img class="trailer_img" src="{{asset.getUrl() }}" alt="{{entry.description}}">
 					{% endif %}
 					<p>Aftermovie
 						{{entry.year}}
 						-
 						{{entry.season}}</p>
+					<img class="play_button" src="/public/play.svg" alt="play button" width="50px">
+
 				</div>
 				<div class="header__festival__text">
 					<h1>
