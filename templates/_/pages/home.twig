@@ -6,25 +6,31 @@
 {% endblock %}
 
 {% block content %}
-	<header class="header__home">
-		<h1 class="hidden">Visualise your voice</h1>
-		<a href="/{{('participation') }}" class="btn__text">Join &amp;</a>
-		<img class="img__title" src="{{ siteUrl }}public/1-title.svg" alt="Visualise your voice">{#  do it differently? #}
-		<h2>workshops and filmmaking<br>by
-			<span class="orange">Kortkijk Film Festival</span>
-		</h2>
-		<a href="#join" class="btn btn--white">Can I join?</a>
+	<section class="header__home">
+		<h1 class="hidden">Welcome to Korkijk Film Festival</h1>
+		<div class="header__left">
+			<a href="/{{('participation') }}" class="btn__left"><span class="underline">Join</span> &amp;</a>
+			<h2 class="hidden">Visualise your voice</h2>
+			<img class="img__left--title" src="{{ siteUrl }}public/1-title.svg" width="648.2" height="176" alt="Visualise your voice">{#  do it differently? #}
+			<div class="line"></div>
+			<h3 class="header__subtitle">workshops and filmmaking<br>by<span class="subtitle--span orange">Kortkijk Film Festival</span></h3>
+			<div class="header__btn">
+				<a href="#join" id="join" class="btn btn--white">Can I join?</a>
+			</div>
+		</div>
 		<div class="header__right">
-			{% if entry.headerImage.one() is defined %}
-			<img class="img__header" src="{{ entry.headerImage.one().url }}" alt="{{entry.imageDescription}}"> 
+			{% set asset = entry.headerImage.one() %}
+			{% if asset %}
+			<img class="right__img--header" src="{{ asset.getUrl({width:712, height:518 })}}" alt="{{entry.imageDescription}}"> 
 			{% endif %}
-			<h3>{{entry.theme}}<br><span>topic this year<span></h3>
-			<p>festival date</p>
-			<p>{{entry.festivalDate}}</p>
+			<h3 class="right__theme">{{entry.theme}}<br><span class="theme--size">topic this year<span></h3>
+			<div class="right__date">
+				<p>Festival date</p>
+				<p>{{entry.festivalDate}}</p> {#  adjust 2 separate - br #}
+			</div>
 			{#  redactor line breaks #}
 		</div>
-	</header>
-
+	</section>
 
 	<section class="container__countdown">
 		<h2 class="hidden">Festival Countdown</h2>
@@ -37,35 +43,38 @@
 
 
 			{# Adjust the extraTitle: take it out and make it static later #}
-			<section id="join" class="container__requirements">
+	<section id="join" class="container__requirements">
 				{% for block in entry.informationBlock %}
 					{% switch block.type %}
 						{% case 'image' %}
 							{% set asset = block.image.one() %}
 							{% if asset %}
-							<img class="requirements__img" src="{{ asset.getUrl()}}" alt="{{block.description}}">
+							<img class="requirements__img" src="{{ asset.getUrl({width:680, height:672 })}}" alt="{{block.description}}">
 							{% endif %}
 							<div class="requirements__info">
 								{% case 'extraTitle' %}
-									<h2 class="info__title">{{ block.extraTitle}}</h2>
-									<h3 class="info__subtitle">{{ block.subtitle }}</h3>
-									<div class="info__details">
+									<h2 class="info__title">Are you between<br>the ages of <span class="orange semibold">16-25?</span></h2>
+									<h3 class="info__subtitle">Then perhaps you're the person we're looking for!</h3>
+									<div class="info__details--home">
 										{% case 'infoText' %}
-											<h3 class="detail__subtitle">{{ block.subtitle }}</h3>
-											<h2 class="detail__title">{{ block.infotitle }}</h2>
-											<p class="detail__paragraph">{{ block.paragraph }}</p>
+											<h3 class="detail__subtitle--home">{{ block.subtitle }}</h3>
+											<div class="line line--dark"></div>
+											<h2 class="detail__title--home">{{ block.infotitle }}</h2>
+											<p class="detail__paragraph--home">Well, we want to involve the youngsters of Kortrijk in this process. This is done by improving the city’s culture based on the values and needs that they voice in their short films. With those, we hold a fun festival to inspire others! You can get your opinions, values and ideas out there and <span class="orange bold">make an impact!</span></p>
 											<a href="/{{('participation') }}" class="btn">{{ block.buttonText}}</a>
 										</div>
 									</div>
 								{% endswitch %}
 							{% endfor %}
-						</section>
+	</section>
 
 						<section class="container__festival">
-							<h2>Is filmmaking not your thing?</h2>
-							<p>Come and see a film at the festival</p>
-							<h3>Kortkikj film festival</h3>
-							<a href="/{{('festival-details')}}" class="btn white">Festival? Tell me more &amp;</a>
+							<h2 class="festival__title--home">Is filmmaking not your thing?</h2>
+							<p class="festival__subtitle--home">Come and see a film at the festival</p>
+							<div class="festival__cta--home">
+								<h3><span class="orange">Kort</span><span class="purple">kikj</span><br>film festival</h3>
+								<a href="/{{('festival-details')}}" class="btn white">Festival? Tell me more &amp;</a>
+							<div>
 							{# static image here after creating public folder  #}
 							{# popcorn banner #}
 						</section>
