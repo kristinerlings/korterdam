@@ -91,15 +91,23 @@ body {
 
   /*create clamp/responsive later*/
 
-  --font-size-h1: 4.375rem; /*70px*/
-  --font-size-h2: 3.12rem; /*50px*/
-  --font-size-h3: 3rem; /*48px*/
+  --font-size-h1: 4.375rem;
+  /*70px*/
+  --font-size-h2: 3.12rem;
+  /*50px*/
+  --font-size-h3: 3rem;
+  /*48px*/
 
-  --font-size-xl: 2.5rem; /*40px*/
-  --font-size-l: 1.875rem; /*30px*/
-  --font-size-m: 1.5rem; /*24px*/
-  --font-size-s: 1.25rem; /*20px*/
-  --font-size-body: 1.125rem; /*18px*/
+  --font-size-xl: 2.5rem;
+  /*40px*/
+  --font-size-l: 1.875rem;
+  /*30px*/
+  --font-size-m: 1.5rem;
+  /*24px*/
+  --font-size-s: 1.25rem;
+  /*20px*/
+  --font-size-body: 1.125rem;
+  /*18px*/
 
   --border-radius: 0.2rem;
   --border-radius-large: 2rem;
@@ -145,6 +153,10 @@ strong {
 
 .bold {
   font-weight: bold;
+}
+
+.bold2 {
+  font-family: 'ClashDisplay-semiBold', sans-serif;
 }
 
 .btn {
@@ -592,7 +604,6 @@ body {
 .festival-details__container {
   position: relative;
   left: 10%;
-  margin-right: 3%;
   margin-top: 3rem;
 }
 
@@ -600,8 +611,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
-  margin-right: 5%;
-
+  margin-right: 10%;
 }
 
 .header__festival img {
@@ -628,12 +638,14 @@ body {
 .header__festival__text h1 {
   font-family: var(--ff-clash-semibold);
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 .container__what {
   display: flex;
   gap: 2rem;
   margin-bottom: 5rem;
+  margin-right: 3%;
 }
 
 .what__theme {
@@ -685,18 +697,18 @@ body {
   font-weight: var(--font-weight-bold);
 }
 
-.container__when__bleed {
-  background-image: url(../img/dateinfo.svg);
+.container__when__where__bleed {
+  background-image: url(../img/when-where-background.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100vw;
   position: relative;
   left: 40%;
   right: 50%;
-  margin-left: -49vw;
+  margin-left: -50vw;
   margin-right: -50vw;
-  padding: 3rem 0 8rem 0;
+  padding: 2rem 0 8rem 0;
 }
 
 
@@ -711,6 +723,7 @@ body {
   justify-content: center;
   align-items: left;
   padding: 4rem;
+  margin-bottom: 13rem;
 }
 
 .container__when__title {
@@ -794,6 +807,259 @@ body {
 }
 
 
+.container__where {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  margin: 0rem auto;
+  padding: 8rem 0 8rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.container__where__text {
+  width: 40%;
+}
+
+.container__where h2 {
+  font-size: 3rem;
+  font-family: var(--ff-clash-semibold);
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+
+.container__cta--festival {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  right: 10%;
+  background-image: url(../img/cta-arrow.svg);
+  background-position: bottom left 35%;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  margin: 10rem 0 10rem 0;
+
+}
+
+.container__cta--festival h2 {
+  font-family: var(--ff-clash-regular);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container__cta--festival p {
+  font-family: var(--ff-montserrat);
+  font-size: var(--font-size-s);
+}
+
+.container__cta--festival div {
+  margin-bottom: 2rem;
+}
+
+.container__cta--festival a {
+  position: relative;
+  left: 5%;
+  border: solid 2px var(--color-black);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container__cta--festival a:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: solid 2px var(--color-white);
+}
+
+.location1 {
+  position: absolute;
+  bottom: 10%;
+  pointer-events: none;
+}
+
+.location2 {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.location3 {
+  position: absolute;
+  top: 21%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.location4 {
+  position: absolute;
+  top:15%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  pointer-events: none;
+}
+
+.location5 {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  pointer-events: none;
+}
+
+.location1--active,
+.location2--active,
+.location3--active,
+.location4--active,
+.location5--active {
+  z-index: 10;
+}
+
+
+.location-pin,
+.location-pin2,
+.location-pin3,
+.location-pin4,
+.location-pin5 {
+  background-image: url(../img/location-pin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 3.5rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.location-pin:hover,
+.location-pin2:hover,
+.location-pin3:hover,
+.location-pin4:hover,
+.location-pin5:hover {
+  background-image: url(../img/location-pin-selected.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 3.5rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.location-info,
+.location-info2,
+.location-info3 {
+  background-image: url(../img/location-popup.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  left: 10%;
+  visibility: hidden;
+
+}
+
+.location-info4,
+.location-info5 {
+  background-image: url(../img/location-popup2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  right: 10%;
+  visibility: hidden;
+}
+
+.location-info--active,
+.location-info2--active,
+.location-info3--active {
+  background-image: url(../img/location-popup.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  left: 10%;
+  visibility: visible;
+}
+
+.location-info4--active,
+.location-info5--active {
+  background-image: url(../img/location-popup2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-black);
+  padding: 2rem 0rem 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  visibility: visible;
+}
+
+.location-pin--active,
+.location-pin2--active,
+.location-pin3--active,
+.location-pin4--active,
+.location-pin5--active {
+  background-image: url(../img/location-pin-selected.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 3.5rem;
+
+}
+
+
+.locations h3 {
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-s);
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  border-bottom: solid 2px var(--color-black);
+}
+
+.location-info img,
+.location-info2 img,
+.location-info3 img,
+.location-info4 img,
+.location-info5 img {
+  border-radius: var(--border-radius);
+  margin-right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/* When what where navigation */
+
 
 .festival-details__nav {
   position: fixed;
@@ -811,6 +1077,11 @@ body {
   gap: 1rem;
 }
 
+#what,
+#when,
+#where {
+  scroll-margin-top: 200px;
+}
 
 .what__nav,
 .when__nav,
@@ -983,6 +1254,7 @@ select {
   background-color: var(--color-white);
   height: 0.09rem;
 }
+
 /* 
 .album__images {
   width: 100%;
@@ -1000,7 +1272,8 @@ select {
 }
 
 .crew__img {
-  flex: 10%; /* Adjust the value as needed to determine the width of each image container */
+  flex: 10%;
+  /* Adjust the value as needed to determine the width of each image container */
   /* padding: 1rem 0.5rem; */
   width: 100%;
   height: auto;
@@ -1018,6 +1291,7 @@ select {
   padding-block-start: 2rem;
   width: 100%;
 }
+
 .detailpage__header {
   display: flex;
   margin-block-start: 4.9rem;
