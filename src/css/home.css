@@ -78,7 +78,6 @@
   width: 45%;
   display:flex;
   flex-direction: column;
-/*   justify-content: center; */
 }
 
 .img__left--title{
@@ -183,12 +182,6 @@
   display: flex;
 }
 
- .container__countdown{
-  /* background-image: url('../img/.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; */
-} 
 
 /*--------- REQUIREMENTES --------*/
 
@@ -197,7 +190,6 @@
   margin: 8rem 0rem 0em;
   gap: 1.5rem;
   height: 80vh;
- /*  padding: 0rem 4rem; */
 }
 .requirements__img{
   width: 50%;
@@ -317,7 +309,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
- /*  align-items: flex-end; */
   text-align: center;
   width: auto;
 }
@@ -337,25 +328,12 @@
   padding: 1rem 0rem;
 }
 
-/* .bg__wrapper--home{
-  background-image: url('../img/1-arrow-countd-sh2.svg');
-    background-repeat: no-repeat;
-  background-size: fill;
-  background-position: right;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw; 
-  margin-right: -50vw;
-}
- */
 
 
  /*----- TRAVEL TO THE PAST----*/
 
 .container__archive{
-  height: 90vh;
+  height: 100vh;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -394,11 +372,9 @@
 }
 
 .btn__l--white{
-  /* margin: 2.9rem 0rem; */
   color: var(--color-white);
   border: solid 2px var(--color-white);
   width: 11.8rem;
-  /* height: 3rem;  */
   border-radius: var(--border-radius);
   padding: 0.5rem 2.87rem 0.5rem 1rem;
   cursor: pointer;
@@ -427,8 +403,8 @@
  .container__hotspot{
  display:flex;
  flex-direction:column;
- height: 100vh;
- padding-block: 5rem;
+ height: 100%;
+ padding-block: 6rem 0;
  }
 
 .hotspot__intro{
@@ -539,15 +515,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-block-end: 10rem; 
-
- /* position: relative;
-  right: 10%;
-  background-image: url(../img/1-arrow-cta.svg);
-  background-position: center left 30%;
-  background-repeat: no-repeat;
-  background-size: 10%;
-  margin: 10rem 0 10rem 0;  */
+  padding-block: 8rem;
 }
 
 .container__cta--home h2{
