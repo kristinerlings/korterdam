@@ -703,7 +703,7 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 3rem 0 8rem 0;
+  padding: 2rem 0 8rem 0;
 }
 
 
@@ -718,7 +718,7 @@ body {
   justify-content: center;
   align-items: left;
   padding: 4rem;
-  margin-bottom: 12rem;
+  margin-bottom: 13rem;
 }
 
 .container__when__title {
@@ -810,12 +810,58 @@ body {
   padding: 8rem 0 8rem 0;
 }
 
-.container__where h2{
+.container__where h2 {
   font-size: 3rem;
   font-family: var(--ff-clash-semibold);
   color: var(--color-white);
   margin-bottom: 2rem;
 }
+
+.container__cta--festival {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  right: 10%;
+  background-image: url(../img/cta-arrow.svg);
+  background-position: bottom left 35%;
+  background-repeat: no-repeat;
+  background-size: 10%;
+ margin: 10rem 0 10rem 0;
+
+}
+
+.container__cta--festival h2 {
+  font-family: var(--ff-clash-regular);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container__cta--festival p {
+  font-family: var(--ff-montserrat);
+  font-size: var(--font-size-s);
+}
+
+.container__cta--festival div {
+  margin-bottom: 2rem;
+}
+
+.container__cta--festival a {
+  position: relative;
+  left: 5%;
+  border: solid 2px var(--color-black);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container__cta--festival a:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: solid 2px var(--color-white);
+}
+
+
 
 /* When what where navigation */
 
