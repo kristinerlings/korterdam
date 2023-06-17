@@ -155,6 +155,10 @@ strong {
   font-weight: bold;
 }
 
+.bold2 {
+  font-family: 'ClashDisplay-semiBold', sans-serif;
+}
+
 .btn {
   border: solid 0.125rem var(--color-black);
   border-radius: var(--border-radius);
@@ -828,7 +832,7 @@ body {
   background-position: bottom left 35%;
   background-repeat: no-repeat;
   background-size: 10%;
- margin: 10rem 0 10rem 0;
+  margin: 10rem 0 10rem 0;
 
 }
 
@@ -882,6 +886,11 @@ body {
   gap: 1rem;
 }
 
+#what,
+#when,
+#where {
+  scroll-margin-top: 200px;
+}
 
 .what__nav,
 .when__nav,

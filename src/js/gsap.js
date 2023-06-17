@@ -59,11 +59,15 @@ const detailsNav = () => {
 
 }
 
-const init = () => {
+/// NOT GSAP BUT SCROLL TO SECTION JS ///
 
-    navScroll();
-    detailsNav();
 
-}
 
-init();
+
+    const init = () => {
+
+        navScroll();
+        detailsNav();
+    }
+
+    init();
