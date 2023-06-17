@@ -254,6 +254,7 @@
   right: 50%;
   margin-left: -50vw; 
   margin-right: -50vw;
+
 }
 
 .festival__wrap{
@@ -296,6 +297,10 @@
   justify-content: center;
   text-align: center;
   width: auto;
+  background-image: url('../img/1-arrow-festivalticket.svg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: bottom right;
 }
 
 .festival__cta--home > h3{
