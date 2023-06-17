@@ -51,9 +51,11 @@
 			</div>
 		</section>
 
+		<div class="container__when__bleed">
+
 		<section class="nav-section container__when" id="when">
 
-			<h2>Save the date</h2>
+			<h2 class="container__when__title">Save the date</h2>
 
 			<div class="date-info__container">
 			{% for block in entry.festivalDates %}
@@ -74,13 +76,14 @@
 						<div>
 							<h3>Next Edition</h3>
 							<p>{{block.nextEdition}}</p>
-							<a href="/{{('participation')}}">Participate next year</a>
+							<a href="/{{('participation')}}">Make a film!</a>
 							{# Ath this CTA is unclear #}
 						</div>
 				{% endswitch %}
 			{% endfor %}
 			</div>
 		</section>
+		</div>
 
 
 		<section class="nav-section container__where" id="where">
