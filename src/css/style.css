@@ -165,9 +165,7 @@ a {
 
 main {
   margin: 0 auto;
-
   max-width: 80%;
-
 }
 
 p {
@@ -177,14 +175,14 @@ p {
 h1 {
   font-size: 2rem;
   margin-block-end: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: 'ClashDisplay-Bold', sans-serif;
 }
 
 h3 {
   font-size: 1.5rem;
   margin-block-end: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: 'ClashDisplay-SemiBold', sans-serif;
 }
 

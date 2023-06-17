@@ -51,6 +51,12 @@
 
 /******* Homepage - casting call *********/
 
+.semibold{
+ font-weight:var(--font-weight-semibold);
+}
+
+
+
 .header__home {
   height: 58vh; /* give space for event countdown  */  
   display:flex; 
@@ -176,11 +182,89 @@
   display: flex;
 }
 
-/* .container__countdown{
-  background-image: url('../img/.svg');
+ .container__countdown{
+  /* background-image: url('../img/.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-} */
+  background-position: center; */
+} 
 
 /*--------- REQUIREMENTES --------*/
+
+.container__requirements{
+  display: flex;
+  margin: 5rem 0rem;
+  gap: 1.5rem;
+}
+.requirements__img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+.requirements__info{
+  text-align: left;
+}
+
+.info__details--home{
+  width: 100%;
+  height: auto;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+  padding: 3.5rem;
+  background: var(--color-white) url(../img/cardbackground.svg) no-repeat center;
+  background-size: cover;
+}
+
+.detail__paragraph{
+  margin-block-end:2rem;
+}
+
+.info__title{
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-xl);
+  margin-block-start: 1rem;
+  line-height:3rem;
+}
+.info__subtitle{
+  font-family: 'ClashDisplay-Light', sans-serif;
+  font-size: var(--font-size-m);
+  margin-block-end: 1rem;
+  line-height:3rem;
+}
+
+.detail__subtitle--home{
+  font-size: var(--font-size-body);
+  font-family: var(--ff-clash--medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.detail__title--home{
+  font-size: var(--font-size-h2);
+  font-family: var(--ff-clash-medium);
+  line-height: 1.1;
+  padding-block-end: 1rem; 
+}
+
+.info__details--home > p{
+  padding-block-end: 2rem; 
+}
+
+.line--dark{
+  background-color: var(--color-black);
+  margin-block: -.5rem 1rem;
+  height:0.125rem;
+}
+
+/******** TICKET-FESTIVAL CONTAINER *******/
+
+.container__festival{
+
+}
+
+.festival__title--home{
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-h2);
+
+}
