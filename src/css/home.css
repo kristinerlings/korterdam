@@ -451,9 +451,10 @@
   padding: 1rem 5rem 5rem;
  }
 
-.hotspot__paragraph{
+.hotspot__paragraph, .hotspot__paragraph--two{
   padding-block-start: 1.3rem; 
 }
+
 
  .hotspot__year{
   font-size: var(--font-size-h1);
@@ -467,13 +468,56 @@
   font-family: var(--ff-clash-semibold);
  }
  
- .hotspot__year span {
+ .hotspot__theme {
   font-size: 28px;
   font-family: var(--ff-montserrat);
   text-transform: uppercase;
   font-weight: var(--font-weight-medium);
  }
 
+ /*carousel*/
+  .h--dots{
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+  }
+  .h--dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    margin: 0 1rem;
+    cursor: pointer;
+    }
+
+  .dot__active {
+      background-color: var(--color-red);
+    }
+
+  .hotspot__prev, .hotspot__next{
+    border: none;
+    color: var(--color-black);
+    padding: 1rem;
+    text-align: center; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border-radius: 50%;
+    font-size: var(--font-size-l);
+}     
+
+.hotspot__prev:hover, .hotspot__next:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+  .hotspot__buttons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 2rem;
+  }
 
   /* film - images */
 .hotspot__film{
