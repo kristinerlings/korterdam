@@ -1,5 +1,6 @@
 import '../css/style.css';
 import '../css/home.css';
+import '../css/form.css';
 
 // Accept HMR as per: https://vitejs.dev/guide/api-hmr.html
 if (import.meta.hot) {
