@@ -366,9 +366,10 @@
   border: solid 2px var(--color-white);
   width: 11.8rem;
   border-radius: var(--border-radius);
-  padding: 0.5rem 2.87rem 0.5rem 1rem;
+  padding: 0.5rem 2rem ;
   cursor: pointer;
   text-align: center;
+  display:block;
 }
 
 .btn__l--white:hover{
