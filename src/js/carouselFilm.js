@@ -48,8 +48,8 @@ const paragraphsTwo = [
 
 const images = [
   'public/1-hotspot-1.png',
-  'public/1-hotspot-1.svg',
-  'public/1-hotspot-1.svg',
+  'public/1-hotspot-1.png',
+  'public/1-hotspot-1.png',
 ];
 
 /* const theme = ['theme', 'theme', 'theme'];
@@ -86,16 +86,14 @@ const replacHotspotContent = () => {
 const $prevButton = document.querySelector('.hotspot__prev');
 $prevButton.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + years.length) % years.length; // Decrement index (with wrapping)
-  replaceContent();
+  replacHotspotContent();
 });
 
 const $nextButton = document.querySelector('.hotspot__next');
 $nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % years.length; // Increment index (with wrapping)
-  replaceContent();
+  replacHotspotContent();
 });
-
-
 
 const init = () => {
   document.addEventListener('DOMContentLoaded', () => {
