@@ -52,9 +52,11 @@ const images = [
   'public/1-hotspot-1.svg',
 ];
 
-let currentIndex = 0;
+/* const theme = ['theme', 'theme', 'theme'];
+const themes = ['theme', 'another theme', 'yet another theme']; */
+let currentIndex = 0; // Current index
 
-const replaceHotspotContent = () => {
+const replaceContent = () => {
   // Get references to the elements
   const $yearElement = document.querySelector('.hotspot__year');
   const $titleElement = document.querySelector('.hotspot__title');
@@ -63,9 +65,11 @@ const replaceHotspotContent = () => {
     '.hotspot__paragraph--two'
   );
   const $imageElement = document.querySelector('.hotspot__img');
+  /*  const themeElement = document.querySelector('.hotspot__theme'); */
 
   // Replace the content based on the current index
   $yearElement.textContent = years[currentIndex];
+  /*   themeElement.textContent = themes[currentIndex]; */
   $paragraphElementTwo.textContent = paragraphsTwo[currentIndex];
   $titleElement.textContent = titles[currentIndex];
   $paragraphElement.textContent = paragraphs[currentIndex];
@@ -90,9 +94,10 @@ $prevButton.addEventListener('click', () => {
 const $nextButton = document.querySelector('.hotspot__next');
 $nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % years.length; // Increment index (with wrapping)
-  replaceHotspotContent();
+  replaceContent();
 });
 
+// Initial content replacement
 
 const init = () => {
   document.addEventListener('DOMContentLoaded', () => {
@@ -100,6 +105,9 @@ const init = () => {
     initializeFlickityCarousel(); /*Always initialise it last! */
 
     replaceContent();
+
+    /*     generateCarouselHotspotCells();
+    initializeFlickityHotspotCarousel(); */
   });
 };
 
