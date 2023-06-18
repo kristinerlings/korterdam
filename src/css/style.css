@@ -431,18 +431,33 @@ body {
 
 /*******EVENT COUNTDOWN*********/
 
-.container__countdown {
-  background-image: url('../img/1-arrow-countd-p2.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 15%;
+
+
+.arrow__wrapper {
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  background-image: url('../img/big-purple-arrow.svg');
+  background-repeat: no-repeat;
+  background-position:center 0;
+  background-size: 90%;
 
+}
+
+.container__countdown {
+  position: relative;
+  right: 10%;
+  padding-top: 2%;
+}
+
+
+
+.wrapper__non-bleed{
+max-width: 80%;
+margin: 0 auto;
 }
 
 .countdown__wrapper {
@@ -453,6 +468,7 @@ body {
   color: var(--color-purple);
   width: 80%;
   margin: 0 auto;
+  align-items: center;
 }
 
 .countdown {
@@ -464,7 +480,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding-block-end: 0.5rem;
-  gap: 0.5rem;
+  gap: 1rem;
   color: var(--color-white);
 }
 
@@ -577,7 +593,7 @@ body {
   transition: .5s;
 }
 
-.btn__card:hover{
+.btn__card:hover {
   background-image: url('../img/arrow.svg');
   background-repeat: no-repeat;
   background-position: 7rem center;
