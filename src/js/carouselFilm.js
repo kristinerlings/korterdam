@@ -48,15 +48,15 @@ const paragraphsTwo = [
 
 const images = [
   'public/1-hotspot-1.png',
-  'public/1-hotspot-1.svg',
-  'public/1-hotspot-1.svg',
+  'public/1-hotspot-1.png',
+  'public/1-hotspot-1.png',
 ];
 
 /* const theme = ['theme', 'theme', 'theme'];
 const themes = ['theme', 'another theme', 'yet another theme']; */
 let currentIndex = 0; // Current index
 
-const replaceContent = () => {
+const replacHotspotContent = () => {
   // Get references to the elements
   const $yearElement = document.querySelector('.hotspot__year');
   const $titleElement = document.querySelector('.hotspot__title');
@@ -65,11 +65,9 @@ const replaceContent = () => {
     '.hotspot__paragraph--two'
   );
   const $imageElement = document.querySelector('.hotspot__img');
-  /*  const themeElement = document.querySelector('.hotspot__theme'); */
 
   // Replace the content based on the current index
   $yearElement.textContent = years[currentIndex];
-  /*   themeElement.textContent = themes[currentIndex]; */
   $paragraphElementTwo.textContent = paragraphsTwo[currentIndex];
   $titleElement.textContent = titles[currentIndex];
   $paragraphElement.textContent = paragraphs[currentIndex];
@@ -88,26 +86,21 @@ const replaceContent = () => {
 const $prevButton = document.querySelector('.hotspot__prev');
 $prevButton.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + years.length) % years.length; // Decrement index (with wrapping)
-  replaceContent();
+  replacHotspotContent();
 });
 
 const $nextButton = document.querySelector('.hotspot__next');
 $nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % years.length; // Increment index (with wrapping)
-  replaceContent();
+  replacHotspotContent();
 });
-
-// Initial content replacement
 
 const init = () => {
   document.addEventListener('DOMContentLoaded', () => {
     generateCarouselCells();
     initializeFlickityCarousel(); /*Always initialise it last! */
 
-    replaceContent();
-
-    /*     generateCarouselHotspotCells();
-    initializeFlickityHotspotCarousel(); */
+    replacHotspotContent();
   });
 };
 
