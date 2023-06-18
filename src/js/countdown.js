@@ -1,7 +1,7 @@
 const $countdownDays = document.querySelector('.c__days');
 const $countdownHours = document.querySelector('.c__hrs');
 const $countdownMinutes = document.querySelector('.c__min');
-const $countdownSeconds = document.querySelector('.c__sec');
+// const $countdownSeconds = document.querySelector('.c__sec');
 const $countdownTitle = document.querySelector('.c__title');
 const $countdownStatus = document.querySelector('.c__status');
 const finalDate = new Date('2023-06-23T18:00:00');
@@ -15,17 +15,17 @@ const updateCountdown = () => {
     const days = Math.floor(remainingSeconds / 86400);
     const hours = Math.floor((remainingSeconds % 86400) / 3600);
     const minutes = Math.floor(((remainingSeconds % 86400) % 3600) / 60);
-    const seconds = remainingSeconds % 60;
+    // const seconds = remainingSeconds % 60;
 
     $countdownDays.textContent = `${days}`;
     $countdownHours.textContent = `${hours}`;
     $countdownMinutes.textContent = `${minutes}`;
-    $countdownSeconds.textContent = `${seconds}`;
+    // $countdownSeconds.textContent = `${seconds}`;
   } else if (currentTime >= finalDate) {
     $countdownDays.textContent = `0`;
     $countdownHours.textContent = `0`;
     $countdownMinutes.textContent = `0`;
-    $countdownSeconds.textContent = `0`;
+    //  $countdownSeconds.textContent = `0`;
     if (
       currentTime >= finalDate &&
       currentTime <= finalDate + twoDaysInSeconds
