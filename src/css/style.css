@@ -347,10 +347,17 @@ footer {
   z-index: 1000;
 }
 
-/*******BANNER*********/
 
-body {
-  margin: 0;
+
+/******* HEADER *********/
+.header__home {
+  height: 60vh;
+  /* give space for event countdown  */
+}
+
+.btn__text {
+  font-family: var(--ff-clash-regular);
+  font-size: var(--font-size-h3);
 }
 
 .ticker {
@@ -418,17 +425,6 @@ body {
   }
 }
 
-/******* HEADER *********/
-.header__home {
-  height: 60vh;
-  /* give space for event countdown  */
-}
-
-.btn__text {
-  font-family: var(--ff-clash-regular);
-  font-size: var(--font-size-h3);
-}
-
 /*******EVENT COUNTDOWN*********/
 
 
@@ -442,7 +438,7 @@ body {
   margin-right: -50vw;
   background-image: url('../img/big-purple-arrow.svg');
   background-repeat: no-repeat;
-  background-position:center 0;
+  background-position: center 0;
   background-size: 90%;
 
 }
@@ -455,9 +451,9 @@ body {
 
 
 
-.wrapper__non-bleed{
-max-width: 80%;
-margin: 0 auto;
+.wrapper__non-bleed {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .countdown__wrapper {
@@ -1202,6 +1198,7 @@ margin: 0 auto;
 /******* Film Archive - REQUIREMENTS *********/
 
 .title-main__archive {
+  text-transform: uppercase;
   color: var(--color-red);
   font-size: 2.5rem;
   font-family: 'ClashDisplay-SemiBold', sans-serif;
@@ -1582,8 +1579,6 @@ select {
   margin-right: -50vw;
   padding: 0 4rem 0 0rem;
 
-
-
 }
 
 .how__container {
@@ -1601,13 +1596,26 @@ select {
   padding: 3rem;
   border-radius: var(--border-radius);
   color: var(--color-black);
-
-
 }
 
 .container__participate h2 {
   font-family: var(--ff-clash-medium);
   font-size: var(--font-size-xl);
+  margin-bottom: 2rem;
+}
+
+.container__participate p {
+  margin-bottom: 2rem;
+}
+
+.container__participate a {
+  padding: 1rem 2rem;
+  max-width: 15rem;
+}
+
+.container__participate a:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .container__participate {
@@ -1616,11 +1624,9 @@ select {
   margin-bottom: 5rem;
 }
 
-.picture-banner {
-  width: 105vw;
-  position: relative;
-  right: 25%;
-  margin: 3rem 0;
+.container__participate img {
+  width: 50%;
+  height: auto;
 }
 
 .btn--festival {
@@ -1639,4 +1645,220 @@ select {
 .btn--festival:hover {
   background-color: var(--color-black);
   color: var(--color-white);
+}
+
+.year-season__text {
+  text-transform: uppercase;
+  font-family: var(--ff-montserrat);
+  font-size: var(--font-size-s);
+}
+
+.container__theme {
+  background-image: url(../img/kortrijk-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35rem;
+}
+
+.theme--bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+}
+
+.container__theme h3 {
+
+  text-transform: uppercase;
+  font-family: var(--ff-clash-medium);
+
+}
+
+.container__theme h1 {
+  text-transform: uppercase;
+  font-family: var(--ff-clash-semibold);
+  font-size: 3rem;
+}
+
+.container__theme h2 {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-m);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.theme__card {
+  background-image: url(../img/theme-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 4rem;
+  border-radius: var(--border-radius);
+  color: var(--color-black);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  max-width: 60%;
+}
+
+
+
+
+
+.container__theme--wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 8rem;
+  align-items: center;
+}
+
+/*******BANNER THEME*********/
+
+.banner-theme {
+  width: 100vw;
+  background-image: url('../img/banner.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-black);
+  text-align: center;
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  font-weight: 500;
+  transform: rotate(3deg);
+  position: absolute;
+  bottom: 0;
+}
+
+.banner-theme div {
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: banner-theme 10s linear infinite;
+}
+
+
+.banner-theme span {
+  float: left;
+  width: 10%;
+}
+
+.banner-theme-text {
+  display: flex;
+  align-items: center;
+}
+
+.banner-theme-text p {
+  font-family: var(--ff-clash-semibold);
+  color: var(--color-white);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner-theme-text a:hover {
+  color: var(--color-white);
+}
+
+@keyframes banner-theme {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: -80%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .banner-theme div {
+    animation: none;
+  }
+}
+
+
+/*******BANNER HOW*********/
+
+.banner-how {
+  width: 100vw;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-top: solid 0.125rem var(--color-white);
+  border-bottom: solid 0.125rem var(--color-white);
+  text-align: center;
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  font-weight: 500;
+  transform: rotate(-1.5deg);
+  position: absolute;
+  top: 90%;
+
+}
+
+.banner-how div {
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: banner-how 10s linear infinite;
+}
+
+
+.banner-how span {
+  float: left;
+  width: 10%;
+}
+
+.banner-how-text {
+  display: flex;
+  align-items: center;
+}
+
+.banner-how-text p {
+  font-family: var(--ff-clash-semibold);
+  color: var(--color-white);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner--how-text a:hover {
+  color: var(--color-white);
+}
+
+@keyframes banner-how {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: -80%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .banner-how div {
+    animation: none;
+  }
+}
+
+.picture-banner--bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -52vw;
+  margin-right: -50vw;
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+}
+
+.picture-banner--bleed img {
+  width: 110%;
+  height: auto;
+  position: relative;
+  right: 10%;
 }
