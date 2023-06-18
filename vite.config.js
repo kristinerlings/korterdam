@@ -23,6 +23,7 @@ export default ({ command }) => ({
         countdown: './src/js/countdown.js',
         gsap: './src/js/gsap.js',
         locations: './src/js/locations.js',
+        form: './src/js/form.js',
       },
     },
   },

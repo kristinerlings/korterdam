@@ -49,23 +49,23 @@ Template provided by wheel form (advanced templating):https://github.com/xpertbo
                 </select>
                 </div>
             {% case "file" %}
-                <div class="form-group">
+                <div class="form-group group-{{field.name}}">
                     <label>{{field.label}}</label>
                     <input type="file" name="{{field.name}}" id="{{field.name}}"/>
                 </div>
             {% case "textarea" %}
-                <div class="form-group">
+                <div class="form-group group-{{field.name}}">
                     <label>{{field.label}}</label>
                     <textarea class="form-control" name="{{field.name}}" id="{{field.name}}">{{ values[field.name] ?? '' }}</textarea>
                 </div>
             {% case "list" %}
-                <div class="form-group">
+                <div class="form-group group-{{field.name}}">
                     <label>{{field.label}}</label>
                     <input type="text" name="{{field.name}}[]" id="{{field.name}}"/>
                     <script>//Javascript to handle adding fields</script>
                 </div>
             {% default %}
-                <div class="form-group">
+                <div class="form-group group-{{field.name}}">
                 <label>{{field.label}}</label>
                 <input class="form-control" type="{{field.type}}" value="{{ values[field.name] ?? '' }}" name="{{field.name}}" id="{{field.name}}"/>
                 </div>

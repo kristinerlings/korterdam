@@ -1,5 +1,8 @@
 {% extends "_/layouts/base" %}
 
+{% block head %}
+	{{ craft.vite.script("src/js/form.js" ) }}
+{% endblock %}
 
 {% block content %}
 <section class="container__form form__bleed">

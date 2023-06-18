@@ -1,6 +1,7 @@
 @import url(style.css);
 @import url(form.css);
 
+
 :root {
   --color-reduced-white: rgba(255, 255, 255, 0.27);
 }
@@ -125,3 +126,21 @@
 .errors li {
   margin-bottom: 5px;
 }
+
+
+.group-Name{
+  margin-right: 1rem;
+  background-color: red;
+}
+
+/* .firstName,
+#lastName  */
+
+/* .group-lastName, .group-firstName{
+  display: flex;
+   
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+} */
+
