@@ -2,12 +2,10 @@
 
 
 {% block content %}
-<section class="container__form">
+<section class="container__form form__bleed">
 	<div class="form__left">
-	<h1 class="form__title">Apply for<br><span class="purple">your spot</span> now</h1>
-	<img
-			class="img__left--title" src="{{ siteUrl }}public/1-title.svg" width="648.2" height="176" alt="Visualise your voice">
-			{#  do it differently? #}
+		<h1 class="form__title">Apply for<br><span class="purple">your spot</span> now</h1>
+		<img class="form__img" src="/public/form-eye.svg" width="210" height="180" alt="Illustration of smiling logo">
 	</div>
 	<div class="form">
 	{% include "_/components/contact-form.twig" %}
