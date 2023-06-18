@@ -90,7 +90,7 @@
 .subtitle--font{
   font-family: var(--ff-clash--medium);
   font-size: var(--font-size-m);
-  font-weight: var(--font-weight-medium));
+  font-weight: var(--font-weight-medium);
   text-transform: capitalize;
 }
 
