@@ -467,13 +467,32 @@
   font-family: var(--ff-clash-semibold);
  }
  
- .hotspot__year span {
+ .hotspot__theme {
   font-size: 28px;
   font-family: var(--ff-montserrat);
   text-transform: uppercase;
   font-weight: var(--font-weight-medium);
  }
 
+ /*carousel*/
+  .h--dots{
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+  }
+  .h--dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    margin: 0 5px;
+    cursor: pointer;
+    }
+
+    .dot__active {
+      background-color: var(--color-red);
+    }
 
   /* film - images */
 .hotspot__film{
