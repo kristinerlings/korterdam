@@ -30,15 +30,13 @@
 				<img class="right__img--header" src="{{ asset.getUrl({width:712, height:518 })}}" alt="{{entry.imageDescription}}">
 			{% endif %}
 			<h3 class="right__theme">{{entry.theme}}<br><span class="theme--size">topic this year<span></h3>
-					<div class="right__date">
-						<p>Festival date</p>
-						<p>{{entry.date}}</p>
-						<p class="inline">{{entry.festivalDate}}</p>
-					</div>
-					{#  redactor line breaks #}
-
-				</div>
-			</section>
+			<div class="right__date">
+					<p>Festival date</p>
+					<p>{{entry.date}}</p>
+					<p class="inline">{{entry.festivalDate}}</p>
+			</div>
+		</div>
+	 </section>
 
 			{# 	<div class="bg__wrapper--home"> #}
 			<div class="arrow__wrapper">
@@ -102,7 +100,7 @@
 											<h3>
 												<span class="orange">Kort</span>
 												<span class="purple">kijk</span><br>film festival</h3>
-											<a href="/{{('festival-details')}}" class="btn btn__l--white">Festival? Tell me more</a>
+											<a href="/{{('festival-details')}}" class="btn__l--white">Festival? Tell me more</a>
 										</div>
 										<h3 class="hidden">We know you like free stuff and so do we</h3>
 										{# if image does not show, then display text  #}
