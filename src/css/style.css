@@ -1325,7 +1325,7 @@ select {
 }
 
 .line {
-  background-color: var(--color-white);
+  background-color: var(--color-black);
   height: 0.09rem;
 }
 
@@ -1347,8 +1347,6 @@ select {
 
 .crew__img {
   flex: 10%;
-  /* Adjust the value as needed to determine the width of each image container */
-  /* padding: 1rem 0.5rem; */
   width: 100%;
   height: auto;
   border-radius: 4px;
