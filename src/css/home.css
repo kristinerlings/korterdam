@@ -40,8 +40,6 @@
   font-weight: var(--font-weight-semibold);
 }
 
-
-
 .header__home {
   height: 65vh;
   /* give space for event countdown  */
@@ -85,7 +83,7 @@
   line-height: 1.2;
 }
 
-.header__left>.line {
+.header__left > .line {
   margin-block-start: 1.3rem;
   height: 0.125rem;
 }
@@ -96,7 +94,6 @@
   font-weight: var(--font-weight-medium);
   text-transform: capitalize;
 }
-
 
 /*Right*/
 .header__right {
@@ -113,7 +110,6 @@
 
 .right__img--header {
   z-index: -10;
-
 }
 
 .right__theme {
@@ -141,9 +137,7 @@
   font-weight: var(--font-weight-medium);
 }
 
-
 .header__btn {
-
   display: flex;
   justify-content: flex-end;
 }
@@ -151,7 +145,7 @@
 #btn__join {
   text-align: center;
   padding: 1.1rem 5rem;
-  font-weight: var(--font-weight-medium)
+  font-weight: var(--font-weight-medium);
 }
 
 .right__date {
@@ -163,7 +157,12 @@
   left: 5%;
 }
 
-.right__date :nth-child(2) {
+.inline {
+  display: inline;
+}
+
+.right__date :nth-child(2),
+.right__date :nth-child(3) {
   font-family: var(--ff-clash-medium);
   font-size: var(--font-size-xl);
   width: 50%;
@@ -172,7 +171,6 @@
 .bg__countdown {
   display: flex;
 }
-
 
 /*--------- REQUIREMENTES --------*/
 
@@ -212,7 +210,7 @@
 }
 
 .btn--home {
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   max-width: 13rem;
 }
 
@@ -244,18 +242,17 @@
   padding-block-end: 1rem;
 }
 
-.info__details--home>p {
+.info__details--home > p {
   padding-block-end: 2rem;
 }
 
 .line--dark {
   background-color: var(--color-black);
-  margin-block: -.5rem 1rem;
+  margin-block: -0.5rem 1rem;
   height: 0.125rem;
 }
 
 /******** TICKET-FESTIVAL CONTAINER *******/
-
 
 .container__festival {
   height: 90vh;
@@ -269,7 +266,6 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-
 }
 
 .festival__wrap {
@@ -292,7 +288,7 @@
   font-family: var(--ff-montserrat);
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-regular);
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .wrap__title {
@@ -318,25 +314,23 @@
   text-align: center;
   width: auto;
   position: absolute;
-  top:15vw;
+  top: 15vw;
 }
 
-.festival__cta--home>h3 {
+.festival__cta--home > h3 {
   font-weight: bold;
   font-size: 2.18rem;
   font-family: var(--ff-clash-medium);
   text-transform: uppercase;
-  padding-block-end: .1rem;
+  padding-block-end: 0.1rem;
   text-align: start;
 }
 
-.festival__cta--home>.btn {
+.festival__cta--home > .btn {
   text-align: center;
-  width: 15rem;
+  width: auto;
   padding: 1rem 0rem;
 }
-
-
 
 /*----- TRAVEL TO THE PAST----*/
 
@@ -388,6 +382,7 @@
   cursor: pointer;
   text-align: center;
   display: block;
+  text-decoration: none;
 }
 
 .btn__l--white:hover {
@@ -396,10 +391,9 @@
 }
 
 .container__archive .btn__l--white {
-  margin-block: .8rem;
+  margin-block: 0.8rem;
   margin-inline-start: 5%;
 }
-
 
 /*carousel*/
 .main-carousel {
@@ -407,7 +401,6 @@
 }
 
 /*----- HOTSOPT --------*/
-
 
 .container__hotspot {
   display: flex;
@@ -472,13 +465,12 @@
   padding: 1rem 5rem 5rem;
 }
 
-
-.hotspot__paragraph, .hotspot__paragraph--two{
-  padding-block-start: 1.3rem; 
+.hotspot__paragraph,
+.hotspot__paragraph--two {
+  padding-block-start: 1.3rem;
 }
 
-
- .hotspot__year{
+.hotspot__year {
   font-size: var(--font-size-h1);
   margin-top: 1;
   font-family: var(--ff-clash-semibold);
@@ -488,58 +480,60 @@
   font-size: var(--font-size-l);
   text-transform: uppercase;
   font-family: var(--ff-clash-semibold);
- }
- 
- .hotspot__theme {
+}
+
+.hotspot__theme {
   font-size: 28px;
   font-family: var(--ff-montserrat);
   text-transform: uppercase;
   font-weight: var(--font-weight-medium);
 }
 
- /*carousel*/
-  .h--dots{
-    display: flex;
-    justify-content: center;
-    margin-block: 2rem;
-  }
-  .h--dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--color-black);
-    margin: 0 1rem;
-    cursor: pointer;
-    }
+/*carousel*/
+.h--dots {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+.h--dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  margin: 0 1rem;
+  cursor: pointer;
+}
 
-  .dot__active {
-      background-color: var(--color-red);
-    }
+.dot__active {
+  background-color: var(--color-red);
+}
 
-  .hotspot__prev, .hotspot__next{
-    border: none;
-    color: var(--color-black);
-    padding: 1rem;
-    text-align: center; 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border-radius: 50%;
-    font-size: var(--font-size-l);
-}     
+.hotspot__prev,
+.hotspot__next {
+  border: none;
+  color: var(--color-black);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border-radius: 50%;
+  font-size: var(--font-size-l);
+}
 
-.hotspot__prev:hover, .hotspot__next:hover {
+.hotspot__prev:hover,
+.hotspot__next:hover {
   background-color: var(--color-white);
   color: var(--color-black);
 }
-  .hotspot__buttons{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-block: 2rem;
-  }
+.hotspot__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 2rem;
+}
 
 /* film - images */
 .hotspot__film {
@@ -561,8 +555,6 @@
   /*   overflow: hidden; */
 }
 
-
-
 /********** CASTING CALL **********´*/
 
 .container__cta--home {
@@ -581,14 +573,12 @@
   margin-block-start: 2rem;
 }
 
-
 .home__cta--sub {
   font-family: var(--ff-montserrat);
   font-size: var(--font-size-xl);
   color: var(--color-white);
   margin-block-start: 2rem;
-  margin-top: -.2rem;
-
+  margin-top: -0.2rem;
 }
 
 .cta__text--wrapper {
@@ -638,8 +628,8 @@
   align-items: center;
 }
 
-.cta__casting>a,
-.casting__wrapper>a {
+.cta__casting > a,
+.casting__wrapper > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -660,7 +650,6 @@
   font-family: var(--ff-clash-montserrat);
   text-transform: uppercase;
   margin-block-start: 2rem;
-
 }
 
 .btn__casting:hover {
