@@ -144,3 +144,30 @@
 input[type='submit'] {
   visibility: hidden;
 }
+
+/* input[name='firstName'] {
+  visibility: hidden;
+}
+ */
+
+
+/*adjusts the whole*/
+/* div.group-firstName,
+div.group-lastName {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+} */
+
+div.group-lastName label {
+ visibility: hidden;
+}
+
+
+
+.name--wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
