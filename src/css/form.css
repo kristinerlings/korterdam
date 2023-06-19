@@ -150,24 +150,28 @@ input[type='submit'] {
 }
  */
 
-
 /*adjusts the whole*/
 /* div.group-firstName,
 div.group-lastName {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  padding: 1ör
 } */
 
 div.group-lastName label {
- visibility: hidden;
+  visibility: hidden;
 }
 
-
-
-.name--wrapper{
+.name--wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1rem;
+  width: 100%;
 }
+/* 
+.group-fristName element.style {
+  width: 20rem;
+} */
+
+div.form-group.group-firstName, div.form-group.group-lastName  {
+  width: 20rem;
+}
+
