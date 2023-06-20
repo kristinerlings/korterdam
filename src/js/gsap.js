@@ -1,22 +1,20 @@
-// Select the element you want to make sticky
 const element = document.querySelector('.nav__wrapper');
 
-// Create a GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 const navScroll = () => {
     ScrollTrigger.create({
         trigger: element,
-        start: 'top top', // Start the sticky behavior when the element's top reaches the top of the window
-        endTrigger: 'body', // Stop the sticky behavior when scrolling reaches the end of the document
-        pin: true, // Pins the element in place
-        pinSpacing: false, // Disables automatic adjustment of pin spacing
+        start: 'top top', 
+        endTrigger: 'body',
+        pin: true, 
+        pinSpacing: false,
 
         onUpdate: self => {
             if (self.isActive) {
-                element.classList.add('sticky'); // Add the 'sticky' class when the element is active
+                element.classList.add('sticky'); 
             } else {
-                element.classList.remove('sticky'); // Remove the 'sticky' class when the element is not active
+                element.classList.remove('sticky'); 
             }
         }
     });
@@ -30,12 +28,11 @@ const links = document.querySelectorAll(".sidebar-link");
 
 const detailsNav = () => {
 
-    // Add a GSAP ScrollTrigger for section highlighting
     sections.forEach(function (section, index) {
         ScrollTrigger.create({
             trigger: section,
-            start: "top 50%", // Activate the animation when the section is 50% in view
-            end: "bottom", // Deactivate the animation when the section is 50% out of view
+            start: "top 50%", 
+            end: "bottom", 
             onEnter: function () {
                 links.forEach(function (link) {
                     link.classList.remove("activesection");
@@ -59,9 +56,6 @@ const detailsNav = () => {
 
 }
 
-
-
-/// NOT GSAP BUT SCROLL TO SECTION JS ///
 
 const init = () => {
 
