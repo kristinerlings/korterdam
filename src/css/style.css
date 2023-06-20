@@ -181,6 +181,21 @@ strong {
   text-align: center;
 }
 
+.btn--join {
+  border: solid 0.125rem var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  display: block;
+  text-align: center;
+}
+
+.btn--join:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: solid 0.125rem var(--color-white);
+}
+
+
 .btn--white--border {
   border: solid 0.125rem var(--color-white);
   border-radius: var(--border-radius);
@@ -1151,8 +1166,10 @@ footer {
 
 #what,
 #when,
-#where {
-  scroll-margin-top: 200px;
+#where,
+#how,
+#join {
+  scroll-margin-top: 180px;
 }
 
 .what__nav,
@@ -1698,10 +1715,6 @@ select {
   text-align: center;
   max-width: 60%;
 }
-
-
-
-
 
 .container__theme--wrapper {
   max-width: 80%;
