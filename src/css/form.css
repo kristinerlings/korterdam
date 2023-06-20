@@ -36,8 +36,6 @@
 
 .form__left {
   text-align: end;
-  /* align-self: flex-start; */
-  /*    align-self: flex-start; */
 }
 
 .form__title {
@@ -85,9 +83,6 @@
   padding-block-end: 4rem;
 }
 
-/* Style text input fields */
-
-/* Style the submit button */
 .btn-success {
   background-color: var(--color-white);
   color: var(--color-black);
@@ -106,7 +101,6 @@
   font-weight: var(--ff-weight-bold);
 }
 
-/* Style form validation error messages */
 .errors {
   color: var(--color-red);
   list-style: none;
@@ -123,31 +117,10 @@
   background-color: red;
 }
 
-/* .firstName,
-#lastName  */
-
-/* .group-lastName, .group-firstName{
-  display: flex;
-   
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-} */
 
 input[type='submit'] {
   visibility: hidden;
 }
-
-/* input[name='firstName'] {
-  visibility: hidden;
-}
- */
-
-/*adjusts the whole*/
-/* div.group-firstName,
-div.group-lastName {
-  padding: 1ör
-} */
 
 div.group-lastName label {
   visibility: hidden;
@@ -160,9 +133,6 @@ div.group-lastName label {
   width: 100%;
 }
 
-/* div.form-group.group-firstName, div.form-group.group-lastName  {
-  width: 20rem;
-} */
 
 #firstName,
 #lastName {
