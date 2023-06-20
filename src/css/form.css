@@ -36,8 +36,6 @@
 
 .form__left {
   text-align: end;
-  /* align-self: flex-start; */
-  /*    align-self: flex-start; */
 }
 
 .form__title {
@@ -59,11 +57,10 @@
 }
 
 .form-control:focus {
-  /*  border: 2px solid var(--color-white); */
   color: var(--color-white);
   background-color: var(--color-black);
 }
-/* Style the form container */
+
 .form-group {
   margin-bottom: 1rem;
   color: var(--color-orange);
@@ -72,7 +69,6 @@
   font-size: 18px;
 }
 
-/* Style the form labels */
 .form-group label {
   font-weight: var(--font-weight-medium);
   font-size: 16px;
@@ -87,14 +83,6 @@
   padding-block-end: 4rem;
 }
 
-#firstName,
-#lastName {
-  width: 50%;
-}
-
-/* Style text input fields */
-
-/* Style the submit button */
 .btn-success {
   background-color: var(--color-white);
   color: var(--color-black);
@@ -113,7 +101,6 @@
   font-weight: var(--ff-weight-bold);
 }
 
-/* Style form validation error messages */
 .errors {
   color: var(--color-red);
   list-style: none;
@@ -130,31 +117,10 @@
   background-color: red;
 }
 
-/* .firstName,
-#lastName  */
-
-/* .group-lastName, .group-firstName{
-  display: flex;
-   
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-} */
 
 input[type='submit'] {
   visibility: hidden;
 }
-
-/* input[name='firstName'] {
-  visibility: hidden;
-}
- */
-
-/*adjusts the whole*/
-/* div.group-firstName,
-div.group-lastName {
-  padding: 1ör
-} */
 
 div.group-lastName label {
   visibility: hidden;
@@ -166,12 +132,13 @@ div.group-lastName label {
   align-items: flex-start;
   width: 100%;
 }
-/* 
-.group-fristName element.style {
-  width: 20rem;
-} */
 
-div.form-group.group-firstName, div.form-group.group-lastName  {
-  width: 20rem;
+
+#firstName,
+#lastName {
+  width: 10.35rem;
 }
 
+#lastName {
+  margin-left: 1rem;
+}
