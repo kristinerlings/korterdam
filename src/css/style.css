@@ -2007,7 +2007,7 @@ select {
   margin-top: 1rem;
 }
 
-.questions__container p {
+.questions__container .question__text {
   background-color: var(--color-white);
   padding: .6rem 2rem;
   color: var(--color-black);
@@ -2018,6 +2018,20 @@ select {
   max-width: 60%;
   cursor: pointer;
 }
+
+.questions__container .question__text.collapsed {
+  background-image: url(../img/dropdown-arrow-rotated.svg);
+}
+
+.answer {
+  display: none;
+  margin: 1rem;
+}
+
+.showanswer {
+  display: block;
+}
+
 
 .container__cta--participation {
   position: relative;

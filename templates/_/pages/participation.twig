@@ -1,5 +1,10 @@
 {% extends "_/layouts/base" %}
 
+{% block head %}
+	{{ craft.vite.script("src/js/dropdown.js" ) }}
+{% endblock %}
+
+
 {% block content %}
 	<header class="header__workshops">
 		<div class="header__text">
@@ -89,7 +94,7 @@
 
 			</div>
 
-			<section id="requirements" class="container__participate">
+			<section class="container__participate">
 				<div>
 					<h3 class="year-season__text">{{entry.year}}&#124;{{entry.season}}<h3>
 							<h2>Can I participate?</h2>
@@ -180,12 +185,29 @@
 					</h2>
 					<p>You can always send us an email if you have a question,<br>but perhaps you can find your answer here</p>
 					<div class="questions__container">
-						<p>Can I work in a group with my friends?</p>
-						<p>Am I required to attend the workshops?</p>
-						<p>Do I need to have previous experiences in filmmaking?</p>
-						<p>What if I don't have a camera?</p>
-						<p>Do I have to pay for anything?</p>
+						<div class="question">
+							<p class="question__text">Can I work in a group with my friends?</p>
+							<p class="answer">Yes you can! You can work in a group of 4-5 people.</p>
+						</div>
+						<div class="question">
+							<p class="question__text">Am I required to attend the workshops?</p>
+							<p class="answer">No you are not, but if you don't attend, you won't get all the juicy film knowledge!</p>
+						</div>
+						<div class="question">
+							<p class="question__text">Do I need to have previous experiences in filmmaking?</p>
+							<p class="answer">No, you don't. We will teach you everything you need to know.</p>
+						</div>
+						<div class="question">
+							<p class="question__text">What if I don't have a camera?</p>
+							<p class="answer">Don't worry, we have all the equipment you need.</p>
+						</div>
+						<div class="question">
+							<p class="question__text">Do I have to pay for anything?</p>
+							<p class="answer">No, the workshops are completely free.</p>
+						</div>
 					</div>
+
+
 				</section>
 			</div>
 
