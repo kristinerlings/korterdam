@@ -1983,7 +1983,7 @@ select {
 .orange-arrow__wrapper {
   background-image: url(../img/orange-arrow.svg);
   background-repeat: no-repeat;
-  background-position: right 20rem;
+  background-position: right 28rem;
   background-size: 5rem;
 
 }
@@ -1997,6 +1997,7 @@ select {
 .container__questions {
   max-width: 90%;
   margin: 0 auto;
+  margin-bottom: 10rem;
 }
 
 .questions__container {
@@ -2016,6 +2017,56 @@ select {
   background-position: 95%;
   max-width: 60%;
   cursor: pointer;
-
 }
 
+.container__cta--participation{
+  max-width: 70%;
+  margin: 0 0 10rem auto;
+  display:flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.container__cta--participation h2 {
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-xl);
+  margin-bottom: 1rem;
+}
+
+.container__cta--participation span {
+  font-family: var(--ff-clash-medium);
+}
+
+.container__cta--participation p {
+  margin-bottom: 1rem;
+}
+
+.cta--card{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(../img/cardbackground.svg);
+  color: var(--color-black);
+  padding: 4rem 3rem;
+  max-width: 55%;
+  border-radius: var(--border-radius);
+}
+
+.cta--card p{
+  font-weight: 400;
+}
+
+
+.btn--form{
+
+  max-width: 15rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.btn--form:hover{
+  background-color: transparent;
+  color: var(--color-black);
+}
