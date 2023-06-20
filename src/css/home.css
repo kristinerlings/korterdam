@@ -82,7 +82,7 @@
   line-height: 1.2;
 }
 
-.header__left>.line {
+.header__left > .line {
   margin-block-start: 1.3rem;
   height: 0.125rem;
 }
@@ -239,7 +239,7 @@
   padding-block-end: 1rem;
 }
 
-.info__details--home>p {
+.info__details--home > p {
   padding-block-end: 1rem;
 }
 
@@ -312,7 +312,7 @@
   top: 15vw;
 }
 
-.festival__cta--home>h3 {
+.festival__cta--home > h3 {
   font-weight: bold;
   font-size: 2.18rem;
   font-family: var(--ff-clash-medium);
@@ -321,7 +321,7 @@
   text-align: start;
 }
 
-.festival__cta--home>.btn {
+.festival__cta--home > .btn {
   text-align: center;
   width: auto;
   padding: 1rem 0rem;
@@ -373,7 +373,7 @@
   border: solid 2px var(--color-white);
   width: 14rem;
   border-radius: var(--border-radius);
-  padding: 0.6rem .6rem;
+  padding: 0.6rem 0.6rem;
   cursor: pointer;
   text-align: center;
   display: block;
@@ -454,10 +454,12 @@
   background-color: var(--color-white);
   color: var(--color-black);
   border-radius: var(--border-radius);
-  padding: 3.5rem;
   background: var(--color-white) url(../img/cardbackground.svg) no-repeat center;
   background-size: cover;
-  padding: 1rem 5rem 5rem;
+  padding: 2.5rem 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotspot__paragraph,
@@ -509,11 +511,7 @@
 .hotspot__next {
   border: none;
   color: var(--color-black);
-  padding: 1rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem 3.5rem;
   background: none;
   border-radius: 50%;
   font-size: var(--font-size-l);
@@ -521,16 +519,18 @@
 
 .hotspot__prev:hover,
 .hotspot__next:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  color: var(--color-red);
+  transform: scale(1.1);
 }
 
 .hotspot__buttons {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
-  margin-block: 2rem;
+  margin: 1.5rem 0rem 0rem;
 }
+
 
 /* film - images */
 .hotspot__film {
@@ -625,8 +625,8 @@
   align-items: center;
 }
 
-.cta__casting>a,
-.casting__wrapper>a {
+.cta__casting > a,
+.casting__wrapper > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -674,7 +674,7 @@
   color: var(--color-black);
   text-align: center;
   overflow: hidden;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   padding-bottom: 2.5rem;
   font-weight: 500;
   transform: rotate(3deg);
@@ -688,7 +688,6 @@
   overflow: hidden;
   animation: banner-popcorn 10s linear infinite;
 }
-
 
 .banner-popcorn span {
   float: left;
@@ -732,4 +731,3 @@
     animation: none;
   }
 }
-
