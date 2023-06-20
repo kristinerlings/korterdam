@@ -1151,8 +1151,8 @@ footer {
 
 #what,
 #when,
-#where {
-  scroll-margin-top: 200px;
+#where, #how, #join {
+  scroll-margin-top: 180px;
 }
 
 .what__nav,
