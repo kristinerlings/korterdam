@@ -36,6 +36,11 @@
   /*--font-weight-bold: 700;
 }*/
 
+.line--white {
+  background-color: var(--color-white);
+  height: 0.125rem;
+}
+
 .semibold {
   font-weight: var(--font-weight-semibold);
 }
@@ -70,6 +75,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  padding-block-end: 1rem;
 }
 
 .header__subtitle {
@@ -551,7 +557,7 @@
   margin-block: 1rem;
   border-radius: var(--border-radius);
   overflow: hidden;
-  margin-inline-start:-6rem;
+  margin-inline-start: -6rem;
 }
 
 /********** CASTING CALL **********´*/
@@ -584,7 +590,6 @@
   margin-block-start: 2rem;
   margin-top: -0.2rem;
 }
-
 
 .cta__casting {
   background-image: url(../img/1-arrow-cta.svg);
