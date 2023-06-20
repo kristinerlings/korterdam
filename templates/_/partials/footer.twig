@@ -1,9 +1,31 @@
-<nav class="footer__links">
-	<ul>
-		<li><a href="/" class="footer_link__item">Home</a></li>
-		<li><a href="/{{('festival-details')}}" class="footer_link__item">Festival details</a></li>
-		<li><a href="/{{('participation')}}" class="footer_link__item">Participation</a></li>
-		<li><a href="/{{('film-archive')}}" class="footer_link__item">Film Archive</a></li>
+<footer class="footer">
+	<h2 class="hidden">Footer links and information</h2>
+	<nav>
+		<ul class="footer__links">
+			<li><a href="/" class="footer_link__item"><img class="img__footer--logo" src="/public/logo-footer.svg" width="259" height="66" alt="Kortkijk Logo"></a></li>
+			<li><a href="/{{('festival-details')}}" class="footer_link__item">Festival details</a></li>
+			<li><a href="/{{('participation')}}" class="footer_link__item">Participation</a></li>
+			<li><a href="/{{('film-archive')}}" class="footer_link__item">Film Archive</a></li>
+		</ul>
+	</nav>
+	<div class="footer__contact">
+		<h3>Find us</h3>
+		<ul class="contact__list">
+			<li>+32 056 55 55 55</li>
+			<li>kortkijkfest@gmail.be</li>
+			<li><a href="https://facebook.com">Facebook</a></li>
+			<li><a href="https://instagram.com">Instagram</a></li>
+			<li><a href="https://youtube.com">Youtube</a></li>
+		</ul>
+	</div>
+	<div class="footer__apply">
+		<h3>Visualise your voice!</h3>
+		<a href="/{{('apply')}}" class="footer__apply--btn">Apply now</a>
+		<ul class="footer__lang">
+			<li>EN</li>
+			<li>NL</li>
+			<li>FR</li>
+		</ul>
 
-	</ul>
-</nav>
+	</div>
+</footer>
