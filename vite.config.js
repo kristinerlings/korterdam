@@ -24,6 +24,7 @@ export default ({ command }) => ({
         gsap: './src/js/gsap.js',
         locations: './src/js/locations.js',
         form: './src/js/form.js',
+        dropdown: './src/js/dropdown.js',
       },
     },
   },

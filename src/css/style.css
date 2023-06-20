@@ -1201,6 +1201,10 @@ footer {
 /*////////////// FILM ARCHIVE ///////////////*/
 /******* Film Archive - REQUIREMENTS *********/
 
+.film-list__archive {
+  margin-bottom: 10rem;
+}
+
 .title-main__archive {
   text-transform: uppercase;
   color: var(--color-red);
@@ -1672,6 +1676,7 @@ select {
 .container__theme h1 {
   text-transform: uppercase;
   font-family: var(--ff-clash-semibold);
+  max-width: 80%;
   font-size: 3rem;
 }
 
@@ -1679,7 +1684,7 @@ select {
   font-family: var(--ff-clash-medium);
   font-size: var(--font-size-m);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .theme__card {
@@ -1845,3 +1850,228 @@ select {
   position: relative;
   right: 10%;
 }
+
+/******* end banner *********/
+
+.container__workshops {
+  margin-top: 10rem;
+  max-width: 90%;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.container__workshops h1 {
+  text-align: center;
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-l);
+  text-transform: uppercase;
+}
+
+
+.workshops--card {
+  background-image: url(../img/workshops-card.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 3rem;
+  border-radius: var(--border-radius);
+  color: var(--color-black);
+  width: 100%;
+}
+
+.workshops--card h3 {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-s);
+  margin-bottom: 1rem;
+  border-bottom: solid 0.125rem var(--color-black);
+}
+
+.workshops--card h2 {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-l);
+  margin-bottom: 1rem;
+}
+
+.workshops--card span {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-s);
+  margin-bottom: 1rem;
+}
+
+.workshops--card p {
+  margin-bottom: 1rem;
+}
+
+.workshops--info {
+  display: flex;
+  gap: 1rem;
+}
+
+.when-bubble {
+  position: absolute;
+  bottom: 75%;
+  left: 82%;
+  background-image: url(../img/red-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9rem;
+  padding: 4rem 2rem 3.2rem 2rem;
+  text-align: center;
+}
+
+.where-bubble {
+  position: absolute;
+  top: 10%;
+  left: 93%;
+  background-image: url(../img/orange-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12rem;
+  padding: 4rem 4rem 3.2rem 4rem;
+  text-align: center;
+}
+
+.where-bubble h4,
+.when-bubble h4 {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-s);
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.where-bubble p,
+.when-bubble p {
+  font-weight: 400;
+
+}
+
+.btn--workshop {
+  max-width: 15rem;
+  padding: 1rem 2rem;
+}
+
+.btn--workshop:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.orange-arrow__wrapper {
+  background-image: url(../img/orange-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 28rem;
+  background-size: 5rem;
+
+}
+
+.container__questions h2 {
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-xl);
+  margin-bottom: 1rem;
+}
+
+.container__questions {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.questions__container {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  margin-top: 1rem;
+}
+
+.questions__container .question__text {
+  background-color: var(--color-white);
+  padding: .6rem 2rem;
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+  background-image: url(../img/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  max-width: 60%;
+  cursor: pointer;
+}
+
+.questions__container .question__text.collapsed {
+  background-image: url(../img/dropdown-arrow-rotated.svg);
+}
+
+.answer {
+  display: none;
+  margin: 1rem;
+}
+
+.showanswer {
+  display: block;
+}
+
+
+.container__cta--participation {
+  position: relative;
+  max-width: 70%;
+  right: 5%;
+  margin: 0 0 10rem auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.container__cta--participation h2 {
+  line-height: 1.2;
+  text-align: right;
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-xl);
+  margin-bottom: 1rem;
+}
+
+.container__cta--participation span {
+  font-family: var(--ff-clash-medium);
+}
+
+.container__cta--participation p {
+  margin-bottom: 1rem;
+}
+
+.cta--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(../img/cardbackground.svg);
+  color: var(--color-black);
+  padding: 4rem 3rem;
+  max-width: 55%;
+  border-radius: var(--border-radius);
+}
+
+.cta--card p {
+  font-weight: 400;
+}
+
+
+.btn--form {
+  padding: 1rem 3rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.btn--form:hover {
+  background-color: transparent;
+  color: var(--color-black);
+}
+
+.cta-purple-line {
+  position: absolute;
+  left: 76%;
+  top: 30%;
+  z-index: -1;
+}
+
+.cta-form-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
