@@ -159,17 +159,6 @@ div.group-lastName label {
 #lastName {
   margin-left: 1rem;
 }
-/* 
-input[value='placeholder'] {
-  color: red;
-}
-
-.form-group input::placeholder {
-  color: red;
-  font-style: italic;
-}
-
- */
 
 .form-group input::placeholder, .form-group textarea::placeholder, input[type='date'] {
   color: var(--color-reduced-white); 
@@ -177,7 +166,3 @@ input[value='placeholder'] {
   font-family: var(--ff-montserrat);
 }
 
-/* input[type='date']{
-  width: 10.2rem;
-} */
- 
