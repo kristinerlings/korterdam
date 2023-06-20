@@ -148,38 +148,58 @@
 				</div>
 			</section>
 
+			<div class="orange-arrow__wrapper">
 
-			<section class="container__workshops ">
+				<section class="container__workshops ">
 
-				<h3>Join us in film workshops</h3>
-				<h2>{{entry.workshopDays}}<br><span>{{entry.workshopTime}}</span>
-				</h2>
-				<a href="/{{('apply')}}" class="btn">I want to apply</a>
-				<div>
-					<h3>When?</h3>
-					<p>{{entry.workshopDate}}</p>
-				</div>
-				<div>
-					<h3>Where?</h3>
-					<p>{{entry.workshopWhere}}</p>
-				</div>
+					<h1>Workshops</h1>
+					<div class="workshops--info">
+						<img src="/public/workshops.png" alt="workshop people">
+						<div class="workshops--card">
+							<h3>Join us in film workshops</h3>
+							<h2>{{entry.workshopDays}}<br><span>{{entry.workshopTime}}</span>
+							</h2>
+							<p>After the workshops there will be an open house with mentors available to assist you further. This is the perfect opportunity for you and your teammates to work on your film, socialise and have an access to our equipment.</p>
 
-			</section>
+							<a href="/{{('apply')}}" class="btn btn--workshop">I want to apply</a>
+							<div class="when-bubble">
+								<h4>When?</h3>
+								<p>{{entry.workshopDate}}</p>
+							</div>
+							<div class="where-bubble">
+								<h4>Where?</h3>
+								<p>{{entry.workshopWhere}}</p>
+							</div>
+						</div>
+					</div>
+				</section>
 
-			<section class="container__questions">
-				<h2>Commonly<br><span class="orange">asked</span>
-					<span class="purple">questions</span>
-				</h2>
-				{# add toggle questions/answer #}
-			</section>
+				<section class="container__questions">
+					<h2>Commonly<br><span class="orange">asked</span>
+						<span class="purple">questions</span>
+					</h2>
+					<p>You can always send us an email if you have a question,<br>but perhaps you can find your answer here</p>
+					<div class="questions__container">
+						<p>Can I work in a group with my friends?</p>
+						<p>Am I required to attend the workshops?</p>
+						<p>Do I need to have previous experiences in filmmaking?</p>
+						<p>What if I don't have a camera?</p>
+						<p>Do I have to pay for anything?</p>
+					</div>
+				</section>
+			</div>
 
 			<section class="container__cta--participation">
-				<h2>Apply for<br><span class="orange">your spot</span>
-					now&#33;</h2>
-				{# eye illustration #}
-				<div>
+				<div class="cta-form-title">
+					<h2>Apply for<br><span class="orange">your spot</span>
+						now&#33;</h2>
+					<img src="/public/happy-eye.svg" alt="eye illustration" width="200px">
+					<img class="cta-purple-line" src="/public/cta-purple-line.svg" alt="purple line illustration" width="600px">
+				</div>
+				<div class="cta--card">
 					<p>Fill in the form now and get your acceptance notification within 21 days</p>
-					<a href="/{{('apply')}}" class="btn">Bring me to the form</a>
+					<a href="/{{('apply')}}" class="btn btn--form">Bring me to the form</a>
 				</div>
 			</section>
+
 		{% endblock %}
