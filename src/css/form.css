@@ -172,8 +172,12 @@ input[value='placeholder'] {
  */
 
 .form-group input::placeholder, .form-group textarea::placeholder, input[type='date'] {
-/*   color: var(--color-reduced-white); */
+  color: var(--color-reduced-white); 
   font-size: 16px;
   font-family: var(--ff-montserrat);
 }
 
+/* input[type='date']{
+  width: 10.2rem;
+} */
+ 
