@@ -71,8 +71,11 @@
 
 .form-group label {
   font-weight: var(--font-weight-medium);
-  font-size: 16px;
+  font-size: 18px;
 }
+
+
+
 
 .input::placeholder {
   color: rgb(255, 122, 193);
@@ -101,6 +104,22 @@
   font-weight: var(--ff-weight-bold);
 }
 
+.btn__apply--requirements {
+  color: var(--color-white);
+  padding: 1rem 2.8rem;
+  width: 100%;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--ff-weight-medium);
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+.btn__apply--requirements:hover {
+  color: var(--color-purple);
+  font-weight: var(--ff-weight-bold);
+}
+
 .errors {
   color: var(--color-red);
   list-style: none;
@@ -117,7 +136,6 @@
   background-color: red;
 }
 
-
 input[type='submit'] {
   visibility: hidden;
 }
@@ -133,12 +151,18 @@ div.group-lastName label {
   width: 100%;
 }
 
-
 #firstName,
 #lastName {
-  width: 10.35rem;
+  width: 10.45rem;
 }
 
 #lastName {
   margin-left: 1rem;
 }
+
+.form-group input::placeholder, .form-group textarea::placeholder, input[type='date'] {
+  color: var(--color-reduced-white); 
+  font-size: 16px;
+  font-family: var(--ff-montserrat);
+}
+
