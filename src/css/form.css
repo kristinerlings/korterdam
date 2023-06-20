@@ -59,11 +59,10 @@
 }
 
 .form-control:focus {
-  /*  border: 2px solid var(--color-white); */
   color: var(--color-white);
   background-color: var(--color-black);
 }
-/* Style the form container */
+
 .form-group {
   margin-bottom: 1rem;
   color: var(--color-orange);
@@ -72,7 +71,6 @@
   font-size: 18px;
 }
 
-/* Style the form labels */
 .form-group label {
   font-weight: var(--font-weight-medium);
   font-size: 16px;
@@ -85,11 +83,6 @@
 
 .form-group textarea {
   padding-block-end: 4rem;
-}
-
-#firstName,
-#lastName {
-  width: 50%;
 }
 
 /* Style text input fields */
@@ -166,12 +159,16 @@ div.group-lastName label {
   align-items: flex-start;
   width: 100%;
 }
-/* 
-.group-fristName element.style {
+
+/* div.form-group.group-firstName, div.form-group.group-lastName  {
   width: 20rem;
 } */
 
-div.form-group.group-firstName, div.form-group.group-lastName  {
-  width: 20rem;
+#firstName,
+#lastName {
+  width: 10.35rem;
 }
 
+#lastName {
+  margin-left: 1rem;
+}
