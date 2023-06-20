@@ -1211,6 +1211,10 @@ footer {
 /*////////////// FILM ARCHIVE ///////////////*/
 /******* Film Archive - REQUIREMENTS *********/
 
+.film-list__archive {
+  margin-bottom: 10rem;
+}
+
 .title-main__archive {
   text-transform: uppercase;
   color: var(--color-red);
@@ -1693,6 +1697,7 @@ select {
 .container__theme h1 {
   text-transform: uppercase;
   font-family: var(--ff-clash-semibold);
+  max-width: 80%;
   font-size: 3rem;
 }
 
@@ -1700,7 +1705,7 @@ select {
   font-family: var(--ff-clash-medium);
   font-size: var(--font-size-m);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .theme__card {
@@ -1870,3 +1875,147 @@ select {
   position: relative;
   right: 10%;
 }
+
+/******* end banner *********/
+
+.container__workshops {
+  margin-top: 10rem;
+  max-width: 90%;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.container__workshops h1 {
+  text-align: center;
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-l);
+  text-transform: uppercase;
+}
+
+
+.workshops--card {
+  background-image: url(../img/workshops-card.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 3rem;
+  border-radius: var(--border-radius);
+  color: var(--color-black);
+  width: 100%;
+}
+
+.workshops--card h3 {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-s);
+  margin-bottom: 1rem;
+  border-bottom: solid 0.125rem var(--color-black);
+}
+
+.workshops--card h2 {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-l);
+  margin-bottom: 1rem;
+}
+
+.workshops--card span {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-s);
+  margin-bottom: 1rem;
+}
+
+.workshops--card p {
+  margin-bottom: 1rem;
+}
+
+.workshops--info {
+  display: flex;
+  gap: 1rem;
+}
+
+.when-bubble {
+  position: absolute;
+  bottom: 75%;
+  left: 82%;
+  background-image: url(../img/red-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9rem;
+  padding: 4rem 2rem 3.2rem 2rem;
+  text-align: center;
+}
+
+.where-bubble {
+  position: absolute;
+  top: 10%;
+  left: 93%;
+  background-image: url(../img/orange-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12rem;
+  padding: 4rem 4rem 3.2rem 4rem;
+  text-align: center;
+}
+
+.where-bubble h4,
+.when-bubble h4 {
+  font-family: var(--ff-clash-medium);
+  font-size: var(--font-size-s);
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.where-bubble p,
+.when-bubble p {
+  font-weight: 400;
+
+}
+
+.btn--workshop {
+  max-width: 15rem;
+  padding: 1rem 2rem;
+}
+
+.btn--workshop:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.orange-arrow__wrapper {
+  background-image: url(../img/orange-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20rem;
+  background-size: 5rem;
+
+}
+
+.container__questions h2 {
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-xl);
+  margin-bottom: 1rem;
+}
+
+.container__questions {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.questions__container {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  margin-top: 1rem;
+}
+
+.questions__container p {
+  background-color: var(--color-white);
+  padding: .6rem 2rem;
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+  background-image: url(../img/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  max-width: 60%;
+  cursor: pointer;
+
+}
+
