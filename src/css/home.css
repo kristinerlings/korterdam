@@ -82,7 +82,7 @@
   line-height: 1.2;
 }
 
-.header__left > .line {
+.header__left>.line {
   margin-block-start: 1.3rem;
   height: 0.125rem;
 }
@@ -139,12 +139,6 @@
 .header__btn {
   display: flex;
   justify-content: flex-end;
-}
-
-#btn__join {
-  text-align: center;
-  padding: 1.1rem 5rem;
-  font-weight: var(--font-weight-medium);
 }
 
 .right__date {
@@ -209,8 +203,12 @@
 }
 
 .btn--home {
-  padding: 0.6rem 1rem;
-  max-width: 13rem;
+  max-width: 16rem;
+}
+
+.btn--home:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .info__title {
@@ -241,8 +239,8 @@
   padding-block-end: 1rem;
 }
 
-.info__details--home > p {
-  padding-block-end: 2rem;
+.info__details--home>p {
+  padding-block-end: 1rem;
 }
 
 .line--dark {
@@ -314,7 +312,7 @@
   top: 15vw;
 }
 
-.festival__cta--home > h3 {
+.festival__cta--home>h3 {
   font-weight: bold;
   font-size: 2.18rem;
   font-family: var(--ff-clash-medium);
@@ -323,7 +321,7 @@
   text-align: start;
 }
 
-.festival__cta--home > .btn {
+.festival__cta--home>.btn {
   text-align: center;
   width: auto;
   padding: 1rem 0rem;
@@ -359,7 +357,7 @@
 
 .intro__title--wrapper h2 {
   font-family: var(--ff-clash-medium);
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h3);
   color: var(--color-white);
   margin-inline-start: 5%;
 }
@@ -373,9 +371,9 @@
 .btn__l--white {
   color: var(--color-white);
   border: solid 2px var(--color-white);
-  width: 11.8rem;
+  width: 14rem;
   border-radius: var(--border-radius);
-  padding: 0.5rem 2rem;
+  padding: 0.6rem .6rem;
   cursor: pointer;
   text-align: center;
   display: block;
@@ -492,6 +490,7 @@
   justify-content: center;
   margin-block: 2rem;
 }
+
 .h--dot {
   display: inline-block;
   width: 10px;
@@ -525,6 +524,7 @@
   background-color: var(--color-white);
   color: var(--color-black);
 }
+
 .hotspot__buttons {
   display: flex;
   justify-content: space-around;
@@ -625,8 +625,8 @@
   align-items: center;
 }
 
-.cta__casting > a,
-.casting__wrapper > a {
+.cta__casting>a,
+.casting__wrapper>a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -662,3 +662,74 @@
 .btn__casting--details:hover {
   color: var(--color-purple);
 }
+
+/*******BANNER popcorn*********/
+
+.banner-popcorn {
+  width: 100vw;
+  background-image: url('../img/banner.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-black);
+  text-align: center;
+  overflow: hidden;
+  padding-top: .5rem;
+  padding-bottom: 2.5rem;
+  font-weight: 500;
+  transform: rotate(3deg);
+  position: absolute;
+  bottom: 5%;
+}
+
+.banner-popcorn div {
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: banner-popcorn 10s linear infinite;
+}
+
+
+.banner-popcorn span {
+  float: left;
+  width: 10%;
+}
+
+.banner-popcorn-text {
+  display: flex;
+  align-items: center;
+}
+
+.banner-popcorn-text p {
+  font-family: var(--ff-clash-semibold);
+  font-size: var(--font-size-m);
+  color: var(--color-white);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner-popcorn-text .outline--text {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-white);
+}
+
+.banner-popcorn-text a:hover {
+  color: var(--color-white);
+}
+
+@keyframes banner-popcorn {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: -80%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .banner-popcorn div {
+    animation: none;
+  }
+}
+
