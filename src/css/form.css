@@ -17,6 +17,7 @@
   background-repeat: no-repeat;
   background-size: fill;
   background-position: right;
+  margin-bottom: 10rem;
 }
 .form__bleed {
   width: 100vw;
@@ -73,6 +74,8 @@
   font-weight: var(--font-weight-medium);
   font-size: 18px;
 }
+
+
 
 .input::placeholder {
   color: rgb(255, 122, 193);
@@ -163,4 +166,8 @@ input[type='date'] {
   color: var(--color-reduced-white);
   font-size: 15px;
   font-family: var(--ff-montserrat);
+}
+
+.form-control{
+  margin-top: .3rem;
 }

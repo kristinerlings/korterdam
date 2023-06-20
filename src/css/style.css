@@ -182,17 +182,17 @@ strong {
 }
 
 .btn--join {
+  background-color: var(--color-black);
+  color: var(--color-white);
   border: solid 0.125rem var(--color-white);
-  background-color: var(--color-white);
-  color: var(--color-black);
   display: block;
   text-align: center;
 }
 
 .btn--join:hover {
-  background-color: var(--color-black);
-  color: var(--color-white);
   border: solid 0.125rem var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .btn--white--border {
@@ -450,9 +450,44 @@ footer {
   background-size: 90%;
 }
 
+@media screen and (min-width: 1500px) {
+  .arrow__wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-image: url('../img/big-purple-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 90%;
+  }
+
+  .container__countdown {
+    position: relative;
+    right: 10%;
+    padding-top: 1.5%;
+  }
+
+  .countdown__info {
+    padding-block-end: 0.5rem;
+    gap: 1rem;
+  }
+
+  .banner-popcorn {
+    bottom: 5%;
+  }
+
+  .container__archive{
+    margin-top: 2rem;
+  }
+}
+
+
 .container__countdown {
   position: relative;
-  right: 10%;
+  right: 13%;
   padding-top: 1.5%;
 }
 
@@ -481,7 +516,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-block-end: 0.5rem;
+  padding-block-end: 1rem;
   gap: 1rem;
   color: var(--color-white);
 }
@@ -1361,9 +1396,17 @@ select {
 }
 
 .back-button {
+  max-width: 15rem;
   margin: 2.9rem 0rem;
   color: var(--color-white);
   border: solid 0.1rem var(--color-white);
+}
+
+.back-button:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: solid 0.1rem var(--color-white);
+
 }
 
 /** detailpage - film-information **/
@@ -1638,6 +1681,7 @@ select {
   background-color: none;
   display: block;
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .btn--festival:hover {
