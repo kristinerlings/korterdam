@@ -515,12 +515,14 @@
   background: none;
   border-radius: 50%;
   font-size: var(--font-size-l);
+  cursor: pointer;
 }
 
 .hotspot__prev:hover,
 .hotspot__next:hover {
-  color: var(--color-red);
-  transform: scale(1.1);
+  color: var(--color-black);
+  transform: scale(1.2);
+  transition: all 0.4s;
 }
 
 .hotspot__buttons {
@@ -530,7 +532,6 @@
   align-items: center;
   margin: 1.5rem 0rem 0rem;
 }
-
 
 /* film - images */
 .hotspot__film {
@@ -560,60 +561,61 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-block: 8rem;
+  padding: 5rem 0rem 10rem;
 }
 
 .container__cta--home h2 {
   font-family: var(--ff-clash-medium);
-  font-size: var(--font-size-h1);
+  font-size: 3rem;
   color: var(--color-white);
   margin-block-start: 2rem;
 }
 
+.container__cta--home h2 span {
+  font-family: var(--ff-clash-semibold);
+  font-size: 3rem;
+}
+
 .home__cta--sub {
   font-family: var(--ff-montserrat);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-l);
   color: var(--color-white);
   margin-block-start: 2rem;
   margin-top: -0.2rem;
 }
 
-.cta__text--wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-}
 
 .cta__casting {
   background-image: url(../img/1-arrow-cta.svg);
-  background-position: left 10%;
+  background-position: left 5%;
   background-repeat: no-repeat;
   background-size: 20%;
   font-family: var(--ff-montserrat);
+  margin-left: -3rem;
 }
 
 .casting__wrapper {
-  padding: 0rem 10rem;
+  padding: 0rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  margin-block-start: 2rem;
-  left: 6%;
+  margin-block-start: 1rem;
+  left: 16%;
 }
 
 .img__left--title {
   position: relative;
   z-index: -1;
+  width: 23rem;
 }
 
 .casting__wrapper h3 {
-  font-size: 35px;
+  font-size: 24px;
   color: var(--color-white);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
-  margin-top: -10rem;
+  margin-top: -7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -623,6 +625,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -0.5rem;
+  font-weight: var(--font-weight-medium);
 }
 
 .cta__casting > a,
@@ -652,6 +656,7 @@
 .btn__casting:hover {
   background-color: var(--color-orange);
   background-image: none;
+  transition: all 0.4s;
 }
 
 .btn__casting--details {
@@ -661,6 +666,7 @@
 
 .btn__casting--details:hover {
   color: var(--color-purple);
+  transition: all 0.2s;
 }
 
 /*******BANNER popcorn*********/
