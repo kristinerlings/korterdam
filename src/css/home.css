@@ -545,12 +545,13 @@
 }
 
 .img__film {
-  width: 105%;
+  width: 115%;
   transform: rotate(-5deg);
   height: auto;
   margin-block: 1rem;
   border-radius: var(--border-radius);
-  /*   overflow: hidden; */
+  overflow: hidden;
+  margin-inline-start:-6rem;
 }
 
 /********** CASTING CALL **********´*/
