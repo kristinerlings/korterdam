@@ -74,9 +74,6 @@
   font-size: 18px;
 }
 
-
-
-
 .input::placeholder {
   color: rgb(255, 122, 193);
   font-size: 5rem;
@@ -160,9 +157,10 @@ div.group-lastName label {
   margin-left: 1rem;
 }
 
-.form-group input::placeholder, .form-group textarea::placeholder, input[type='date'] {
-  color: var(--color-reduced-white); 
-  font-size: 16px;
+.form-group input::placeholder,
+.form-group textarea::placeholder,
+input[type='date'] {
+  color: var(--color-reduced-white);
+  font-size: 15px;
   font-family: var(--ff-montserrat);
 }
-
