@@ -2019,15 +2019,19 @@ select {
   cursor: pointer;
 }
 
-.container__cta--participation{
+.container__cta--participation {
+  position: relative;
   max-width: 70%;
+  right: 5%;
   margin: 0 0 10rem auto;
-  display:flex;
+  display: flex;
   gap: 2rem;
   align-items: center;
 }
 
 .container__cta--participation h2 {
+  line-height: 1.2;
+  text-align: right;
   font-family: var(--ff-clash-semibold);
   font-size: var(--font-size-xl);
   margin-bottom: 1rem;
@@ -2041,8 +2045,8 @@ select {
   margin-bottom: 1rem;
 }
 
-.cta--card{
-  display:flex;
+.cta--card {
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -2053,20 +2057,31 @@ select {
   border-radius: var(--border-radius);
 }
 
-.cta--card p{
+.cta--card p {
   font-weight: 400;
 }
 
 
-.btn--form{
-
-  max-width: 15rem;
-  padding: 1rem 2rem;
+.btn--form {
+  padding: 1rem 3rem;
   background-color: var(--color-black);
   color: var(--color-white);
 }
 
-.btn--form:hover{
+.btn--form:hover {
   background-color: transparent;
   color: var(--color-black);
+}
+
+.cta-purple-line {
+  position: absolute;
+  left: 76%;
+  top: 30%;
+  z-index: -1;
+}
+
+.cta-form-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
